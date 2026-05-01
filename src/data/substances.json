@@ -9041,7 +9041,9 @@
     "ec_number": "",
     "name_it": "Composti del Nichel",
     "name_en": "Composti del Nichel",
-    "synonyms": [],
+    "synonyms": [
+      "nichel"
+    ],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
       "metadata": {
@@ -9087,8 +9089,7 @@
         "notes": [
           "Frazione respirabile, misurata come nickel.",
           "Frazione inalabile, misurata come nickel.",
-          "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie.",
-          "La fonte ufficiale riporta due valori 8h distinti: 0,01 mg/m³ (frazione respirabile, nota 16) e 0,05 mg/m³ (frazione inalabile, nota 17)."
+          "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie."
         ],
         "transitional_measures": [
           "Il valore limite(16) si applica a decorrere dal 18 gennaio 2025 Il valore limite(17) si applica a decorrere dal 18 gennaio 2025 Fino ad allora si applica un valore limite di 0,1 mg/m3 (17)."
@@ -9112,7 +9113,30 @@
           "mg_m3": null,
           "ppm": null,
           "fibers_ml": null
-        }
+        },
+        "limits": [
+          {
+            "label": "Frazione respirabile, misurata come nickel",
+            "period": "8h",
+            "mg_m3": 0.01,
+            "ppm": null,
+            "fibers_ml": null,
+            "notes": [
+              "Valore applicabile a decorrere dal 18 gennaio 2025."
+            ]
+          },
+          {
+            "label": "Frazione inalabile, misurata come nickel",
+            "period": "8h",
+            "mg_m3": 0.05,
+            "ppm": null,
+            "fibers_ml": null,
+            "notes": [
+              "Valore applicabile a decorrere dal 18 gennaio 2025.",
+              "Fino ad allora si applica un valore limite di 0,1 mg/m³."
+            ]
+          }
+        ]
       },
       "allegato_xliii_bis": {
         "present": false,

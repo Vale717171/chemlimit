@@ -66,6 +66,28 @@ function getAnnexLimit(annexRecord, fieldName) {
   return annexRecord?.[fieldName] || null;
 }
 
+function renderSpecificLimits(limits) {
+  if (!Array.isArray(limits) || limits.length === 0) {
+    return "";
+  }
+
+  return `
+    <h2>Limiti specifici</h2>
+    <ul>
+      ${limits
+        .map((limit) => {
+          const limitLabel = [limit.label, limit.period].filter(Boolean).join(" - ");
+          const value = formatLimit(limit);
+          const noteText = Array.isArray(limit.notes) && limit.notes.length
+            ? ` (${limit.notes.map((note) => escapeHtml(note)).join("; ")})`
+            : "";
+          return `<li><strong>${escapeHtml(limitLabel || "Limite")}</strong>: ${escapeHtml(value)}${noteText}</li>`;
+        })
+        .join("")}
+    </ul>
+  `;
+}
+
 function renderAnnexBlock(annexRecord) {
   if (!annexRecord?.present) {
     return "";
@@ -96,6 +118,7 @@ function renderAnnexBlock(annexRecord) {
         <dt>Notazioni</dt>
         <dd>${escapeHtml(notations.join(", ") || "Non indicato")}</dd>
       </dl>
+      ${renderSpecificLimits(annexRecord.limits)}
       ${annexRecord.verified ? "" : "<div class=\"notice\">Dato importato nella pipeline, da verificare prima dell'uso professionale.</div>"}
       <h2>Note normative</h2>
       ${noteHtml}

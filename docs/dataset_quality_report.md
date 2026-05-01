@@ -49,7 +49,7 @@ Tutti i 19 casi rilevati sono record senza CAS, non record con CAS formalmente e
 | XLIII | Emissioni di gas di scarico dei motori diesel | - | 8h: 0,05 mg/m³ | Misurate come carbonio elementare; TM: applicazione dal 21 febbraio 2026 per miniere sotterranee e gallerie | Emissione di processo / miscela complessa |
 | XLIII | Miscele di idrocarburi policiclici aromatici, in particolare quelle contenenti benzo(a)pirene, definite cancerogene ai sensi della direttiva 2004/37 | - | Non indicato | Notazione `Cute` | Miscela complessa / categoria normativa |
 | XLIII | Oli minerali precedentemente usati nei motori a combustione interna per lubrificare e raffreddare le parti mobili all’interno del motore | - | Non indicato | Notazione `Cute` | Miscela complessa / categoria d’uso |
-| XLIII | Composti del Nichel | - | 8h: 0,01 mg/m³ | Frazione respirabile; frazione inalabile; sensibilizzazione cutanea e respiratoria; TM fino al 18 gennaio 2025 | Gruppo di composti con doppio limite respirabile/inalabile |
+| XLIII | Composti del Nichel | - | 8h compatibilità: 0,01 mg/m³; limiti specifici: 0,01 mg/m³ respirabile, 0,05 mg/m³ inalabile | Frazione respirabile; frazione inalabile; sensibilizzazione cutanea e respiratoria; TM fino al 18 gennaio 2025 | Gruppo di composti con doppio limite respirabile/inalabile |
 | XLIII | Piombo inorganico e i suoi composti | - | 8h: 0,15 mg/m³ | - | Gruppo di composti inorganici del piombo |
 | XLIII | Mercurio e composti inorganici bivalenti del mercurio compresi ossido mercurico e cloruro di mercurio (misurati come mercurio) | - | 8h: 0,02 mg/m³ | Frazione respirabile; notazione `Cute` | Gruppo di composti misurati come mercurio |
 
@@ -101,6 +101,7 @@ Esito:
 - `notations`: `Cute` e le notazioni di sensibilizzazione sono presenti e arrivano all’aggregato.
 - `transitional_measures`: benzene, cromo VI, cadmio, berillio, diesel e nichel risultano trasportati nel file aggregato.
 - `XLIII-bis`: `Piombo e suoi composti ionici` mantiene parametro biologico, valore, unità, matrice e note operative.
+- `limits`: `Composti del Nichel` conserva ora in forma strutturata i due limiti 8h distinti per frazione respirabile e inalabile.
 
 Correzione minima effettuata durante il QA:
 
@@ -109,9 +110,9 @@ Correzione minima effettuata durante il QA:
 
 ## Criticità potenziali
 
-1. **Schema non sufficiente per alcuni record multi-limite**
-   - `Composti del Nichel` ha due valori 8h distinti nella stessa riga (`0,01 mg/m³` respirabile e `0,05 mg/m³` inalabile).
-   - Lo schema attuale conserva solo un valore numerico in `limit_8h.mg_m3`; il secondo resta nelle note.
+1. **Supporto multi-limite introdotto e primo caso risolto**
+   - `Composti del Nichel` è stato migrato al nuovo campo opzionale `limits`.
+   - Restano da intercettare eventuali altri casi futuri in cui una singola voce normativa porti più limiti strutturati.
 
 2. **Record senza CAS ricercabili solo per nome**
    - Le 19 voci di gruppo/processo non sono intercettabili da ricerca CAS, per definizione.
@@ -139,7 +140,7 @@ La simulazione è stata effettuata leggendo `src/data/substances.json` e confron
 | Benzene | Sì | `71-43-2` | XLIII | `0,2 ppm / 0,66 mg/m³` | `Cute`, misura transitoria presente, `verified: false` |
 | Tricloroetilene | Sì | `79-01-6` | XLIII | `10 ppm / 54,7 mg/m³`; STEL `30 ppm / 164,1 mg/m³` | `Cute`, `verified: false` |
 | Fibre ceramiche refrattarie | Sì | assenza CAS mostrabile come `-` | XLIII | `0,3 f/ml` | `verified: false` |
-| Composti del Nichel | Sì | assenza CAS mostrabile come `-` | XLIII | `0,01 mg/m³` | Note e TM visibili; limite inalabile secondario presente solo nelle note; `verified: false` |
+| Composti del Nichel | Sì | assenza CAS mostrabile come `-` | XLIII | `0,01 mg/m³` + sottosezione `Limiti specifici` con respirabile/inalabile | Note e TM visibili; `verified: false` |
 | Piombo e suoi composti ionici | Sì | assenza CAS mostrabile come `-` | XLIII-bis | valore biologico `60 μg Pb/100 ml di sangue` | note operative presenti, `verified: false` |
 
 Esito UI simulata:
@@ -147,11 +148,10 @@ Esito UI simulata:
 - il side panel può mostrare correttamente nome, CAS o sua assenza, allegato, limiti, note e stato `verified`;
 - i record con `f/ml` sono ora visualizzabili;
 - i record XLIII-bis sono visualizzabili come blocco biologico dedicato;
-- il caso `Composti del Nichel` rimane semanticamente compresso rispetto alla fonte ufficiale.
+- il caso `Composti del Nichel` non è più compresso nelle sole note: i due limiti 8h sono ora strutturati e renderizzabili in UI.
 
 ## Campione di righe da verificare manualmente sulla fonte ufficiale
 
-- `Composti del Nichel`: doppio valore 8h respirabile/inalabile
 - `Composti di cromo VI`: misura transitoria complessa
 - `Cadmio e suoi composti inorganici`: limite attuale + transitorio con nota 13
 - `Berillio e composti inorganici del berillio`: limite attuale + transitorio + sensibilizzazione
@@ -165,7 +165,7 @@ Esito UI simulata:
 ## Raccomandazioni prima della pubblicazione
 
 1. Ripulire editorialmente i testi estratti dal PDF per rimuovere gli ultimi artefatti di spaziatura.
-2. Introdurre uno schema dati più ricco per i record con limiti multipli nella stessa colonna, a partire da `Composti del Nichel`.
+2. Riutilizzare il nuovo campo `limits` per futuri record multi-limite che emergano da allegati o aggiornamenti normativi.
 3. Valutare un collegamento esplicito tra record XLIII e XLIII-bis relativi al piombo.
 4. Eseguire una revisione manuale riga-per-riga delle voci con misure transitorie e delle voci di gruppo senza CAS.
 5. Mantenere `verified: false` finché non viene eseguito un controllo manuale puntuale sulla fonte ufficiale.

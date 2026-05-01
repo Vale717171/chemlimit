@@ -112,6 +112,48 @@ function validateExposureLimit(limitObject, fieldName, errors, context) {
   }
 }
 
+function validateOptionalLimits(limits, errors, context) {
+  if (!Array.isArray(limits)) {
+    errors.push(`${context}: limits deve essere un array quando presente.`);
+    return;
+  }
+
+  limits.forEach((limit, index) => {
+    const limitContext = `${context}: limits[${index}]`;
+
+    if (!limit || typeof limit !== "object") {
+      errors.push(`${limitContext} non valido.`);
+      return;
+    }
+
+    if (!hasOwn(limit, "period") || !String(limit.period).trim()) {
+      errors.push(`${limitContext}: period mancante o vuoto.`);
+    }
+
+    for (const key of ["mg_m3", "ppm", "fibers_ml"]) {
+      if (!hasOwn(limit, key)) {
+        errors.push(`${limitContext}: campo ${key} mancante.`);
+        continue;
+      }
+
+      if (!isNumberOrNull(limit[key])) {
+        errors.push(`${limitContext}: campo ${key} deve essere numerico o null.`);
+      }
+    }
+
+    if (!hasOwn(limit, "notes") || !Array.isArray(limit.notes)) {
+      errors.push(`${limitContext}: notes deve essere presente e array.`);
+    }
+
+    const hasNumericValue = ["mg_m3", "ppm", "fibers_ml"].some((key) => typeof limit[key] === "number");
+    const hasExplanatoryNote = Array.isArray(limit.notes) && limit.notes.length > 0;
+
+    if (!hasNumericValue && !hasExplanatoryNote) {
+      errors.push(`${limitContext}: almeno uno tra mg_m3, ppm, fibers_ml deve essere numerico oppure deve esserci una nota esplicativa.`);
+    }
+  });
+}
+
 function validateBiologicalLimit(limitObject, errors, context) {
   if (!limitObject || typeof limitObject !== "object") {
     errors.push(`${context}: biological_limit_value mancante o non valido.`);
@@ -237,6 +279,10 @@ async function main() {
 
         validateExposureLimit(row.limit_8h, "limit_8h", errors, context);
         validateExposureLimit(row.limit_short_term, "limit_short_term", errors, context);
+
+        if (hasOwn(row, "limits")) {
+          validateOptionalLimits(row.limits, errors, context);
+        }
       }
 
       if (config.kind === "biological") {

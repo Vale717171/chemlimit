@@ -71,9 +71,23 @@ function createLimitRecord(limitObject) {
   };
 }
 
+function createStructuredLimits(limits) {
+  if (!Array.isArray(limits) || limits.length === 0) {
+    return undefined;
+  }
+
+  return limits.map((limit) => ({
+    label: limit?.label || "",
+    period: limit?.period || "",
+    ...createLimitRecord(limit),
+    notes: Array.isArray(limit?.notes) ? limit.notes : []
+  }));
+}
+
 function createAnnexRecord(row) {
   const limit8h = createLimitRecord(row.limit_8h);
   const limitShortTerm = createLimitRecord(row.limit_short_term);
+  const structuredLimits = createStructuredLimits(row.limits);
 
   return {
     present: true,
@@ -89,7 +103,8 @@ function createAnnexRecord(row) {
     limit_8h: limit8h,
     limit_short_term: limitShortTerm,
     vlep_8h: limit8h,
-    vlep_breve_termine: limitShortTerm
+    vlep_breve_termine: limitShortTerm,
+    ...(structuredLimits ? { limits: structuredLimits } : {})
   };
 }
 
