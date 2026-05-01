@@ -39,6 +39,14 @@ ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per A
 - ACGIH non viene copiato nel database e non viene interrogato tramite scraping.
 - I link esterni rimandano alle fonti ufficiali o ai relativi motori di ricerca.
 
+
+## External source links
+
+- ECHA direct links are used only when manually verified;
+- otherwise ChemLimit opens the official ECHA search page;
+- ACGIH is not scraped and TLV values are not copied;
+- generic search engines are not used for technical source buttons.
+
 ## Privacy
 
 L'estensione funziona localmente, non invia ricerche a server propri, non richiede account, non traccia l'utente e non usa analytics. L'apertura dei siti esterni è soggetta alle privacy policy dei rispettivi siti.

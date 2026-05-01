@@ -3,7 +3,6 @@ const GESTIS_SEARCH_PAGE = "https://gestis.dguv.de/search?q=";
 const GESTIS_HOME = "https://gestis.dguv.de/";
 const PUBCHEM_SEARCH_PAGE = "https://pubchem.ncbi.nlm.nih.gov/#query=";
 const ECHEMPORTAL_HOME = "https://www.echemportal.org/echemportal/";
-const DUCKDUCKGO_SEARCH = "https://duckduckgo.com/?q=";
 
 function cleanValue(value) {
   const text = String(value || "").trim();
@@ -12,16 +11,6 @@ function cleanValue(value) {
 
 function encodeQuery(query) {
   return encodeURIComponent(cleanValue(query));
-}
-
-function buildSiteSearch(domain, query, extraTerms = "") {
-  const terms = [cleanValue(query), cleanValue(extraTerms)].filter(Boolean).join(" ");
-
-  if (!terms) {
-    return "";
-  }
-
-  return `${DUCKDUCKGO_SEARCH}${encodeURIComponent(`site:${domain} ${terms}`)}`;
 }
 
 function pickQueryParts({ cas = "", name_it = "", name_en = "", fallbackQuery = "" } = {}) {
@@ -63,34 +52,16 @@ function buildGestisLink(parts) {
 }
 
 function buildEchaLink(parts) {
-  const query = parts.cas || parts.fallback;
-
-  if (!query) {
-    return {
-      status: "search",
-      url: ECHA_SEARCH_PAGE
-    };
-  }
-
   return {
     status: "search",
-    url: buildSiteSearch("echa.europa.eu", query, "ECHA chemical")
+    url: ECHA_SEARCH_PAGE
   };
 }
 
 function buildEchemPortalLink(parts) {
-  const query = parts.cas || parts.fallback;
-
-  if (!query) {
-    return {
-      status: "search",
-      url: ECHEMPORTAL_HOME
-    };
-  }
-
   return {
     status: "search",
-    url: buildSiteSearch("echemportal.org/echemportal", query, "eChemPortal")
+    url: ECHEMPORTAL_HOME
   };
 }
 
@@ -113,7 +84,7 @@ export function buildSearchLinks(query) {
   return buildExternalLinks({ fallbackQuery: query });
 }
 
-export function mergeExternalLinks(substance, fallbackQuery = "") {
+export function mergeExternalLinks(substance, fallbackQuery = "", echaVerifiedLinks = []) {
   const generatedLinks = buildExternalLinks({
     cas: substance?.cas,
     name_it: substance?.name_it,
@@ -123,8 +94,20 @@ export function mergeExternalLinks(substance, fallbackQuery = "") {
   const existingLinks = substance?.external_links || {};
   const existingAcgih = existingLinks.acgih || {};
 
+  let echaLink = generatedLinks.echa;
+  if (substance?.cas) {
+    const verifiedEcha = echaVerifiedLinks.find(link => link.cas === substance.cas && link.verified);
+    if (verifiedEcha && verifiedEcha.url) {
+      echaLink = {
+        status: "verified",
+        url: verifiedEcha.url
+      };
+    }
+  }
+
   return {
     ...generatedLinks,
+    echa: echaLink,
     acgih:
       existingAcgih.status === "verified" && cleanValue(existingAcgih.url)
         ? {
