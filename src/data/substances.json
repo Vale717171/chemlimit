@@ -16418,6 +16418,93 @@
     }
   },
   {
+    "id": "lead-and-its-ionic-compounds",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Piombo e suoi composti ionici",
+    "name_en": "Lead and its ionic compounds",
+    "synonyms": [],
+    "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
+    "dlgs81": {
+      "metadata": {
+        "dataset_name": "Italy - D.Lgs. 81/08 occupational exposure limits",
+        "dataset_scope": "Italian VLEP/OEL dataset for ChemLimit",
+        "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
+        "primary_annexes": [
+          "XXXVIII",
+          "XLIII",
+          "XLIII-bis"
+        ],
+        "current_legal_update": "D.Lgs. 4 settembre 2024, n. 135",
+        "current_legal_update_publication": "G.U. Serie Generale n. 226 del 26-09-2024",
+        "current_legal_update_effective_date": "2024-10-11",
+        "last_checked": "2026-05-01",
+        "data_status": "pipeline iniziale - dati da verificare",
+        "official_sources": [
+          {
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario"
+          },
+          {
+            "label": "Normattiva - D.Lgs. 135/2024",
+            "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26"
+          }
+        ]
+      },
+      "allegato_xxxviii": {
+        "present": false,
+        "notes": []
+      },
+      "allegato_xliii": {
+        "present": false,
+        "notes": []
+      },
+      "allegato_xliii_bis": {
+        "present": true,
+        "annex": "XLIII-bis",
+        "annex_title": "Valori limite biologici obbligatori e misure di sorveglianza sanitaria",
+        "source_label": "D.Lgs. 81/08, Allegato XLIII-bis",
+        "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII-bis introdotto da D.Lgs. 135/2024",
+        "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+        "verified": false,
+        "notes": [
+          "Per le lavoratrici in età fertile il riscontro di valori di piombemia superiori a 40 microgrammi di piombo per 100 millilitri di sangue comporta comunque allontanamento dall’esposizione.",
+          "La sorveglianza sanitaria si effettua quando l’esposizione a una concentrazione di piombo nell’aria, espressa come media ponderata nel tempo calcolata su 40 ore alla settimana, è superiore a 0,075 mg/m³.",
+          "La sorveglianza sanitaria si effettua anche quando nei singoli lavoratori è riscontrato un contenuto di piombo nel sangue superiore a 40 μg Pb/100 ml di sangue."
+        ],
+        "biological_limit_value": {
+          "parameter": "Piombo nel sangue (PbB)",
+          "value": 60,
+          "unit": "μg Pb/100 ml di sangue",
+          "matrix": "Sangue",
+          "sampling_time": "Monitoraggio biologico ai sensi dell’Allegato XLIII-bis"
+        }
+      }
+    },
+    "external_links": {
+      "acgih": {
+        "status": "unverified",
+        "url": ""
+      },
+      "echa": {
+        "status": "search",
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=Lead%20and%20its%20ionic%20compounds"
+      },
+      "gestis": {
+        "status": "search",
+        "url": "https://gestis.dguv.de/search?q=Lead%20and%20its%20ionic%20compounds"
+      },
+      "pubchem": {
+        "status": "search",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=Lead%20and%20its%20ionic%20compounds"
+      },
+      "echemportal": {
+        "status": "search",
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=Lead%20and%20its%20ionic%20compounds"
+      }
+    }
+  },
+  {
     "id": "piombo-inorganico-e-i-suoi-composti",
     "cas": "",
     "ec_number": "",

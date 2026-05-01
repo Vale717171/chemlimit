@@ -7,18 +7,22 @@
     "annex_title": "Valori limite biologici obbligatori e misure di sorveglianza sanitaria",
     "cas": null,
     "ec_number": null,
-    "name_it": "",
-    "name_en": "",
+    "name_it": "Piombo e suoi composti ionici",
+    "name_en": "Lead and its ionic compounds",
     "biological_limit_value": {
-      "parameter": "",
-      "value": null,
-      "unit": "",
-      "matrix": "",
-      "sampling_time": ""
+      "parameter": "Piombo nel sangue (PbB)",
+      "value": 60,
+      "unit": "μg Pb/100 ml di sangue",
+      "matrix": "Sangue",
+      "sampling_time": "Monitoraggio biologico ai sensi dell’Allegato XLIII-bis"
     },
-    "notes": [],
+    "notes": [
+      "Per le lavoratrici in età fertile il riscontro di valori di piombemia superiori a 40 microgrammi di piombo per 100 millilitri di sangue comporta comunque allontanamento dall’esposizione.",
+      "La sorveglianza sanitaria si effettua quando l’esposizione a una concentrazione di piombo nell’aria, espressa come media ponderata nel tempo calcolata su 40 ore alla settimana, è superiore a 0,075 mg/m³.",
+      "La sorveglianza sanitaria si effettua anche quando nei singoli lavoratori è riscontrato un contenuto di piombo nel sangue superiore a 40 μg Pb/100 ml di sangue."
+    ],
     "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII-bis introdotto da D.Lgs. 135/2024",
-    "source_url": "",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
     "verified": false
   }
 ]
