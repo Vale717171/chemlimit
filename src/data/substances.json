@@ -2,24 +2,57 @@
   {
     "id": "acetone",
     "cas": "67-64-1",
+    "ec_number": "200-662-2",
     "name_it": "Acetone",
     "name_en": "Acetone",
-    "synonyms": ["propanone", "dimetilchetone", "dimethyl ketone"],
-    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
+    "synonyms": [
+      "propanone",
+      "dimetilchetone",
+      "dimethyl ketone"
+    ],
+    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
     "dlgs81": {
+      "metadata": {
+        "dataset_name": "Italy - D.Lgs. 81/08",
+        "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
+        "primary_annexes": [
+          "XXXVIII",
+          "XLIII"
+        ],
+        "last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "official_sources": [
+          {
+            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+          },
+          {
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+          }
+        ],
+        "data_status": "seed da verificare"
+      },
       "allegato_xxxviii": {
         "present": true,
+        "annex": "XXXVIII",
         "vlep_8h": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
+          "mg_m3": "1210",
+          "ppm": "500"
         },
         "vlep_breve_termine": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
         },
-        "notes": ["Valori seed non completati."],
+        "notations": [],
+        "notes": [
+          "Voce seed iniziale da verificare sul testo vigente."
+        ],
         "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "da completare/verificare"
+        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
+        "dataset_last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "verified": false
       },
       "allegato_xliii": {
         "present": false,
@@ -33,47 +66,95 @@
       },
       "echa": {
         "status": "search",
-        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=67-64-1"
+        "url": ""
       },
       "gestis": {
         "status": "search",
-        "url": "https://gestis.dguv.de/search?q=67-64-1"
+        "url": ""
       },
       "pubchem": {
         "status": "search",
-        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=67-64-1"
+        "url": ""
       },
       "echemportal": {
         "status": "search",
-        "url": "https://www.echemportal.org/echemportal/substance-search?query=67-64-1"
+        "url": ""
       }
     }
   },
   {
     "id": "benzene",
     "cas": "71-43-2",
+    "ec_number": "200-753-7",
     "name_it": "Benzene",
     "name_en": "Benzene",
-    "synonyms": ["benzolo"],
-    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
+    "synonyms": [
+      "benzolo"
+    ],
+    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
     "dlgs81": {
+      "metadata": {
+        "dataset_name": "Italy - D.Lgs. 81/08",
+        "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
+        "primary_annexes": [
+          "XXXVIII",
+          "XLIII"
+        ],
+        "last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "official_sources": [
+          {
+            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+          },
+          {
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+          }
+        ],
+        "data_status": "seed da verificare"
+      },
       "allegato_xxxviii": {
         "present": true,
+        "annex": "XXXVIII",
         "vlep_8h": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
         },
         "vlep_breve_termine": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
         },
-        "notes": ["Valori seed non completati."],
+        "notations": [],
+        "notes": [
+          "Voce seed iniziale da verificare sul testo vigente."
+        ],
         "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "da completare/verificare"
+        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
+        "dataset_last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "verified": false
       },
       "allegato_xliii": {
         "present": true,
-        "notes": ["Presenza indicativa da verificare nella versione normativa applicabile."]
+        "annex": "XLIII",
+        "vlep_8h": {
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
+        },
+        "vlep_breve_termine": {
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
+        },
+        "notations": [],
+        "notes": [
+          "Presenza seed iniziale da verificare nell'allegato per il testo vigente."
+        ],
+        "source_label": "D.Lgs. 81/08, Allegato XLIII",
+        "source_version": "D.Lgs. 81/08 vigente, Allegato XLIII",
+        "dataset_last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "verified": false
       }
     },
     "external_links": {
@@ -83,147 +164,97 @@
       },
       "echa": {
         "status": "search",
-        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=71-43-2"
-      },
-      "gestis": {
-        "status": "search",
-        "url": "https://gestis.dguv.de/search?q=71-43-2"
-      },
-      "pubchem": {
-        "status": "search",
-        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=71-43-2"
-      },
-      "echemportal": {
-        "status": "search",
-        "url": "https://www.echemportal.org/echemportal/substance-search?query=71-43-2"
-      }
-    }
-  },
-  {
-    "id": "toluene",
-    "cas": "108-88-3",
-    "name_it": "Toluene",
-    "name_en": "Toluene",
-    "synonyms": ["toluolo", "methylbenzene", "metilbenzene"],
-    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
-    "dlgs81": {
-      "allegato_xxxviii": {
-        "present": true,
-        "vlep_8h": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
-        },
-        "vlep_breve_termine": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
-        },
-        "notes": ["Valori seed non completati."],
-        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "da completare/verificare"
-      },
-      "allegato_xliii": {
-        "present": false,
-        "notes": []
-      }
-    },
-    "external_links": {
-      "acgih": {
-        "status": "unverified",
         "url": ""
       },
-      "echa": {
-        "status": "search",
-        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=108-88-3"
-      },
       "gestis": {
         "status": "search",
-        "url": "https://gestis.dguv.de/search?q=108-88-3"
-      },
-      "pubchem": {
-        "status": "search",
-        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=108-88-3"
-      },
-      "echemportal": {
-        "status": "search",
-        "url": "https://www.echemportal.org/echemportal/substance-search?query=108-88-3"
-      }
-    }
-  },
-  {
-    "id": "xylene",
-    "cas": "1330-20-7",
-    "name_it": "Xilene",
-    "name_en": "Xylene",
-    "synonyms": ["xilolo", "dimetilbenzene", "dimethylbenzene", "mixed xylenes"],
-    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
-    "dlgs81": {
-      "allegato_xxxviii": {
-        "present": true,
-        "vlep_8h": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
-        },
-        "vlep_breve_termine": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
-        },
-        "notes": ["Miscela di isomeri: dettaglio normativo da verificare."],
-        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "da completare/verificare"
-      },
-      "allegato_xliii": {
-        "present": false,
-        "notes": []
-      }
-    },
-    "external_links": {
-      "acgih": {
-        "status": "unverified",
         "url": ""
       },
-      "echa": {
-        "status": "search",
-        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=1330-20-7"
-      },
-      "gestis": {
-        "status": "search",
-        "url": "https://gestis.dguv.de/search?q=1330-20-7"
-      },
       "pubchem": {
         "status": "search",
-        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=1330-20-7"
+        "url": ""
       },
       "echemportal": {
         "status": "search",
-        "url": "https://www.echemportal.org/echemportal/substance-search?query=1330-20-7"
+        "url": ""
       }
     }
   },
   {
     "id": "formaldehyde",
     "cas": "50-00-0",
+    "ec_number": "200-001-8",
     "name_it": "Formaldeide",
     "name_en": "Formaldehyde",
-    "synonyms": ["formaldehyde", "metanale", "methanal", "aldeide formica"],
-    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
+    "synonyms": [
+      "metanale",
+      "methanal",
+      "aldeide formica"
+    ],
+    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
     "dlgs81": {
+      "metadata": {
+        "dataset_name": "Italy - D.Lgs. 81/08",
+        "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
+        "primary_annexes": [
+          "XXXVIII",
+          "XLIII"
+        ],
+        "last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "official_sources": [
+          {
+            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+          },
+          {
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+          }
+        ],
+        "data_status": "seed da verificare"
+      },
       "allegato_xxxviii": {
         "present": true,
+        "annex": "XXXVIII",
         "vlep_8h": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
         },
         "vlep_breve_termine": {
-          "ppm": "da verificare",
-          "mg_m3": "da verificare"
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
         },
-        "notes": ["Valori seed non completati."],
+        "notations": [],
+        "notes": [
+          "Voce seed iniziale da verificare sul testo vigente."
+        ],
         "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "da completare/verificare"
+        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
+        "dataset_last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "verified": false
       },
       "allegato_xliii": {
         "present": true,
-        "notes": ["Presenza indicativa da verificare nella versione normativa applicabile."]
+        "annex": "XLIII",
+        "vlep_8h": {
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
+        },
+        "vlep_breve_termine": {
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
+        },
+        "notations": [],
+        "notes": [
+          "Presenza seed iniziale da verificare nell'allegato per il testo vigente."
+        ],
+        "source_label": "D.Lgs. 81/08, Allegato XLIII",
+        "source_version": "D.Lgs. 81/08 vigente, Allegato XLIII",
+        "dataset_last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "verified": false
       }
     },
     "external_links": {
@@ -233,19 +264,186 @@
       },
       "echa": {
         "status": "search",
-        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=50-00-0"
+        "url": ""
       },
       "gestis": {
         "status": "search",
-        "url": "https://gestis.dguv.de/search?q=50-00-0"
+        "url": ""
       },
       "pubchem": {
         "status": "search",
-        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=50-00-0"
+        "url": ""
       },
       "echemportal": {
         "status": "search",
-        "url": "https://www.echemportal.org/echemportal/substance-search?query=50-00-0"
+        "url": ""
+      }
+    }
+  },
+  {
+    "id": "toluene",
+    "cas": "108-88-3",
+    "ec_number": "203-625-9",
+    "name_it": "Toluene",
+    "name_en": "Toluene",
+    "synonyms": [
+      "toluolo",
+      "methylbenzene",
+      "metilbenzene"
+    ],
+    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
+    "dlgs81": {
+      "metadata": {
+        "dataset_name": "Italy - D.Lgs. 81/08",
+        "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
+        "primary_annexes": [
+          "XXXVIII",
+          "XLIII"
+        ],
+        "last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "official_sources": [
+          {
+            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+          },
+          {
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+          }
+        ],
+        "data_status": "seed da verificare"
+      },
+      "allegato_xxxviii": {
+        "present": true,
+        "annex": "XXXVIII",
+        "vlep_8h": {
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
+        },
+        "vlep_breve_termine": {
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
+        },
+        "notations": [],
+        "notes": [
+          "Voce seed iniziale da verificare sul testo vigente."
+        ],
+        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
+        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
+        "dataset_last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "verified": false
+      },
+      "allegato_xliii": {
+        "present": false,
+        "notes": []
+      }
+    },
+    "external_links": {
+      "acgih": {
+        "status": "unverified",
+        "url": ""
+      },
+      "echa": {
+        "status": "search",
+        "url": ""
+      },
+      "gestis": {
+        "status": "search",
+        "url": ""
+      },
+      "pubchem": {
+        "status": "search",
+        "url": ""
+      },
+      "echemportal": {
+        "status": "search",
+        "url": ""
+      }
+    }
+  },
+  {
+    "id": "xylene",
+    "cas": "1330-20-7",
+    "ec_number": "215-535-7",
+    "name_it": "Xilene",
+    "name_en": "Xylene",
+    "synonyms": [
+      "xilolo",
+      "dimetilbenzene",
+      "dimethylbenzene",
+      "mixed xylenes"
+    ],
+    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
+    "dlgs81": {
+      "metadata": {
+        "dataset_name": "Italy - D.Lgs. 81/08",
+        "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
+        "primary_annexes": [
+          "XXXVIII",
+          "XLIII"
+        ],
+        "last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "official_sources": [
+          {
+            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+          },
+          {
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+          }
+        ],
+        "data_status": "seed da verificare"
+      },
+      "allegato_xxxviii": {
+        "present": true,
+        "annex": "XXXVIII",
+        "vlep_8h": {
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
+        },
+        "vlep_breve_termine": {
+          "mg_m3": "da verificare",
+          "ppm": "da verificare"
+        },
+        "notations": [],
+        "notes": [
+          "Miscela di isomeri: voce seed iniziale da verificare sul testo vigente."
+        ],
+        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
+        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
+        "dataset_last_checked": "2026-05-01",
+        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "verified": false
+      },
+      "allegato_xliii": {
+        "present": false,
+        "notes": []
+      }
+    },
+    "external_links": {
+      "acgih": {
+        "status": "unverified",
+        "url": ""
+      },
+      "echa": {
+        "status": "search",
+        "url": ""
+      },
+      "gestis": {
+        "status": "search",
+        "url": ""
+      },
+      "pubchem": {
+        "status": "search",
+        "url": ""
+      },
+      "echemportal": {
+        "status": "search",
+        "url": ""
       }
     }
   }

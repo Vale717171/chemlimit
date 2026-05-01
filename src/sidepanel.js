@@ -33,18 +33,36 @@ function valueOrDash(value) {
   return value || "-";
 }
 
+function buildVersionSummary(xxxviii, xliii) {
+  const parts = [];
+
+  if (xxxviii.present && xxxviii.source_version) {
+    parts.push(`XXXVIII: ${xxxviii.source_version}`);
+  }
+
+  if (xliii.present && xliii.source_version) {
+    parts.push(`XLIII: ${xliii.source_version}`);
+  }
+
+  return parts.join(" | ") || "da verificare";
+}
+
 function renderRegulatory(substance) {
   const xxxviii = substance.dlgs81?.allegato_xxxviii || {};
   const xliii = substance.dlgs81?.allegato_xliii || {};
+  const metadata = substance.dlgs81?.metadata || {};
   const notes = [...(xxxviii.notes || []), ...(xliii.notes || [])];
   const regulatoryNotes = notes.length
     ? `<ul>${notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul>`
     : "<p class=\"link-note\">Nessuna nota normativa nel seed corrente.</p>";
+  const showVerificationWarning = xxxviii.verified === false || xliii.verified === false;
 
   return `
     <section class="section">
       <h2>Italy - D.Lgs. 81/08</h2>
       <dl class="definition-list">
+        <dt>Fonte</dt>
+        <dd>${escapeHtml(metadata.legal_source || "D.Lgs. 81/08")}</dd>
         <dt>Allegato XXXVIII</dt>
         <dd>${xxxviii.present ? "Presente" : "Non indicato nel seed"}</dd>
         <dt>Allegato XLIII</dt>
@@ -53,7 +71,12 @@ function renderRegulatory(substance) {
         <dd>${escapeHtml(valueOrDash(xxxviii.vlep_8h?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_8h?.mg_m3))} mg/m3</dd>
         <dt>VLEP breve termine</dt>
         <dd>${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.mg_m3))} mg/m3</dd>
+        <dt>Versione dataset</dt>
+        <dd>${escapeHtml(buildVersionSummary(xxxviii, xliii))}</dd>
+        <dt>Ultimo controllo</dt>
+        <dd>${escapeHtml(metadata.last_checked || "da verificare")}</dd>
       </dl>
+      ${showVerificationWarning ? "<div class=\"notice\">Dati normativi non ancora verificati sul testo vigente.</div>" : ""}
       <h2>Note normative</h2>
       ${regulatoryNotes}
     </section>

@@ -1,0 +1,18 @@
+{
+  "dataset_name": "Italy - D.Lgs. 81/08",
+  "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
+  "primary_annexes": ["XXXVIII", "XLIII"],
+  "last_checked": "2026-05-01",
+  "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+  "official_sources": [
+    {
+      "label": "Normattiva - D.Lgs. 81/08 testo vigente",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+    },
+    {
+      "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+    }
+  ],
+  "data_status": "seed da verificare"
+}

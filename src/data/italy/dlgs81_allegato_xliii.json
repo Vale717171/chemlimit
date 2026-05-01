@@ -1,0 +1,50 @@
+[
+  {
+    "country": "IT",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "cas": "71-43-2",
+    "ec_number": "200-753-7",
+    "name_it": "Benzene",
+    "name_en": "Benzene",
+    "synonyms": ["benzolo"],
+    "limit_8h": {
+      "mg_m3": null,
+      "ppm": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null
+    },
+    "notations": [],
+    "notes": [
+      "Presenza seed iniziale da verificare nell'allegato per il testo vigente."
+    ],
+    "source_version": "D.Lgs. 81/08 vigente, Allegato XLIII",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "cas": "50-00-0",
+    "ec_number": "200-001-8",
+    "name_it": "Formaldeide",
+    "name_en": "Formaldehyde",
+    "synonyms": ["metanale", "methanal", "aldeide formica"],
+    "limit_8h": {
+      "mg_m3": null,
+      "ppm": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null
+    },
+    "notations": [],
+    "notes": [
+      "Presenza seed iniziale da verificare nell'allegato per il testo vigente."
+    ],
+    "source_version": "D.Lgs. 81/08 vigente, Allegato XLIII",
+    "verified": false
+  }
+]

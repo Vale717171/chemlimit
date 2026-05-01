@@ -8,6 +8,8 @@ Questa è una MVP iniziale. Il database locale contiene poche sostanze dimostrat
 
 Il primo dataset centrale di ChemLimit è il D.Lgs. 81/08. Le fonti internazionali, in questa fase, sono esposte come link esterni e non come database interno aggiuntivo.
 
+`src/data/substances.json` è un indice aggregato generato automaticamente. I file sorgente del dataset Italia vivono in `src/data/italy/`.
+
 ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per ACGIH l'estensione mostra solo un link specifico se presente nel database locale come verificato; in caso contrario mostra "Link ACGIH non ancora verificato".
 
 ## Installazione in Chrome
@@ -56,6 +58,14 @@ If ChemLimit saves you time, you can buy me a coffee: [Buy Me a Coffee](https://
 7. Cercare una sostanza dal popup e verificare l'apertura del side panel.
 8. Cercare una sostanza direttamente dal side panel.
 9. Cercare un testo inesistente e verificare la gestione del nessun risultato con link esterni generici.
+
+## Dataset update workflow
+
+1. Aggiornare i file sorgente degli allegati in `src/data/italy/`.
+2. Eseguire `node scripts/validate-dataset.js`.
+3. Eseguire `node scripts/build-substances-index.js`.
+4. Testare l'estensione.
+5. Fare commit.
 
 ## Roadmap
 
