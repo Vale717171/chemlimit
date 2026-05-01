@@ -10,7 +10,7 @@ Il primo dataset centrale di ChemLimit è il D.Lgs. 81/08. Le fonti internaziona
 
 `src/data/substances.json` è un indice aggregato generato automaticamente. I file sorgente del dataset Italia vivono in `src/data/italy/`.
 
-ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per ACGIH l'estensione mostra solo un link specifico se presente nel database locale come verificato; in caso contrario mostra "Link ACGIH non ancora verificato".
+ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per ACGIH l'estensione non archivia un database locale del Data Hub: apre la fonte ufficiale e aiuta l'utente a trovare il link della sostanza direttamente nella pagina ACGIH.
 
 ## Installazione in Chrome
 
@@ -27,7 +27,7 @@ ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per A
 - Ricerca esatta per CAS normalizzato.
 - Ricerca case-insensitive per nome italiano, nome inglese e sinonimi.
 - Sezione Italy - D.Lgs. 81/08 come primo blocco normativo.
-- Sezione International sources con link esterni verso ECHA, PubChem e ACGIH solo se verificato.
+- Sezione International sources con `ECHA`, `PubChem` e `ACGIH Data Hub`.
 - Stato nessun risultato con link di ricerca generici per fonti esterne non ACGIH.
 
 ## Limiti
@@ -42,11 +42,14 @@ ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per A
 
 ## External source links
 
-- La MVP pubblica mostra i dati del D.Lgs. 81/08 insieme a `ECHA` e `PubChem`.
-- `ACGIH` compare solo quando esiste un link verificato nel database locale.
+- La MVP pubblica mostra i dati del D.Lgs. 81/08 insieme a `ECHA`, `PubChem` e `ACGIH Data Hub`.
+- `ACGIH Data Hub` apre sempre la fonte ufficiale e prova a guidare localmente l'utente verso il link corretto nella pagina ACGIH.
+- `Apri scheda ACGIH` compare solo quando esiste un link verificato nel database locale.
 - ECHA direct links are used only when manually verified.
 - Otherwise ChemLimit opens the official ECHA search page.
 - ACGIH is not scraped and TLV values are not copied.
+- ChemLimit does not archive the ACGIH Data Hub locally.
+- The ACGIH result must always be verified on the official ACGIH page.
 - GESTIS ed eChemPortal restano in roadmap per una fase successiva.
 
 ## Privacy
@@ -60,13 +63,16 @@ If ChemLimit saves you time, you can buy me a coffee: [Buy Me a Coffee](https://
 ## Test manuali
 
 1. Aprire una pagina web e selezionare `67-64-1`, fare tasto destro e cliccare `Cerca con ChemLimit`; verificare apertura del side panel e scheda `Acetone`.
-2. Cercare `acetone` e verificare apertura corretta dei link `ECHA` e `PubChem` in nuove schede.
+2. Cercare `acetone` e verificare apertura corretta dei link `ECHA`, `PubChem` e `Cerca su ACGIH Data Hub`.
 3. Cercare `benzene` e verificare che i link esterni usino il CAS o il nome sostanza in modo coerente.
 4. Cercare `tricloroetilene` e verificare che la scheda mostri i dati `Allegato XLIII` e che i link esterni si aprano correttamente.
 5. Cercare `nichel` e verificare che per una sostanza senza CAS restino disponibili i pulsanti `ECHA` e `PubChem` senza errori UI.
 6. Cercare una sostanza con nome presente ma CAS assente nel dataset e verificare che i pulsanti disponibili restino attivi senza mostrare link rotti.
 7. Cercare una sostanza inesistente e verificare la gestione del nessun risultato con link di ricerca generici.
-8. Verificare che `ACGIH` mostri solo `Link ACGIH non ancora verificato` in assenza di URL verificato.
+8. Cercare `110-54-3` oppure `Hexane`, aprire `ACGIH Data Hub` e verificare che ChemLimit evidenzi `n-Hexane`.
+9. Cercare `67-64-1`, aprire `ACGIH Data Hub` e verificare che ChemLimit evidenzi `Acetone`.
+10. Cercare `71-43-2`, aprire `ACGIH Data Hub` e verificare che ChemLimit evidenzi `Benzene`.
+11. Cercare una sostanza non presente e verificare il messaggio `nessuna corrispondenza automatica trovata`, con suggerimento a usare `Ctrl+F/Cmd+F`.
 
 ## Dataset pipeline
 
@@ -84,6 +90,7 @@ If ChemLimit saves you time, you can buy me a coffee: [Buy Me a Coffee](https://
 - I dati devono essere verificati sulle fonti normative applicabili prima dell'uso professionale.
 - I link internazionali rimandano a fonti esterne.
 - ACGIH non viene copiato né interrogato tramite scraping.
+- La funzione ACGIH guida la ricerca del link ufficiale nella pagina pubblica del Data Hub, senza archiviare localmente il catalogo ACGIH.
 
 ## Roadmap
 

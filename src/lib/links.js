@@ -26,6 +26,21 @@ function pickQueryParts({ cas = "", name_it = "", name_en = "", fallbackQuery = 
   };
 }
 
+export function buildAcgihLookupPayload({ cas = "", name_it = "", name_en = "", fallbackQuery = "" } = {}) {
+  const cleanCas = cleanValue(cas);
+  const cleanNameEn = cleanValue(name_en);
+  const cleanNameIt = cleanValue(name_it);
+  const cleanFallback = cleanValue(fallbackQuery);
+  const query = cleanCas || cleanNameEn || cleanNameIt || cleanFallback;
+
+  return {
+    query,
+    cas: cleanCas,
+    name_en: cleanNameEn,
+    name_it: cleanNameIt
+  };
+}
+
 function buildPubChemLink(parts) {
   if (!parts.preferred) {
     return { status: "missing", url: "" };

@@ -1,4 +1,5 @@
 import { loadSubstances, searchSubstances } from "./lib/search.js";
+import { buildAcgihLookupPayload } from "./lib/links.js";
 
 const form = document.querySelector("#searchForm");
 const input = document.querySelector("#searchInput");
@@ -7,6 +8,9 @@ const results = document.querySelector("#results");
 
 let substances = [];
 let echaVerifiedLinks = [];
+
+const ACGIH_DATA_HUB_URL = "https://www.acgih.org/data-hub/";
+const ACGIH_LOOKUP_STORAGE_KEY = "chemlimitAcgihLookup";
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -28,6 +32,44 @@ function openExternal(url) {
   }
 
   window.open(url, "_blank", "noopener,noreferrer");
+}
+
+async function startAcgihLookup(payload) {
+  const query = String(payload?.query || "").trim();
+
+  if (!query) {
+    setStatus("Nessuna query disponibile per la ricerca ACGIH.", "error");
+    return;
+  }
+
+  const lookupPayload = {
+    query,
+    cas: String(payload?.cas || "").trim(),
+    name_en: String(payload?.name_en || "").trim(),
+    name_it: String(payload?.name_it || "").trim(),
+    created_at: Date.now()
+  };
+
+  try {
+    await chrome.storage.local.set({
+      [ACGIH_LOOKUP_STORAGE_KEY]: lookupPayload
+    });
+
+    if (chrome.tabs?.create) {
+      await chrome.tabs.create({ url: ACGIH_DATA_HUB_URL });
+    } else {
+      window.open(ACGIH_DATA_HUB_URL, "_blank", "noopener,noreferrer");
+    }
+  } catch (error) {
+    console.error("ChemLimit: errore durante l'apertura del lookup ACGIH.", error);
+
+    try {
+      window.open(ACGIH_DATA_HUB_URL, "_blank", "noopener,noreferrer");
+    } catch (fallbackError) {
+      console.error("ChemLimit: errore nel fallback di apertura ACGIH.", fallbackError);
+      setStatus("Impossibile aprire ACGIH Data Hub.", "error");
+    }
+  }
 }
 
 function valueOrDash(value) {
@@ -197,12 +239,23 @@ function renderRegulatory(substance) {
   `;
 }
 
-function renderLinks(links) {
+function renderLinks(links, acgihPayload) {
   const acgih = links.acgih || { status: "missing", url: "" };
-  const acgihHtml =
+  const acgihButtons = [
+    acgihPayload?.query
+      ? `<button
+          class="link-button"
+          data-acgih-lookup="true"
+          data-acgih-query="${escapeHtml(acgihPayload.query)}"
+          data-acgih-cas="${escapeHtml(acgihPayload.cas || "")}"
+          data-acgih-name-en="${escapeHtml(acgihPayload.name_en || "")}"
+          data-acgih-name-it="${escapeHtml(acgihPayload.name_it || "")}"
+        >Cerca su ACGIH Data Hub</button>`
+      : `<p class="link-note">Query ACGIH non disponibile.</p>`,
     acgih.status === "verified" && acgih.url
-      ? `<button class="link-button" data-url="${escapeHtml(acgih.url)}">Apri ACGIH</button>`
-      : `<p class="link-note">Link ACGIH non ancora verificato.</p>`;
+      ? `<button class="link-button" data-url="${escapeHtml(acgih.url)}">Apri scheda ACGIH</button>`
+      : `<p class="link-note">Link diretto ACGIH non verificato.</p>`
+  ].join("");
 
   const linkButtons = [
     ["echa", { verified: "Open ECHA substance page", search: "Open ECHA search" }],
@@ -227,7 +280,7 @@ function renderLinks(links) {
     <section class="section">
       <h2>International sources</h2>
       <div class="links">
-        ${acgihHtml}
+        ${acgihButtons}
         ${linkButtons}
       </div>
     </section>
@@ -236,6 +289,11 @@ function renderLinks(links) {
 
 function renderFound(result) {
   const substance = result.substance;
+  const acgihPayload = buildAcgihLookupPayload({
+    cas: substance.cas,
+    name_en: substance.name_en,
+    name_it: substance.name_it
+  });
 
   results.innerHTML = `
     <section class="section">
@@ -252,7 +310,7 @@ function renderFound(result) {
       </dl>
     </section>
     ${renderRegulatory(substance)}
-    ${renderLinks(substance.external_links)}
+    ${renderLinks(substance.external_links, acgihPayload)}
     <section class="section">
       <h2>Note</h2>
       <div class="notice">${escapeHtml(substance.seed_notice || "Seed iniziale da verificare.")}</div>
@@ -261,17 +319,33 @@ function renderFound(result) {
 }
 
 function renderNotFound(result) {
+  const acgihPayload = buildAcgihLookupPayload({
+    fallbackQuery: result.query
+  });
+
   results.innerHTML = `
     <section class="empty">
       Nessun risultato locale per "${escapeHtml(result.query)}". Puoi consultare le fonti internazionali con link di ricerca generici.
     </section>
-    ${renderLinks(result.external_links)}
+    ${renderLinks(result.external_links, acgihPayload)}
   `;
 }
 
 function bindExternalButtons() {
   results.querySelectorAll("[data-url]").forEach((button) => {
     button.addEventListener("click", () => openExternal(button.dataset.url));
+  });
+
+  results.querySelectorAll("[data-acgih-lookup]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const acgihPayload = buildAcgihLookupPayload({
+        cas: button.dataset.acgihCas,
+        name_en: button.dataset.acgihNameEn,
+        name_it: button.dataset.acgihNameIt,
+        fallbackQuery: button.dataset.acgihQuery
+      });
+      await startAcgihLookup(acgihPayload);
+    });
   });
 }
 
