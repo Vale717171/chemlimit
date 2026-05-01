@@ -50,6 +50,16 @@
           "Record iniziale da verificare sul testo vigente dell'allegato."
         ],
         "transitional_measures": [],
+        "limit_8h": {
+          "mg_m3": 1210,
+          "ppm": 500,
+          "fibers_ml": null
+        },
+        "limit_short_term": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        },
         "vlep_8h": {
           "mg_m3": 1210,
           "ppm": 500,
@@ -144,6 +154,16 @@
           "Record seed con valori da verificare sul testo vigente."
         ],
         "transitional_measures": [],
+        "limit_8h": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        },
+        "limit_short_term": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        },
         "vlep_8h": {
           "mg_m3": null,
           "ppm": null,
@@ -244,6 +264,16 @@
           "Record seed con valori da verificare sul testo vigente."
         ],
         "transitional_measures": [],
+        "limit_8h": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        },
+        "limit_short_term": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        },
         "vlep_8h": {
           "mg_m3": null,
           "ppm": null,
@@ -341,6 +371,16 @@
         ],
         "notes": [],
         "transitional_measures": [],
+        "limit_8h": {
+          "mg_m3": 54.7,
+          "ppm": 10,
+          "fibers_ml": null
+        },
+        "limit_short_term": {
+          "mg_m3": 164.1,
+          "ppm": 30,
+          "fibers_ml": null
+        },
         "vlep_8h": {
           "mg_m3": 54.7,
           "ppm": 10,

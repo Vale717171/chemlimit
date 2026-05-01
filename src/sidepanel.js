@@ -33,64 +33,91 @@ function valueOrDash(value) {
   return value === null || value === undefined || value === "" ? "-" : String(value);
 }
 
-function buildListSummary(values) {
-  return values.filter(Boolean).join(" | ") || "-";
+function formatNumber(value) {
+  if (value === null || value === undefined || value === "") {
+    return "";
+  }
+
+  return String(value).replace(".", ",");
 }
 
-function buildVersionSummary(xxxviii, xliii) {
+function formatLimit(limit) {
+  const ppm = limit?.ppm;
+  const mgM3 = limit?.mg_m3;
   const parts = [];
 
-  if (xxxviii.present && xxxviii.source_version) {
-    parts.push(`XXXVIII: ${xxxviii.source_version}`);
+  if (ppm !== null && ppm !== undefined) {
+    parts.push(`${formatNumber(ppm)} ppm`);
   }
 
-  if (xliii.present && xliii.source_version) {
-    parts.push(`XLIII: ${xliii.source_version}`);
+  if (mgM3 !== null && mgM3 !== undefined) {
+    parts.push(`${formatNumber(mgM3)} mg/m³`);
   }
 
-  return parts.join(" | ") || "da verificare";
+  return parts.join(" / ") || "Non indicato";
+}
+
+function getAnnexLimit(annexRecord, fieldName) {
+  return annexRecord?.[fieldName] || null;
+}
+
+function renderAnnexBlock(annexRecord) {
+  if (!annexRecord?.present) {
+    return "";
+  }
+
+  const notes = annexRecord.notes || [];
+  const notations = annexRecord.notations || [];
+  const noteHtml = notes.length
+    ? `<ul>${notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul>`
+    : "<p class=\"link-note\">Nessuna nota normativa.</p>";
+
+  return `
+    <section class="section">
+      <h2>Allegato ${escapeHtml(annexRecord.annex || "")}</h2>
+      <dl class="definition-list">
+        <dt>Allegato ${escapeHtml(annexRecord.annex || "")}</dt>
+        <dd>Presente</dd>
+        <dt>Fonte</dt>
+        <dd>${escapeHtml(annexRecord.source_label || "D.Lgs. 81/08")}</dd>
+        <dt>Versione fonte</dt>
+        <dd>${escapeHtml(annexRecord.source_version || "da verificare")}</dd>
+        <dt>Stato dato</dt>
+        <dd>${annexRecord.verified ? "Verificato" : "Da verificare"}</dd>
+        <dt>VLEP 8h</dt>
+        <dd>${escapeHtml(formatLimit(getAnnexLimit(annexRecord, "limit_8h") || getAnnexLimit(annexRecord, "vlep_8h")))}</dd>
+        <dt>VLEP breve termine</dt>
+        <dd>${escapeHtml(formatLimit(getAnnexLimit(annexRecord, "limit_short_term") || getAnnexLimit(annexRecord, "vlep_breve_termine")))}</dd>
+        <dt>Notazioni</dt>
+        <dd>${escapeHtml(notations.join(", ") || "Non indicato")}</dd>
+      </dl>
+      ${annexRecord.verified ? "" : "<div class=\"notice\">Dato importato nella pipeline, da verificare prima dell'uso professionale.</div>"}
+      <h2>Note normative</h2>
+      ${noteHtml}
+    </section>
+  `;
 }
 
 function renderRegulatory(substance) {
   const xxxviii = substance.dlgs81?.allegato_xxxviii || {};
   const xliii = substance.dlgs81?.allegato_xliii || {};
   const metadata = substance.dlgs81?.metadata || {};
-  const notes = [...(xxxviii.notes || []), ...(xliii.notes || [])];
-  const regulatoryNotes = notes.length
-    ? `<ul>${notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul>`
-    : "<p class=\"link-note\">Nessuna nota normativa nel seed corrente.</p>";
-  const showVerificationWarning = xxxviii.verified === false || xliii.verified === false;
+  const annexes = [xxxviii, xliii].filter((annex) => annex.present);
+  const annexSummary = annexes.map((annex) => annex.annex).join(" | ") || "-";
 
   return `
     <section class="section">
       <h2>Italy - D.Lgs. 81/08</h2>
       <dl class="definition-list">
         <dt>Allegato</dt>
-        <dd>${escapeHtml(buildListSummary([
-          xxxviii.present ? xxxviii.annex : "",
-          xliii.present ? xliii.annex : ""
-        ]))}</dd>
+        <dd>${escapeHtml(annexSummary)}</dd>
         <dt>Fonte</dt>
         <dd>${escapeHtml(metadata.legal_source || "D.Lgs. 81/08")}</dd>
-        <dt>Allegato XXXVIII</dt>
-        <dd>${xxxviii.present ? "Presente" : "Non indicato nel seed"}</dd>
-        <dt>Allegato XLIII</dt>
-        <dd>${xliii.present ? "Presente nel seed" : "Non presente nel seed"}</dd>
-        <dt>VLEP 8h</dt>
-        <dd>${escapeHtml(valueOrDash(xxxviii.vlep_8h?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_8h?.mg_m3))} mg/m3</dd>
-        <dt>VLEP breve termine</dt>
-        <dd>${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.mg_m3))} mg/m3</dd>
-        <dt>Versione fonte</dt>
-        <dd>${escapeHtml(buildVersionSummary(xxxviii, xliii))}</dd>
-        <dt>Stato verified</dt>
-        <dd>${showVerificationWarning ? "false" : "true"}</dd>
         <dt>Ultimo controllo</dt>
         <dd>${escapeHtml(metadata.last_checked || "da verificare")}</dd>
       </dl>
-      ${showVerificationWarning ? "<div class=\"notice\">Dato importato nella pipeline, da verificare prima dell'uso professionale.</div>" : ""}
-      <h2>Note normative</h2>
-      ${regulatoryNotes}
     </section>
+    ${annexes.map((annex) => renderAnnexBlock(annex)).join("")}
   `;
 }
 

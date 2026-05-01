@@ -37,6 +37,9 @@ function createLimitRecord(limitObject) {
 }
 
 function createAnnexRecord(row) {
+  const limit8h = createLimitRecord(row.limit_8h);
+  const limitShortTerm = createLimitRecord(row.limit_short_term);
+
   return {
     present: true,
     annex: row.annex,
@@ -48,8 +51,10 @@ function createAnnexRecord(row) {
     notations: row.notations || [],
     notes: row.notes || [],
     transitional_measures: row.transitional_measures || [],
-    vlep_8h: createLimitRecord(row.limit_8h),
-    vlep_breve_termine: createLimitRecord(row.limit_short_term)
+    limit_8h: limit8h,
+    limit_short_term: limitShortTerm,
+    vlep_8h: limit8h,
+    vlep_breve_termine: limitShortTerm
   };
 }
 
