@@ -1,0 +1,16 @@
+[
+  {
+    "cas": "110-54-3",
+    "name": "n-Hexane",
+    "echa_substanceinfo_id": "100.003.435",
+    "url": "https://www.echa.europa.eu/substance-information/-/substanceinfo/100.003.435",
+    "verified": true
+  },
+  {
+    "cas": "67-64-1",
+    "name": "Acetone",
+    "echa_substanceinfo_id": "100.000.602",
+    "url": "https://www.echa.europa.eu/substance-information/-/substanceinfo/100.000.602",
+    "verified": true
+  }
+]

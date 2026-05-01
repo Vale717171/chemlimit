@@ -6,6 +6,7 @@ const status = document.querySelector("#status");
 const results = document.querySelector("#results");
 
 let substances = [];
+let echaVerifiedLinks = [];
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -204,12 +205,12 @@ function renderLinks(links) {
       : `<p class="link-note">Link ACGIH non ancora verificato.</p>`;
 
   const linkButtons = [
-    ["echa", "Apri ECHA"],
-    ["gestis", "Apri GESTIS"],
-    ["pubchem", "Apri PubChem"],
-    ["echemportal", "Apri eChemPortal"]
+    ["echa", { verified: "Open ECHA substance page", search: "Open ECHA search" }],
+    ["gestis", { verified: "Apri GESTIS", search: "Apri GESTIS" }],
+    ["pubchem", { verified: "Apri PubChem", search: "Apri PubChem" }],
+    ["echemportal", { verified: "Apri eChemPortal", search: "Apri eChemPortal" }]
   ]
-    .map(([key, label]) => {
+    .map(([key, labels]) => {
       const link = links[key];
       const unavailableLabel = {
         echa: "Ricerca ECHA non disponibile.",
@@ -218,8 +219,9 @@ function renderLinks(links) {
         echemportal: "Ricerca eChemPortal non disponibile."
       };
 
+      const buttonLabel = link?.status === "verified" ? labels.verified : labels.search;
       return link?.url
-        ? `<button class="link-button" data-url="${escapeHtml(link.url)}">${label}</button>`
+        ? `<button class="link-button" data-url="${escapeHtml(link.url)}">${buttonLabel}</button>`
         : `<p class="link-note">${unavailableLabel[key]}</p>`;
     })
     .join("");
@@ -287,7 +289,7 @@ function runSearch(query) {
     }
 
     input.value = cleanQuery;
-    const result = searchSubstances(substances, cleanQuery);
+    const result = searchSubstances(substances, cleanQuery, echaVerifiedLinks);
     setStatus(result.found ? "Risultato locale trovato." : "Nessun risultato locale.");
 
     if (result.found) {
@@ -337,6 +339,10 @@ chrome.runtime.onMessage.addListener((message) => {
 
 try {
   substances = await loadSubstances();
+  const echaResponse = await fetch(chrome.runtime.getURL("src/data/external/echa_verified_links.json"));
+  if (echaResponse.ok) {
+    echaVerifiedLinks = await echaResponse.json();
+  }
   await consumePendingSearch();
 } catch (error) {
   console.error(error);
