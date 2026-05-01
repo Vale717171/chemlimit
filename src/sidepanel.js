@@ -211,7 +211,16 @@ function renderLinks(links) {
   ]
     .map(([key, label]) => {
       const link = links[key];
-      return link?.url ? `<button class="link-button" data-url="${escapeHtml(link.url)}">${label}</button>` : "";
+      const unavailableLabel = {
+        echa: "Ricerca ECHA non disponibile.",
+        gestis: "Ricerca GESTIS non disponibile.",
+        pubchem: "Ricerca PubChem non disponibile.",
+        echemportal: "Ricerca eChemPortal non disponibile."
+      };
+
+      return link?.url
+        ? `<button class="link-button" data-url="${escapeHtml(link.url)}">${label}</button>`
+        : `<p class="link-note">${unavailableLabel[key]}</p>`;
     })
     .join("");
 

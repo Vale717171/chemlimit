@@ -49,15 +49,14 @@ If ChemLimit saves you time, you can buy me a coffee: [Buy Me a Coffee](https://
 
 ## Test manuali
 
-1. Aprire una pagina web e selezionare `67-64-1`.
-2. Fare tasto destro.
-3. Cliccare `Cerca con ChemLimit`.
-4. Verificare che si apra il side panel.
-5. Verificare che compaia la scheda Acetone.
-6. Cliccare ACGIH, ECHA, GESTIS, PubChem ed eChemPortal e verificare l'apertura di nuove schede dove disponibili.
-7. Cercare una sostanza dal popup e verificare l'apertura del side panel.
-8. Cercare una sostanza direttamente dal side panel.
-9. Cercare un testo inesistente e verificare la gestione del nessun risultato con link esterni generici.
+1. Aprire una pagina web e selezionare `67-64-1`, fare tasto destro e cliccare `Cerca con ChemLimit`; verificare apertura del side panel e scheda `Acetone`.
+2. Cercare `acetone` e verificare apertura corretta dei link `ECHA`, `GESTIS`, `PubChem` ed `eChemPortal` in nuove schede.
+3. Cercare `benzene` e verificare che i link esterni usino il CAS o il nome sostanza in modo coerente.
+4. Cercare `tricloroetilene` e verificare che la scheda mostri i dati `Allegato XLIII` e che i link esterni si aprano correttamente.
+5. Cercare `nichel` e verificare che per una sostanza senza CAS il link esterno ricada sulla ricerca per nome o sulla pagina di ricerca principale.
+6. Cercare una sostanza con nome presente ma CAS assente nel dataset e verificare che i pulsanti disponibili restino attivi senza mostrare link rotti.
+7. Cercare una sostanza inesistente e verificare la gestione del nessun risultato con link di ricerca generici.
+8. Verificare che `ACGIH` mostri solo `Link ACGIH non ancora verificato` in assenza di URL verificato.
 
 ## Dataset pipeline
 
