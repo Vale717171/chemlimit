@@ -38,7 +38,7 @@ export function findSubstance(substances, query) {
   );
 }
 
-export function searchSubstances(substances, query) {
+export function searchSubstances(substances, query, echaVerifiedLinks = []) {
   const rawQuery = String(query || "").trim();
   const substance = findSubstance(substances, rawQuery);
 
@@ -48,7 +48,7 @@ export function searchSubstances(substances, query) {
       query: rawQuery,
       substance: {
         ...substance,
-        external_links: mergeExternalLinks(substance, rawQuery)
+        external_links: mergeExternalLinks(substance, rawQuery, echaVerifiedLinks)
       }
     };
   }

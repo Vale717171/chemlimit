@@ -6,6 +6,7 @@ const status = document.querySelector("#status");
 const results = document.querySelector("#results");
 
 let substances = [];
+let echaVerifiedLinks = [];
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -196,7 +197,7 @@ function renderRegulatory(substance) {
   `;
 }
 
-function renderLinks(links) {
+function renderLinks(links, cas) {
   const acgih = links.acgih || { status: "missing", url: "" };
   const acgihHtml =
     acgih.status === "verified" && acgih.url
@@ -204,12 +205,12 @@ function renderLinks(links) {
       : `<p class="link-note">Link ACGIH non ancora verificato.</p>`;
 
   const linkButtons = [
-    ["echa", "Apri ECHA"],
-    ["gestis", "Apri GESTIS"],
-    ["pubchem", "Apri PubChem"],
-    ["echemportal", "Apri eChemPortal"]
+    ["echa", { verified: "Open ECHA substance page", search: "Open ECHA search" }],
+    ["gestis", { verified: "Apri GESTIS", search: "Apri GESTIS" }],
+    ["pubchem", { verified: "Apri PubChem", search: "Apri PubChem" }],
+    ["echemportal", { verified: "Apri eChemPortal", search: "Apri eChemPortal" }]
   ]
-    .map(([key, label]) => {
+    .map(([key, labels]) => {
       const link = links[key];
       const unavailableLabel = {
         echa: "Ricerca ECHA non disponibile.",
@@ -218,11 +219,20 @@ function renderLinks(links) {
         echemportal: "Ricerca eChemPortal non disponibile."
       };
 
-      return link?.url
-        ? `<button class="link-button" data-url="${escapeHtml(link.url)}">${label}</button>`
-        : `<p class="link-note">${unavailableLabel[key]}</p>`;
+      const buttonLabel = link?.status === "verified" ? labels.verified : labels.search;
+
+      let html = "";
+      if (link?.url) {
+        html += `<button class="link-button" data-url="${escapeHtml(link.url)}">${buttonLabel}</button>`;
+        if (cas && (key === "gestis" || key === "echemportal")) {
+          html += ` <button class="copy-cas-button" data-cas="${escapeHtml(cas)}">Copia CAS</button>`;
+        }
+      } else {
+        html += `<p class="link-note">${unavailableLabel[key]}</p>`;
+      }
+      return html;
     })
-    .join("");
+    .join("<br>");
 
   return `
     <section class="section">
@@ -231,6 +241,7 @@ function renderLinks(links) {
         ${acgihHtml}
         ${linkButtons}
       </div>
+      <p class="link-note" style="margin-top: 10px;">Alcune fonti esterne non supportano una ricerca precompilata stabile: apri la fonte e incolla il CAS.</p>
     </section>
   `;
 }
@@ -253,7 +264,7 @@ function renderFound(result) {
       </dl>
     </section>
     ${renderRegulatory(substance)}
-    ${renderLinks(substance.external_links)}
+    ${renderLinks(substance.external_links, substance.cas)}
     <section class="section">
       <h2>Note</h2>
       <div class="notice">${escapeHtml(substance.seed_notice || "Seed iniziale da verificare.")}</div>
@@ -266,13 +277,29 @@ function renderNotFound(result) {
     <section class="empty">
       Nessun risultato locale per "${escapeHtml(result.query)}". Puoi consultare le fonti internazionali con link di ricerca generici.
     </section>
-    ${renderLinks(result.external_links)}
+    ${renderLinks(result.external_links, null)}
   `;
 }
 
 function bindExternalButtons() {
   results.querySelectorAll("[data-url]").forEach((button) => {
     button.addEventListener("click", () => openExternal(button.dataset.url));
+  });
+  results.querySelectorAll(".copy-cas-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      const cas = button.dataset.cas;
+      if (cas && navigator.clipboard) {
+        navigator.clipboard.writeText(cas).then(() => {
+          const originalText = button.textContent;
+          button.textContent = "Copiato!";
+          setTimeout(() => {
+            button.textContent = originalText;
+          }, 1500);
+        }).catch(err => {
+          console.error("Failed to copy CAS", err);
+        });
+      }
+    });
   });
 }
 
@@ -287,7 +314,7 @@ function runSearch(query) {
     }
 
     input.value = cleanQuery;
-    const result = searchSubstances(substances, cleanQuery);
+    const result = searchSubstances(substances, cleanQuery, echaVerifiedLinks);
     setStatus(result.found ? "Risultato locale trovato." : "Nessun risultato locale.");
 
     if (result.found) {
@@ -337,6 +364,10 @@ chrome.runtime.onMessage.addListener((message) => {
 
 try {
   substances = await loadSubstances();
+  const echaResponse = await fetch(chrome.runtime.getURL("src/data/external/echa_verified_links.json"));
+  if (echaResponse.ok) {
+    echaVerifiedLinks = await echaResponse.json();
+  }
   await consumePendingSearch();
 } catch (error) {
   console.error(error);
