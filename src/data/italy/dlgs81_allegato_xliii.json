@@ -5,26 +5,686 @@
     "source": "D.Lgs. 81/08",
     "annex": "XLIII",
     "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Polveri di legno duro",
+    "name_en": "Polveri di legno duro",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 2.0,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [
+      "Frazione inalabile: se le polveri di legno duro sono mischiate con altre polveri di legno, il valore limite si applica a tutte le polveri di legno presenti nella miscela in questione.",
+      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 2 (8)."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Composti di cromo VI definiti cancerogeni ai sensi dell’articolo 2, lettera a), puntoi) della direttiva 2004/37 (come cromo)",
+    "name_en": "Composti di cromo VI definiti cancerogeni ai sensi dell’articolo 2, lettera a), puntoi) della direttiva 2004/37 (come cromo)",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.005,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [],
+    "transitional_measures": [
+      "Valore limite: 0,010 mg/m3 fino al 17 gennaio 2025. Valore limite: 0,025 mg/m3 per i procedimenti di saldatura o taglioal plasma o analoghi procedimenti di lavorazione che producono fumi finoal 17 gennaio 2025."
+    ],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Fibre ceramiche refrattarie definite cancerogene ai sensi dell’articolo 2, lettera a), punto i) della direttiva 2004/37",
+    "name_en": "Fibre ceramiche refrattarie definite cancerogene ai sensi dell’articolo 2, lettera a), punto i) della direttiva 2004/37",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": 0.3
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Polvere di silice cristallina respirabile",
+    "name_en": "Polvere di silice cristallina respirabile",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.1,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [
+      "Frazione respirabile.",
+      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,1(9)."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "71-43-2",
+    "ec_number": "200-753-7",
+    "name_it": "Benzene",
+    "name_en": "Benzene",
+    "synonyms": [
+      "benzolo"
+    ],
+    "limit_8h": {
+      "mg_m3": 0.66,
+      "ppm": 0.2,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [
+      "Valore limite 0,5 ppm (1,65 mg/m3) dal 5 aprile 2024 fino al 5 aprile 2026."
+    ],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "75-01-4",
+    "ec_number": "200-831-0",
+    "name_it": "Cloruro di vinile monomero",
+    "name_en": "Cloruro di vinile monomero",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 2.6,
+      "ppm": 1.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "75-21-8",
+    "ec_number": "200-849-9",
+    "name_it": "Ossido di etilene",
+    "name_en": "Ossido di etilene",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 1.8,
+      "ppm": 1.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "75-56-9",
+    "ec_number": "200-879-2",
+    "name_it": "1,2-Epossipropano",
+    "name_en": "1,2-Epossipropano",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 2.4,
+      "ppm": 1.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
     "cas": "79-01-6",
     "ec_number": "201-167-4",
     "name_it": "Tricloroetilene",
     "name_en": "Trichloroethylene",
-    "synonyms": ["tricloroetene", "trichloroethene", "TCE", "trilene"],
+    "synonyms": [
+      "tricloroetene",
+      "trichloroethene",
+      "TCE",
+      "trilene"
+    ],
     "limit_8h": {
       "mg_m3": 54.7,
-      "ppm": 10,
+      "ppm": 10.0,
       "fibers_ml": null
     },
     "limit_short_term": {
       "mg_m3": 164.1,
-      "ppm": 30,
+      "ppm": 30.0,
       "fibers_ml": null
     },
-    "notations": ["Cute"],
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "79-06-1",
+    "ec_number": "201-173-7",
+    "name_it": "Acrilammide",
+    "name_en": "Acrilammide",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.1,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "79-46-9",
+    "ec_number": "201-209-1",
+    "name_it": "2-Nitropropano",
+    "name_en": "2-Nitropropano",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 18.0,
+      "ppm": 5.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
     "notes": [],
     "transitional_measures": [],
     "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
-    "source_url": "",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "95-53-4",
+    "ec_number": "202-429-0",
+    "name_it": "o-Toluidina",
+    "name_en": "o-Toluidina",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.5,
+      "ppm": 0.1,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "101-77-9",
+    "ec_number": "202-974-4",
+    "name_it": "4,4'-Metilendianilina",
+    "name_en": "4,4'-Metilendianilina",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.08,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "106-89-8",
+    "ec_number": "203-439-8",
+    "name_it": "Epicloridrina",
+    "name_en": "Epicloridrina",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 1.9,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "106-93-4",
+    "ec_number": "203-444-5",
+    "name_it": "Etilene dibromuro",
+    "name_en": "Etilene dibromuro",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.8,
+      "ppm": 0.1,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "106-99-0",
+    "ec_number": "203-450-8",
+    "name_it": "1,3-Butadiene",
+    "name_en": "1,3-Butadiene",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 2.2,
+      "ppm": 1.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "107-06-2",
+    "ec_number": "203-458-1",
+    "name_it": "Etilene dicloruro",
+    "name_en": "Etilene dicloruro",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 8.2,
+      "ppm": 2.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "302-01-2",
+    "ec_number": "206-114-9",
+    "name_it": "Idrazina",
+    "name_en": "Idrazina",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.013,
+      "ppm": 0.01,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "593-60-2",
+    "ec_number": "209-800-6",
+    "name_it": "Bromoetilene",
+    "name_en": "Bromoetilene",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 4.4,
+      "ppm": 1.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Cadmio e suoi composti inorganici",
+    "name_en": "Cadmio e suoi composti inorganici",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.001,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [
+      "Frazione inalabile.",
+      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,001(12)."
+    ],
+    "transitional_measures": [
+      "Valore limite 0,004 mg/m3(13) fino all’11 luglio 2027."
+    ],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Berillio e composti inorganici del berillio",
+    "name_en": "Berillio e composti inorganici del berillio",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.0002,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Sensibilizzazione cutanea e delle vie respiratorie"
+    ],
+    "notes": [
+      "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie.",
+      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,0002(12 )."
+    ],
+    "transitional_measures": [
+      "Valore limite 0,0006 mg/m3 fino all’11 luglio 2026."
+    ],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Acido arsenico ei suoi sali e composti inorganici dell’arsenico",
+    "name_en": "Acido arsenico ei suoi sali e composti inorganici dell’arsenico",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.01,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [
+      "Frazione inalabile.",
+      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,01(12)."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
     "verified": false
   },
   {
@@ -37,9 +697,77 @@
     "ec_number": "200-001-8",
     "name_it": "Formaldeide",
     "name_en": "Formaldehyde",
-    "synonyms": ["metanale", "methanal", "aldeide formica"],
+    "synonyms": [
+      "metanale",
+      "methanal",
+      "aldeide formica"
+    ],
     "limit_8h": {
+      "mg_m3": 0.37,
+      "ppm": 0.3,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": 0.74,
+      "ppm": 0.6,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Sensibilizzazione cutanea"
+    ],
+    "notes": [
+      "La sostanza può causare sensibilizzazione cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "101-14-4",
+    "ec_number": "202-918-9",
+    "name_it": "4,4’-Metilene-bis(2-cloroanilina)",
+    "name_en": "4,4’-Metilene-bis(2-cloroanilina)",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.01,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
       "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Emissioni di gasdi scarico dei motori diesel",
+    "name_en": "Emissioni di gasdi scarico dei motori diesel",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.05,
       "ppm": null,
       "fibers_ml": null
     },
@@ -50,11 +778,530 @@
     },
     "notations": [],
     "notes": [
-      "Record seed con valori da verificare sul testo vigente."
+      "Misurate sotto forma di carbonio elementare.",
+      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,05 (11)."
+    ],
+    "transitional_measures": [
+      "Per le attività minerarie sotterranee e la costruzione di gallerie, il valore limite si applica a decorrere dal 21 febbraio 2026."
+    ],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Miscele di idrocarburi policiclici Aromatici,in particolare quelle contenente benzo(a)pirene, definite cancerogene ai sensi della direttiva 2004/37",
+    "name_en": "Miscele di idrocarburi policiclici Aromatici,in particolare quelle contenente benzo(a)pirene, definite cancerogene ai sensi della direttiva 2004/37",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
     ],
     "transitional_measures": [],
     "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
-    "source_url": "",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Oli minerali precedentemente usati nei motori a combustione interna per lubrificare e raffreddare perle parti mobili all’interno del motore",
+    "name_en": "Oli minerali precedentemente usati nei motori a combustione interna per lubrificare e raffreddare perle parti mobili all’interno del motore",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "107-13-1",
+    "ec_number": "203-466-5",
+    "name_it": "Acrilonitrile",
+    "name_en": "Acrilonitrile",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 1.0,
+      "ppm": 0.45,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": 4.0,
+      "ppm": 1.8,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute",
+      "Sensibilizzazione cutanea"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea.",
+      "La sostanza può causare sensibilizzazione cutanea."
+    ],
+    "transitional_measures": [
+      "I valori limite si applicano a decorrere dal 5 aprile 2026."
+    ],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Composti del Nichel",
+    "name_en": "Composti del Nichel",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.01,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Sensibilizzazione cutanea e delle vie respiratorie"
+    ],
+    "notes": [
+      "Frazione respirabile, misurata come nickel.",
+      "Frazione inalabile, misurata come nickel.",
+      "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie.",
+      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,01(16) 0,05 (17)."
+    ],
+    "transitional_measures": [
+      "Il valore limite(16) si applica a decorrere dal 18 gennaio 2025 Il valore limite(17) si applica a decorrere dal 18 gennaio 2025 Fino ad allora si applica un valore limite di 0,1 mg/m3 (17)."
+    ],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Piombo inorganico e i suoi composti",
+    "name_en": "Piombo inorganico e i suoi composti",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.15,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "110-80-5",
+    "ec_number": "203-804-1",
+    "name_it": "2-Etossi etanolo",
+    "name_en": "2-Etossi etanolo",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 8.0,
+      "ppm": 2.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "111-15-9",
+    "ec_number": "203-839-2",
+    "name_it": "2-Etossietil acetato",
+    "name_en": "2-Etossietil acetato",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 11.0,
+      "ppm": 2.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "109-86-4",
+    "ec_number": "203-713-7",
+    "name_it": "2-Metossietanolo",
+    "name_en": "2-Metossietanolo",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": null,
+      "ppm": 0.5,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "110-49-6",
+    "ec_number": "203-772-9",
+    "name_it": "2-Metossietil acetato",
+    "name_en": "2-Metossietil acetato",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": null,
+      "ppm": 0.5,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "80-05-7",
+    "ec_number": "201-245-8",
+    "name_it": "Bisfenolo A, 4,4’-Isopropilidenedifenolo",
+    "name_en": "Bisfenolo A, 4,4’-Isopropilidenedifenolo",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 2.0,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Frazione inalabile.",
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea.",
+      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 2 (12)."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "",
+    "ec_number": "",
+    "name_it": "Mercurio e composti inorganici bivalenti del mercurio compresi ossido mercurico e cloruro di mercurio (misurati come mercurio)",
+    "name_en": "Mercurio e composti inorganici bivalenti del mercurio compresi ossido mercurico e cloruro di mercurio (misurati come mercurio)",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 0.02,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Frazione respirabile.",
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "630-08-0",
+    "ec_number": "211-128-3",
+    "name_it": "Monossido di carbonio",
+    "name_en": "Monossido di carbonio",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 23.0,
+      "ppm": 20.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": 117.0,
+      "ppm": 100.0,
+      "fibers_ml": null
+    },
+    "notations": [],
+    "notes": [],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "68-12-2",
+    "ec_number": "200-679-5",
+    "name_it": "N,N-Dimetilformamide",
+    "name_en": "N,N-Dimetilformamide",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 15.0,
+      "ppm": 5.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": 30.0,
+      "ppm": 10.0,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "127-19-5",
+    "ec_number": "204-826-4",
+    "name_it": "N,N-Dimetilacetamide",
+    "name_en": "N,N-Dimetilacetamide",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 36.0,
+      "ppm": 10.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": 72.0,
+      "ppm": 20.0,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "98-95-3",
+    "ec_number": "202-716-0",
+    "name_it": "Nitrobenzene",
+    "name_en": "Nitrobenzene",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 1.0,
+      "ppm": 0.2,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": null,
+      "ppm": null,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
+    "verified": false
+  },
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "872-50-4",
+    "ec_number": "212-828-1",
+    "name_it": "N-metil-2-pirrolidone",
+    "name_en": "N-metil-2-pirrolidone",
+    "synonyms": [],
+    "limit_8h": {
+      "mg_m3": 40.0,
+      "ppm": 10.0,
+      "fibers_ml": null
+    },
+    "limit_short_term": {
+      "mg_m3": 80.0,
+      "ppm": 20.0,
+      "fibers_ml": null
+    },
+    "notations": [
+      "Cute"
+    ],
+    "notes": [
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
+    ],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario",
     "verified": false
   }
 ]
