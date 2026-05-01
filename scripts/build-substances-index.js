@@ -10,6 +10,32 @@ const ECHA_BASE = "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimple
 const GESTIS_BASE = "https://gestis.dguv.de/search?q=";
 const PUBCHEM_BASE = "https://pubchem.ncbi.nlm.nih.gov/#query=";
 const ECHEMPORTAL_BASE = "https://www.echemportal.org/echemportal/substance-search?query=";
+const MANUAL_ALIASES = {
+  "67-64-1": {
+    name_en: "Acetone",
+    synonyms: ["propanone", "dimetilchetone", "dimethyl ketone"]
+  },
+  "71-43-2": {
+    name_en: "Benzene",
+    synonyms: ["benzolo"]
+  },
+  "79-01-6": {
+    name_en: "Trichloroethylene",
+    synonyms: ["tricloroetene", "trichloroethene", "TCE", "trilene"]
+  },
+  "50-00-0": {
+    name_en: "Formaldehyde",
+    synonyms: ["metanale", "methanal", "aldeide formica"]
+  },
+  "108-88-3": {
+    name_en: "Toluene",
+    synonyms: ["toluolo"]
+  },
+  "1330-20-7": {
+    name_en: "Xylene, mixed isomers",
+    synonyms: ["xilene", "xylene"]
+  }
+};
 
 function slugify(value) {
   return String(value || "")
@@ -18,6 +44,15 @@ function slugify(value) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+function normalizeKeyPart(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function encodeQuery(value) {
@@ -60,14 +95,15 @@ function createAnnexRecord(row) {
 
 function createBaseSubstance(row, metadata) {
   const queryValue = row.cas || row.name_en || row.name_it;
+  const manualAliases = row.cas ? MANUAL_ALIASES[row.cas] || {} : {};
 
   return {
     id: slugify(row.name_en || row.name_it || row.cas),
-    cas: row.cas,
+    cas: row.cas || "",
     ec_number: row.ec_number || "",
     name_it: row.name_it,
-    name_en: row.name_en,
-    synonyms: row.synonyms || [],
+    name_en: row.name_en || manualAliases.name_en || row.name_it,
+    synonyms: Array.from(new Set([...(row.synonyms || []), ...(manualAliases.synonyms || [])])),
     seed_notice: "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     dlgs81: {
       metadata: {
@@ -120,6 +156,30 @@ function createBaseSubstance(row, metadata) {
   };
 }
 
+function getRowKey(row) {
+  if (row.cas) {
+    return `cas:${row.cas}`;
+  }
+
+  const ecPart = normalizeKeyPart(row.ec_number);
+  const namePart = normalizeKeyPart(row.name_it || row.name_en);
+  return `name:${ecPart}:${namePart}`;
+}
+
+function createBiologicalAnnexRecord(row) {
+  return {
+    present: true,
+    annex: row.annex,
+    annex_title: row.annex_title,
+    source_label: `${row.source}, Allegato ${row.annex}`,
+    source_version: row.source_version,
+    source_url: row.source_url,
+    verified: row.verified,
+    notes: row.notes || [],
+    biological_limit_value: row.biological_limit_value || null
+  };
+}
+
 async function loadJson(fileName) {
   const filePath = path.join(ITALY_DIR, fileName);
   const contents = await fs.readFile(filePath, "utf8");
@@ -131,19 +191,23 @@ async function main() {
   const allegatoXXXVIII = await loadJson("dlgs81_allegato_xxxviii.json");
   const allegatoXLIII = await loadJson("dlgs81_allegato_xliii.json");
   const allegatoXLIIIBis = await loadJson("dlgs81_allegato_xliii_bis.json");
-  const substancesByCas = new Map();
+  const substancesByKey = new Map();
 
   const ingest = (row) => {
-    if (!row.cas) {
-      return;
-    }
-
-    const existing = substancesByCas.get(row.cas) || createBaseSubstance(row, metadata);
+    const key = getRowKey(row);
+    const existing = substancesByKey.get(key) || createBaseSubstance(row, metadata);
     existing.id = existing.id || slugify(row.name_en || row.name_it || row.cas);
     existing.ec_number = existing.ec_number || row.ec_number || "";
     existing.name_it = existing.name_it || row.name_it;
-    existing.name_en = existing.name_en || row.name_en;
-    existing.synonyms = Array.from(new Set([...(existing.synonyms || []), ...(row.synonyms || [])]));
+    existing.name_en = existing.name_en || row.name_en || row.name_it;
+    existing.cas = existing.cas || row.cas || "";
+    existing.synonyms = Array.from(
+      new Set([
+        ...(existing.synonyms || []),
+        ...(row.synonyms || []),
+        ...((row.cas && MANUAL_ALIASES[row.cas]?.synonyms) || [])
+      ])
+    );
 
     if (row.annex === "XXXVIII") {
       existing.dlgs81.allegato_xxxviii = createAnnexRecord(row);
@@ -153,22 +217,48 @@ async function main() {
       existing.dlgs81.allegato_xliii = createAnnexRecord(row);
     }
 
-    substancesByCas.set(row.cas, existing);
+    substancesByKey.set(key, existing);
   };
 
   allegatoXXXVIII.forEach(ingest);
   allegatoXLIII.forEach(ingest);
 
   if (Array.isArray(allegatoXLIIIBis) && allegatoXLIIIBis.length > 0) {
-    substancesByCas.forEach((substance) => {
-      substance.dlgs81.allegato_xliii_bis = {
-        present: false,
-        notes: ["Struttura dataset predisposta per futuri valori limite biologici obbligatori."]
-      };
+    allegatoXLIIIBis.forEach((row) => {
+      const hasBiologicalData =
+        row.name_it ||
+        row.name_en ||
+        row.biological_limit_value?.parameter ||
+        (row.biological_limit_value?.value !== null && row.biological_limit_value?.value !== undefined);
+
+      if (!hasBiologicalData) {
+        return;
+      }
+
+      const biologicalKey = getRowKey({
+        ...row,
+        name_it:
+          row.name_it ||
+          (normalizeKeyPart(row.biological_limit_value?.parameter).includes("piombo")
+            ? "Piombo inorganico e i suoi composti"
+            : row.name_it)
+      });
+      const existing = substancesByKey.get(biologicalKey) ||
+        createBaseSubstance(
+          {
+            ...row,
+            name_it: row.name_it || row.name_en || row.biological_limit_value?.parameter || "Valore biologico",
+            name_en: row.name_en || row.name_it || row.biological_limit_value?.parameter || "Biological value",
+            synonyms: []
+          },
+          metadata
+        );
+      existing.dlgs81.allegato_xliii_bis = createBiologicalAnnexRecord(row);
+      substancesByKey.set(biologicalKey, existing);
     });
   }
 
-  const output = Array.from(substancesByCas.values()).sort((left, right) =>
+  const output = Array.from(substancesByKey.values()).sort((left, right) =>
     left.name_it.localeCompare(right.name_it, "it")
   );
 

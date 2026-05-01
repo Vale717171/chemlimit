@@ -90,6 +90,10 @@ function isValidCasChecksum(cas) {
   return sum % 10 === checkDigit;
 }
 
+function isMissingCas(value) {
+  return value === null || value === undefined || String(value).trim() === "";
+}
+
 function validateExposureLimit(limitObject, fieldName, errors, context) {
   if (!limitObject || typeof limitObject !== "object") {
     errors.push(`${context}: campo ${fieldName} mancante o non valido.`);
@@ -203,17 +207,19 @@ async function main() {
       }
 
       if (config.kind === "exposure") {
-        if (typeof row.cas !== "string" || !CAS_PATTERN.test(row.cas)) {
-          errors.push(`${context}: CAS non valido (${row.cas}).`);
-        } else {
-          if (!isValidCasChecksum(row.cas)) {
-            errors.push(`${context}: checksum CAS non valido (${row.cas}).`);
-          }
-
-          if (casSeen.has(row.cas)) {
-            errors.push(`${context}: duplicato CAS nello stesso allegato (${row.cas}).`);
+        if (!isMissingCas(row.cas)) {
+          if (typeof row.cas !== "string" || !CAS_PATTERN.test(row.cas)) {
+            errors.push(`${context}: CAS non valido (${row.cas}).`);
           } else {
-            casSeen.add(row.cas);
+            if (!isValidCasChecksum(row.cas)) {
+              errors.push(`${context}: checksum CAS non valido (${row.cas}).`);
+            }
+
+            if (casSeen.has(row.cas)) {
+              errors.push(`${context}: duplicato CAS nello stesso allegato (${row.cas}).`);
+            } else {
+              casSeen.add(row.cas);
+            }
           }
         }
 
