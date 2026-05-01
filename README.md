@@ -46,6 +46,10 @@ ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per A
 - otherwise ChemLimit opens the official ECHA search page;
 - ACGIH is not scraped and TLV values are not copied;
 - generic search engines are not used for technical source buttons.
+- generic search engines are not used for technical source buttons;
+- alcuni link esterni aprono una ricerca precompilata;
+- altri aprono la fonte e permettono di copiare il CAS;
+- alcune fonti esterne non supportano una ricerca precompilata stabile, quindi ChemLimit apre la fonte e lascia all'utente il controllo del CAS.
 
 ## Privacy
 
