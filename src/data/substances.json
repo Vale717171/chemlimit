@@ -10,53 +10,66 @@
       "dimetilchetone",
       "dimethyl ketone"
     ],
-    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
+    "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
       "metadata": {
-        "dataset_name": "Italy - D.Lgs. 81/08",
+        "dataset_name": "Italy - D.Lgs. 81/08 occupational exposure limits",
+        "dataset_scope": "Italian VLEP/OEL dataset for ChemLimit",
         "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
         "primary_annexes": [
           "XXXVIII",
-          "XLIII"
+          "XLIII",
+          "XLIII-bis"
         ],
+        "current_legal_update": "D.Lgs. 4 settembre 2024, n. 135",
+        "current_legal_update_publication": "G.U. Serie Generale n. 226 del 26-09-2024",
+        "current_legal_update_effective_date": "2024-10-11",
         "last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "data_status": "pipeline iniziale - dati da verificare",
         "official_sources": [
           {
-            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
-            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario"
           },
           {
-            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
-            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+            "label": "Normattiva - D.Lgs. 135/2024",
+            "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26"
           }
-        ],
-        "data_status": "seed da verificare"
+        ]
       },
       "allegato_xxxviii": {
         "present": true,
         "annex": "XXXVIII",
-        "vlep_8h": {
-          "mg_m3": "1210",
-          "ppm": "500"
-        },
-        "vlep_breve_termine": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
+        "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo I",
+        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
+        "source_version": "D.Lgs. 81/08 vigente - Allegato XXXVIII aggiornato da D.Lgs. 135/2024",
+        "source_url": "",
+        "verified": false,
         "notations": [],
         "notes": [
-          "Voce seed iniziale da verificare sul testo vigente."
+          "Record iniziale da verificare sul testo vigente dell'allegato."
         ],
-        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
-        "dataset_last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
-        "verified": false
+        "transitional_measures": [],
+        "vlep_8h": {
+          "mg_m3": 1210,
+          "ppm": 500,
+          "fibers_ml": null
+        },
+        "vlep_breve_termine": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        }
       },
       "allegato_xliii": {
         "present": false,
         "notes": []
+      },
+      "allegato_xliii_bis": {
+        "present": false,
+        "notes": [
+          "Struttura dataset predisposta per futuri valori limite biologici obbligatori."
+        ]
       }
     },
     "external_links": {
@@ -66,19 +79,19 @@
       },
       "echa": {
         "status": "search",
-        "url": ""
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=67-64-1"
       },
       "gestis": {
         "status": "search",
-        "url": ""
+        "url": "https://gestis.dguv.de/search?q=67-64-1"
       },
       "pubchem": {
         "status": "search",
-        "url": ""
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=67-64-1"
       },
       "echemportal": {
         "status": "search",
-        "url": ""
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=67-64-1"
       }
     }
   },
@@ -91,70 +104,66 @@
     "synonyms": [
       "benzolo"
     ],
-    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
+    "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
       "metadata": {
-        "dataset_name": "Italy - D.Lgs. 81/08",
+        "dataset_name": "Italy - D.Lgs. 81/08 occupational exposure limits",
+        "dataset_scope": "Italian VLEP/OEL dataset for ChemLimit",
         "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
         "primary_annexes": [
           "XXXVIII",
-          "XLIII"
+          "XLIII",
+          "XLIII-bis"
         ],
+        "current_legal_update": "D.Lgs. 4 settembre 2024, n. 135",
+        "current_legal_update_publication": "G.U. Serie Generale n. 226 del 26-09-2024",
+        "current_legal_update_effective_date": "2024-10-11",
         "last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "data_status": "pipeline iniziale - dati da verificare",
         "official_sources": [
           {
-            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
-            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario"
           },
           {
-            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
-            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+            "label": "Normattiva - D.Lgs. 135/2024",
+            "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26"
           }
-        ],
-        "data_status": "seed da verificare"
+        ]
       },
       "allegato_xxxviii": {
         "present": true,
         "annex": "XXXVIII",
-        "vlep_8h": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "vlep_breve_termine": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
+        "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo I",
+        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
+        "source_version": "D.Lgs. 81/08 vigente - Allegato XXXVIII aggiornato da D.Lgs. 135/2024",
+        "source_url": "",
+        "verified": false,
         "notations": [],
         "notes": [
-          "Voce seed iniziale da verificare sul testo vigente."
+          "Record seed con valori da verificare sul testo vigente."
         ],
-        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
-        "dataset_last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
-        "verified": false
+        "transitional_measures": [],
+        "vlep_8h": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        },
+        "vlep_breve_termine": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        }
       },
       "allegato_xliii": {
-        "present": true,
-        "annex": "XLIII",
-        "vlep_8h": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "vlep_breve_termine": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "notations": [],
+        "present": false,
+        "notes": []
+      },
+      "allegato_xliii_bis": {
+        "present": false,
         "notes": [
-          "Presenza seed iniziale da verificare nell'allegato per il testo vigente."
-        ],
-        "source_label": "D.Lgs. 81/08, Allegato XLIII",
-        "source_version": "D.Lgs. 81/08 vigente, Allegato XLIII",
-        "dataset_last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
-        "verified": false
+          "Struttura dataset predisposta per futuri valori limite biologici obbligatori."
+        ]
       }
     },
     "external_links": {
@@ -164,19 +173,19 @@
       },
       "echa": {
         "status": "search",
-        "url": ""
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=71-43-2"
       },
       "gestis": {
         "status": "search",
-        "url": ""
+        "url": "https://gestis.dguv.de/search?q=71-43-2"
       },
       "pubchem": {
         "status": "search",
-        "url": ""
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=71-43-2"
       },
       "echemportal": {
         "status": "search",
-        "url": ""
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=71-43-2"
       }
     }
   },
@@ -191,70 +200,66 @@
       "methanal",
       "aldeide formica"
     ],
-    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
+    "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
       "metadata": {
-        "dataset_name": "Italy - D.Lgs. 81/08",
+        "dataset_name": "Italy - D.Lgs. 81/08 occupational exposure limits",
+        "dataset_scope": "Italian VLEP/OEL dataset for ChemLimit",
         "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
         "primary_annexes": [
           "XXXVIII",
-          "XLIII"
+          "XLIII",
+          "XLIII-bis"
         ],
+        "current_legal_update": "D.Lgs. 4 settembre 2024, n. 135",
+        "current_legal_update_publication": "G.U. Serie Generale n. 226 del 26-09-2024",
+        "current_legal_update_effective_date": "2024-10-11",
         "last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "data_status": "pipeline iniziale - dati da verificare",
         "official_sources": [
           {
-            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
-            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario"
           },
           {
-            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
-            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+            "label": "Normattiva - D.Lgs. 135/2024",
+            "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26"
           }
-        ],
-        "data_status": "seed da verificare"
+        ]
       },
       "allegato_xxxviii": {
-        "present": true,
-        "annex": "XXXVIII",
-        "vlep_8h": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "vlep_breve_termine": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "notations": [],
-        "notes": [
-          "Voce seed iniziale da verificare sul testo vigente."
-        ],
-        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
-        "dataset_last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
-        "verified": false
+        "present": false,
+        "notes": []
       },
       "allegato_xliii": {
         "present": true,
         "annex": "XLIII",
-        "vlep_8h": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "vlep_breve_termine": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "notations": [],
-        "notes": [
-          "Presenza seed iniziale da verificare nell'allegato per il testo vigente."
-        ],
+        "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
         "source_label": "D.Lgs. 81/08, Allegato XLIII",
-        "source_version": "D.Lgs. 81/08 vigente, Allegato XLIII",
-        "dataset_last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
-        "verified": false
+        "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+        "source_url": "",
+        "verified": false,
+        "notations": [],
+        "notes": [
+          "Record seed con valori da verificare sul testo vigente."
+        ],
+        "transitional_measures": [],
+        "vlep_8h": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        },
+        "vlep_breve_termine": {
+          "mg_m3": null,
+          "ppm": null,
+          "fibers_ml": null
+        }
+      },
+      "allegato_xliii_bis": {
+        "present": false,
+        "notes": [
+          "Struttura dataset predisposta per futuri valori limite biologici obbligatori."
+        ]
       }
     },
     "external_links": {
@@ -264,80 +269,94 @@
       },
       "echa": {
         "status": "search",
-        "url": ""
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=50-00-0"
       },
       "gestis": {
         "status": "search",
-        "url": ""
+        "url": "https://gestis.dguv.de/search?q=50-00-0"
       },
       "pubchem": {
         "status": "search",
-        "url": ""
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=50-00-0"
       },
       "echemportal": {
         "status": "search",
-        "url": ""
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=50-00-0"
       }
     }
   },
   {
-    "id": "toluene",
-    "cas": "108-88-3",
-    "ec_number": "203-625-9",
-    "name_it": "Toluene",
-    "name_en": "Toluene",
+    "id": "trichloroethylene",
+    "cas": "79-01-6",
+    "ec_number": "201-167-4",
+    "name_it": "Tricloroetilene",
+    "name_en": "Trichloroethylene",
     "synonyms": [
-      "toluolo",
-      "methylbenzene",
-      "metilbenzene"
+      "tricloroetene",
+      "trichloroethene",
+      "TCE",
+      "trilene"
     ],
-    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
+    "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
       "metadata": {
-        "dataset_name": "Italy - D.Lgs. 81/08",
+        "dataset_name": "Italy - D.Lgs. 81/08 occupational exposure limits",
+        "dataset_scope": "Italian VLEP/OEL dataset for ChemLimit",
         "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
         "primary_annexes": [
           "XXXVIII",
-          "XLIII"
+          "XLIII",
+          "XLIII-bis"
         ],
+        "current_legal_update": "D.Lgs. 4 settembre 2024, n. 135",
+        "current_legal_update_publication": "G.U. Serie Generale n. 226 del 26-09-2024",
+        "current_legal_update_effective_date": "2024-10-11",
         "last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
+        "data_status": "pipeline iniziale - dati da verificare",
         "official_sources": [
           {
-            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
-            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
+            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
+            "url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26&tipoSerie=serie_generale&tipoVigenza=originario"
           },
           {
-            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
-            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
+            "label": "Normattiva - D.Lgs. 135/2024",
+            "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=24G00153&atto.dataPubblicazioneGazzetta=2024-09-26"
           }
-        ],
-        "data_status": "seed da verificare"
+        ]
       },
       "allegato_xxxviii": {
-        "present": true,
-        "annex": "XXXVIII",
-        "vlep_8h": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "vlep_breve_termine": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "notations": [],
-        "notes": [
-          "Voce seed iniziale da verificare sul testo vigente."
-        ],
-        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
-        "dataset_last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
-        "verified": false
-      },
-      "allegato_xliii": {
         "present": false,
         "notes": []
+      },
+      "allegato_xliii": {
+        "present": true,
+        "annex": "XLIII",
+        "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+        "source_label": "D.Lgs. 81/08, Allegato XLIII",
+        "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+        "source_url": "",
+        "verified": false,
+        "notations": [
+          "Cute"
+        ],
+        "notes": [],
+        "transitional_measures": [],
+        "vlep_8h": {
+          "mg_m3": 54.7,
+          "ppm": 10,
+          "fibers_ml": null
+        },
+        "vlep_breve_termine": {
+          "mg_m3": 164.1,
+          "ppm": 30,
+          "fibers_ml": null
+        }
+      },
+      "allegato_xliii_bis": {
+        "present": false,
+        "notes": [
+          "Struttura dataset predisposta per futuri valori limite biologici obbligatori."
+        ]
       }
     },
     "external_links": {
@@ -347,103 +366,19 @@
       },
       "echa": {
         "status": "search",
-        "url": ""
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=79-01-6"
       },
       "gestis": {
         "status": "search",
-        "url": ""
+        "url": "https://gestis.dguv.de/search?q=79-01-6"
       },
       "pubchem": {
         "status": "search",
-        "url": ""
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=79-01-6"
       },
       "echemportal": {
         "status": "search",
-        "url": ""
-      }
-    }
-  },
-  {
-    "id": "xylene",
-    "cas": "1330-20-7",
-    "ec_number": "215-535-7",
-    "name_it": "Xilene",
-    "name_en": "Xylene",
-    "synonyms": [
-      "xilolo",
-      "dimetilbenzene",
-      "dimethylbenzene",
-      "mixed xylenes"
-    ],
-    "seed_notice": "Italy - D.Lgs. 81/08: seed da verificare.",
-    "dlgs81": {
-      "metadata": {
-        "dataset_name": "Italy - D.Lgs. 81/08",
-        "legal_source": "D.Lgs. 9 aprile 2008, n. 81",
-        "primary_annexes": [
-          "XXXVIII",
-          "XLIII"
-        ],
-        "last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
-        "official_sources": [
-          {
-            "label": "Normattiva - D.Lgs. 81/08 testo vigente",
-            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2008%3B81~art25-letc="
-          },
-          {
-            "label": "Gazzetta Ufficiale - D.Lgs. 135/2024",
-            "url": "https://www.gazzettaufficiale.it/eli/id/2024/09/26/24G00153/SG"
-          }
-        ],
-        "data_status": "seed da verificare"
-      },
-      "allegato_xxxviii": {
-        "present": true,
-        "annex": "XXXVIII",
-        "vlep_8h": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "vlep_breve_termine": {
-          "mg_m3": "da verificare",
-          "ppm": "da verificare"
-        },
-        "notations": [],
-        "notes": [
-          "Miscela di isomeri: voce seed iniziale da verificare sul testo vigente."
-        ],
-        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
-        "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
-        "dataset_last_checked": "2026-05-01",
-        "legal_version_note": "Da verificare sul testo vigente Normattiva/Gazzetta Ufficiale",
-        "verified": false
-      },
-      "allegato_xliii": {
-        "present": false,
-        "notes": []
-      }
-    },
-    "external_links": {
-      "acgih": {
-        "status": "unverified",
-        "url": ""
-      },
-      "echa": {
-        "status": "search",
-        "url": ""
-      },
-      "gestis": {
-        "status": "search",
-        "url": ""
-      },
-      "pubchem": {
-        "status": "search",
-        "url": ""
-      },
-      "echemportal": {
-        "status": "search",
-        "url": ""
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=79-01-6"
       }
     }
   }

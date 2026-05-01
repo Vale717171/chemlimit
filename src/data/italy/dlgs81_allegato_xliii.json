@@ -1,32 +1,38 @@
 [
   {
     "country": "IT",
+    "jurisdiction": "Italy",
     "source": "D.Lgs. 81/08",
     "annex": "XLIII",
-    "cas": "71-43-2",
-    "ec_number": "200-753-7",
-    "name_it": "Benzene",
-    "name_en": "Benzene",
-    "synonyms": ["benzolo"],
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
+    "cas": "79-01-6",
+    "ec_number": "201-167-4",
+    "name_it": "Tricloroetilene",
+    "name_en": "Trichloroethylene",
+    "synonyms": ["tricloroetene", "trichloroethene", "TCE", "trilene"],
     "limit_8h": {
-      "mg_m3": null,
-      "ppm": null
+      "mg_m3": 54.7,
+      "ppm": 10,
+      "fibers_ml": null
     },
     "limit_short_term": {
-      "mg_m3": null,
-      "ppm": null
+      "mg_m3": 164.1,
+      "ppm": 30,
+      "fibers_ml": null
     },
-    "notations": [],
-    "notes": [
-      "Presenza seed iniziale da verificare nell'allegato per il testo vigente."
-    ],
-    "source_version": "D.Lgs. 81/08 vigente, Allegato XLIII",
+    "notations": ["Cute"],
+    "notes": [],
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "",
     "verified": false
   },
   {
     "country": "IT",
+    "jurisdiction": "Italy",
     "source": "D.Lgs. 81/08",
     "annex": "XLIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo II",
     "cas": "50-00-0",
     "ec_number": "200-001-8",
     "name_it": "Formaldeide",
@@ -34,17 +40,21 @@
     "synonyms": ["metanale", "methanal", "aldeide formica"],
     "limit_8h": {
       "mg_m3": null,
-      "ppm": null
+      "ppm": null,
+      "fibers_ml": null
     },
     "limit_short_term": {
       "mg_m3": null,
-      "ppm": null
+      "ppm": null,
+      "fibers_ml": null
     },
     "notations": [],
     "notes": [
-      "Presenza seed iniziale da verificare nell'allegato per il testo vigente."
+      "Record seed con valori da verificare sul testo vigente."
     ],
-    "source_version": "D.Lgs. 81/08 vigente, Allegato XLIII",
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "",
     "verified": false
   }
 ]

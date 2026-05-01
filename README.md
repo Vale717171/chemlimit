@@ -59,13 +59,22 @@ If ChemLimit saves you time, you can buy me a coffee: [Buy Me a Coffee](https://
 8. Cercare una sostanza direttamente dal side panel.
 9. Cercare un testo inesistente e verificare la gestione del nessun risultato con link esterni generici.
 
-## Dataset update workflow
+## Dataset pipeline
 
-1. Aggiornare i file sorgente degli allegati in `src/data/italy/`.
+1. Aggiornare o integrare i file `src/data/italy/*.json`.
 2. Eseguire `node scripts/validate-dataset.js`.
 3. Eseguire `node scripts/build-substances-index.js`.
-4. Testare l'estensione.
-5. Fare commit.
+4. Eseguire `node scripts/check-dataset-staleness.js`.
+5. Ricaricare l'estensione in Chrome.
+6. Testare ricerca CAS, nome e sinonimi.
+7. Fare commit.
+
+## Data reliability
+
+- ChemLimit è uno strumento di consultazione rapida.
+- I dati devono essere verificati sulle fonti normative applicabili prima dell'uso professionale.
+- I link internazionali rimandano a fonti esterne.
+- ACGIH non viene copiato né interrogato tramite scraping.
 
 ## Roadmap
 

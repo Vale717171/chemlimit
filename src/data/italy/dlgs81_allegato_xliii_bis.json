@@ -1,0 +1,24 @@
+[
+  {
+    "country": "IT",
+    "jurisdiction": "Italy",
+    "source": "D.Lgs. 81/08",
+    "annex": "XLIII-bis",
+    "annex_title": "Valori limite biologici obbligatori e misure di sorveglianza sanitaria",
+    "cas": null,
+    "ec_number": null,
+    "name_it": "",
+    "name_en": "",
+    "biological_limit_value": {
+      "parameter": "",
+      "value": null,
+      "unit": "",
+      "matrix": "",
+      "sampling_time": ""
+    },
+    "notes": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII-bis introdotto da D.Lgs. 135/2024",
+    "source_url": "",
+    "verified": false
+  }
+]

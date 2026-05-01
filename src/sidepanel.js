@@ -30,7 +30,11 @@ function openExternal(url) {
 }
 
 function valueOrDash(value) {
-  return value || "-";
+  return value === null || value === undefined || value === "" ? "-" : String(value);
+}
+
+function buildListSummary(values) {
+  return values.filter(Boolean).join(" | ") || "-";
 }
 
 function buildVersionSummary(xxxviii, xliii) {
@@ -61,6 +65,11 @@ function renderRegulatory(substance) {
     <section class="section">
       <h2>Italy - D.Lgs. 81/08</h2>
       <dl class="definition-list">
+        <dt>Allegato</dt>
+        <dd>${escapeHtml(buildListSummary([
+          xxxviii.present ? xxxviii.annex : "",
+          xliii.present ? xliii.annex : ""
+        ]))}</dd>
         <dt>Fonte</dt>
         <dd>${escapeHtml(metadata.legal_source || "D.Lgs. 81/08")}</dd>
         <dt>Allegato XXXVIII</dt>
@@ -71,12 +80,14 @@ function renderRegulatory(substance) {
         <dd>${escapeHtml(valueOrDash(xxxviii.vlep_8h?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_8h?.mg_m3))} mg/m3</dd>
         <dt>VLEP breve termine</dt>
         <dd>${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.mg_m3))} mg/m3</dd>
-        <dt>Versione dataset</dt>
+        <dt>Versione fonte</dt>
         <dd>${escapeHtml(buildVersionSummary(xxxviii, xliii))}</dd>
+        <dt>Stato verified</dt>
+        <dd>${showVerificationWarning ? "false" : "true"}</dd>
         <dt>Ultimo controllo</dt>
         <dd>${escapeHtml(metadata.last_checked || "da verificare")}</dd>
       </dl>
-      ${showVerificationWarning ? "<div class=\"notice\">Dati normativi non ancora verificati sul testo vigente.</div>" : ""}
+      ${showVerificationWarning ? "<div class=\"notice\">Dato importato nella pipeline, da verificare prima dell'uso professionale.</div>" : ""}
       <h2>Note normative</h2>
       ${regulatoryNotes}
     </section>

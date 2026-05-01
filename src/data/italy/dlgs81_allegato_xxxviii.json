@@ -1,32 +1,40 @@
 [
   {
     "country": "IT",
+    "jurisdiction": "Italy",
     "source": "D.Lgs. 81/08",
     "annex": "XXXVIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo I",
     "cas": "67-64-1",
     "ec_number": "200-662-2",
     "name_it": "Acetone",
     "name_en": "Acetone",
     "synonyms": ["propanone", "dimetilchetone", "dimethyl ketone"],
     "limit_8h": {
-      "mg_m3": "1210",
-      "ppm": "500"
+      "mg_m3": 1210,
+      "ppm": 500,
+      "fibers_ml": null
     },
     "limit_short_term": {
       "mg_m3": null,
-      "ppm": null
+      "ppm": null,
+      "fibers_ml": null
     },
     "notations": [],
     "notes": [
-      "Voce seed iniziale da verificare sul testo vigente."
+      "Record iniziale da verificare sul testo vigente dell'allegato."
     ],
-    "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XXXVIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "",
     "verified": false
   },
   {
     "country": "IT",
+    "jurisdiction": "Italy",
     "source": "D.Lgs. 81/08",
     "annex": "XXXVIII",
+    "annex_title": "Valori limite di esposizione professionale di cui al Titolo IX, Capo I",
     "cas": "71-43-2",
     "ec_number": "200-753-7",
     "name_it": "Benzene",
@@ -34,89 +42,21 @@
     "synonyms": ["benzolo"],
     "limit_8h": {
       "mg_m3": null,
-      "ppm": null
+      "ppm": null,
+      "fibers_ml": null
     },
     "limit_short_term": {
       "mg_m3": null,
-      "ppm": null
+      "ppm": null,
+      "fibers_ml": null
     },
     "notations": [],
     "notes": [
-      "Voce seed iniziale da verificare sul testo vigente."
+      "Record seed con valori da verificare sul testo vigente."
     ],
-    "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
-    "verified": false
-  },
-  {
-    "country": "IT",
-    "source": "D.Lgs. 81/08",
-    "annex": "XXXVIII",
-    "cas": "108-88-3",
-    "ec_number": "203-625-9",
-    "name_it": "Toluene",
-    "name_en": "Toluene",
-    "synonyms": ["toluolo", "methylbenzene", "metilbenzene"],
-    "limit_8h": {
-      "mg_m3": null,
-      "ppm": null
-    },
-    "limit_short_term": {
-      "mg_m3": null,
-      "ppm": null
-    },
-    "notations": [],
-    "notes": [
-      "Voce seed iniziale da verificare sul testo vigente."
-    ],
-    "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
-    "verified": false
-  },
-  {
-    "country": "IT",
-    "source": "D.Lgs. 81/08",
-    "annex": "XXXVIII",
-    "cas": "1330-20-7",
-    "ec_number": "215-535-7",
-    "name_it": "Xilene",
-    "name_en": "Xylene",
-    "synonyms": ["xilolo", "dimetilbenzene", "dimethylbenzene", "mixed xylenes"],
-    "limit_8h": {
-      "mg_m3": null,
-      "ppm": null
-    },
-    "limit_short_term": {
-      "mg_m3": null,
-      "ppm": null
-    },
-    "notations": [],
-    "notes": [
-      "Miscela di isomeri: voce seed iniziale da verificare sul testo vigente."
-    ],
-    "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
-    "verified": false
-  },
-  {
-    "country": "IT",
-    "source": "D.Lgs. 81/08",
-    "annex": "XXXVIII",
-    "cas": "50-00-0",
-    "ec_number": "200-001-8",
-    "name_it": "Formaldeide",
-    "name_en": "Formaldehyde",
-    "synonyms": ["metanale", "methanal", "aldeide formica"],
-    "limit_8h": {
-      "mg_m3": null,
-      "ppm": null
-    },
-    "limit_short_term": {
-      "mg_m3": null,
-      "ppm": null
-    },
-    "notations": [],
-    "notes": [
-      "Voce seed iniziale da verificare sul testo vigente."
-    ],
-    "source_version": "D.Lgs. 81/08 vigente, Allegato XXXVIII",
+    "transitional_measures": [],
+    "source_version": "D.Lgs. 81/08 vigente - Allegato XXXVIII aggiornato da D.Lgs. 135/2024",
+    "source_url": "",
     "verified": false
   }
 ]
