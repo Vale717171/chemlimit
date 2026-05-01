@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChemLimit</title>
+    <link rel="stylesheet" href="./popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header>
+        <img src="../icons/icon32.png" alt="" width="32" height="32">
+        <div>
+          <h1>ChemLimit</h1>
+          <p>Cerca VLEP italiani e link tecnici da CAS o nome sostanza.</p>
+        </div>
+      </header>
+
+      <form id="popupForm">
+        <label for="popupSearch">CAS o nome sostanza</label>
+        <input id="popupSearch" type="search" autocomplete="off" placeholder="acetone">
+        <button type="submit">Apri side panel</button>
+      </form>
+      <p id="popupStatus" class="status" aria-live="polite"></p>
+    </main>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>

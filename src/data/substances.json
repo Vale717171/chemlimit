@@ -1,0 +1,252 @@
+[
+  {
+    "id": "acetone",
+    "cas": "67-64-1",
+    "name_it": "Acetone",
+    "name_en": "Acetone",
+    "synonyms": ["propanone", "dimetilchetone", "dimethyl ketone"],
+    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
+    "dlgs81": {
+      "allegato_xxxviii": {
+        "present": true,
+        "vlep_8h": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "vlep_breve_termine": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "notes": ["Valori seed non completati."],
+        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
+        "source_version": "da completare/verificare"
+      },
+      "allegato_xliii": {
+        "present": false,
+        "notes": []
+      }
+    },
+    "external_links": {
+      "acgih": {
+        "status": "unverified",
+        "url": ""
+      },
+      "echa": {
+        "status": "search",
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=67-64-1"
+      },
+      "gestis": {
+        "status": "search",
+        "url": "https://gestis.dguv.de/search?q=67-64-1"
+      },
+      "pubchem": {
+        "status": "search",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=67-64-1"
+      },
+      "echemportal": {
+        "status": "search",
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=67-64-1"
+      }
+    }
+  },
+  {
+    "id": "benzene",
+    "cas": "71-43-2",
+    "name_it": "Benzene",
+    "name_en": "Benzene",
+    "synonyms": ["benzolo"],
+    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
+    "dlgs81": {
+      "allegato_xxxviii": {
+        "present": true,
+        "vlep_8h": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "vlep_breve_termine": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "notes": ["Valori seed non completati."],
+        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
+        "source_version": "da completare/verificare"
+      },
+      "allegato_xliii": {
+        "present": true,
+        "notes": ["Presenza indicativa da verificare nella versione normativa applicabile."]
+      }
+    },
+    "external_links": {
+      "acgih": {
+        "status": "unverified",
+        "url": ""
+      },
+      "echa": {
+        "status": "search",
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=71-43-2"
+      },
+      "gestis": {
+        "status": "search",
+        "url": "https://gestis.dguv.de/search?q=71-43-2"
+      },
+      "pubchem": {
+        "status": "search",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=71-43-2"
+      },
+      "echemportal": {
+        "status": "search",
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=71-43-2"
+      }
+    }
+  },
+  {
+    "id": "toluene",
+    "cas": "108-88-3",
+    "name_it": "Toluene",
+    "name_en": "Toluene",
+    "synonyms": ["toluolo", "methylbenzene", "metilbenzene"],
+    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
+    "dlgs81": {
+      "allegato_xxxviii": {
+        "present": true,
+        "vlep_8h": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "vlep_breve_termine": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "notes": ["Valori seed non completati."],
+        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
+        "source_version": "da completare/verificare"
+      },
+      "allegato_xliii": {
+        "present": false,
+        "notes": []
+      }
+    },
+    "external_links": {
+      "acgih": {
+        "status": "unverified",
+        "url": ""
+      },
+      "echa": {
+        "status": "search",
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=108-88-3"
+      },
+      "gestis": {
+        "status": "search",
+        "url": "https://gestis.dguv.de/search?q=108-88-3"
+      },
+      "pubchem": {
+        "status": "search",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=108-88-3"
+      },
+      "echemportal": {
+        "status": "search",
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=108-88-3"
+      }
+    }
+  },
+  {
+    "id": "xylene",
+    "cas": "1330-20-7",
+    "name_it": "Xilene",
+    "name_en": "Xylene",
+    "synonyms": ["xilolo", "dimetilbenzene", "dimethylbenzene", "mixed xylenes"],
+    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
+    "dlgs81": {
+      "allegato_xxxviii": {
+        "present": true,
+        "vlep_8h": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "vlep_breve_termine": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "notes": ["Miscela di isomeri: dettaglio normativo da verificare."],
+        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
+        "source_version": "da completare/verificare"
+      },
+      "allegato_xliii": {
+        "present": false,
+        "notes": []
+      }
+    },
+    "external_links": {
+      "acgih": {
+        "status": "unverified",
+        "url": ""
+      },
+      "echa": {
+        "status": "search",
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=1330-20-7"
+      },
+      "gestis": {
+        "status": "search",
+        "url": "https://gestis.dguv.de/search?q=1330-20-7"
+      },
+      "pubchem": {
+        "status": "search",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=1330-20-7"
+      },
+      "echemportal": {
+        "status": "search",
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=1330-20-7"
+      }
+    }
+  },
+  {
+    "id": "formaldehyde",
+    "cas": "50-00-0",
+    "name_it": "Formaldeide",
+    "name_en": "Formaldehyde",
+    "synonyms": ["formaldehyde", "metanale", "methanal", "aldeide formica"],
+    "seed_notice": "Seed iniziale dimostrativo: dati normativi da verificare prima dell'uso professionale.",
+    "dlgs81": {
+      "allegato_xxxviii": {
+        "present": true,
+        "vlep_8h": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "vlep_breve_termine": {
+          "ppm": "da verificare",
+          "mg_m3": "da verificare"
+        },
+        "notes": ["Valori seed non completati."],
+        "source_label": "D.Lgs. 81/08, Allegato XXXVIII",
+        "source_version": "da completare/verificare"
+      },
+      "allegato_xliii": {
+        "present": true,
+        "notes": ["Presenza indicativa da verificare nella versione normativa applicabile."]
+      }
+    },
+    "external_links": {
+      "acgih": {
+        "status": "unverified",
+        "url": ""
+      },
+      "echa": {
+        "status": "search",
+        "url": "https://echa.europa.eu/search-for-chemicals?p_p_id=disssimplesearch_WAR_disssearchportlet&p_p_lifecycle=0&_disssimplesearch_WAR_disssearchportlet_searchOccurred=true&_disssimplesearch_WAR_disssearchportlet_searchValue=50-00-0"
+      },
+      "gestis": {
+        "status": "search",
+        "url": "https://gestis.dguv.de/search?q=50-00-0"
+      },
+      "pubchem": {
+        "status": "search",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/#query=50-00-0"
+      },
+      "echemportal": {
+        "status": "search",
+        "url": "https://www.echemportal.org/echemportal/substance-search?query=50-00-0"
+      }
+    }
+  }
+]

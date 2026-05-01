@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChemLimit</title>
+    <link rel="stylesheet" href="./sidepanel.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <img src="../icons/icon48.png" alt="" width="40" height="40">
+        <div>
+          <h1>ChemLimit</h1>
+          <p>VLEP italiani e fonti tecniche da CAS o nome sostanza</p>
+        </div>
+      </header>
+
+      <form id="searchForm" class="search-form">
+        <label for="searchInput">CAS o nome sostanza</label>
+        <div class="search-row">
+          <input id="searchInput" name="query" type="search" autocomplete="off" placeholder="67-64-1, acetone, propanone">
+          <button type="submit">Cerca</button>
+        </div>
+      </form>
+
+      <section id="status" class="status" aria-live="polite">
+        Cerca una sostanza dal menu contestuale o inserisci CAS, nome o sinonimo.
+      </section>
+
+      <section id="results" class="results" aria-live="polite"></section>
+    </main>
+
+    <script type="module" src="./sidepanel.js"></script>
+  </body>
+</html>
