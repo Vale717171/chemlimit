@@ -37,23 +37,25 @@ function renderRegulatory(substance) {
   const xxxviii = substance.dlgs81?.allegato_xxxviii || {};
   const xliii = substance.dlgs81?.allegato_xliii || {};
   const notes = [...(xxxviii.notes || []), ...(xliii.notes || [])];
+  const regulatoryNotes = notes.length
+    ? `<ul>${notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul>`
+    : "<p class=\"link-note\">Nessuna nota normativa nel seed corrente.</p>";
 
   return `
     <section class="section">
-      <h2>D.Lgs. 81/08</h2>
+      <h2>Italy - D.Lgs. 81/08</h2>
       <dl class="definition-list">
         <dt>Allegato XXXVIII</dt>
         <dd>${xxxviii.present ? "Presente" : "Non indicato nel seed"}</dd>
-        <dt>VLEP 8h</dt>
-        <dd>${escapeHtml(valueOrDash(xxxviii.vlep_8h?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_8h?.mg_m3))} mg/m3</dd>
-        <dt>Breve termine</dt>
-        <dd>${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.mg_m3))} mg/m3</dd>
         <dt>Allegato XLIII</dt>
         <dd>${xliii.present ? "Presente nel seed" : "Non presente nel seed"}</dd>
-        <dt>Fonte</dt>
-        <dd>${escapeHtml(xxxviii.source_label || "D.Lgs. 81/08")} - ${escapeHtml(xxxviii.source_version || "da verificare")}</dd>
+        <dt>VLEP 8h</dt>
+        <dd>${escapeHtml(valueOrDash(xxxviii.vlep_8h?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_8h?.mg_m3))} mg/m3</dd>
+        <dt>VLEP breve termine</dt>
+        <dd>${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.ppm))} ppm / ${escapeHtml(valueOrDash(xxxviii.vlep_breve_termine?.mg_m3))} mg/m3</dd>
       </dl>
-      ${notes.length ? `<ul>${notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul>` : ""}
+      <h2>Note normative</h2>
+      ${regulatoryNotes}
     </section>
   `;
 }
@@ -79,7 +81,7 @@ function renderLinks(links) {
 
   return `
     <section class="section">
-      <h2>Fonti esterne</h2>
+      <h2>International sources</h2>
       <div class="links">
         ${acgihHtml}
         ${linkButtons}
@@ -117,7 +119,7 @@ function renderFound(result) {
 function renderNotFound(result) {
   results.innerHTML = `
     <section class="empty">
-      Nessun risultato locale per "${escapeHtml(result.query)}". Puoi consultare le fonti esterne con link di ricerca generici.
+      Nessun risultato locale per "${escapeHtml(result.query)}". Puoi consultare le fonti internazionali con link di ricerca generici.
     </section>
     ${renderLinks(result.external_links)}
   `;

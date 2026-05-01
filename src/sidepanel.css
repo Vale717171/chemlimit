@@ -115,6 +115,11 @@ input {
   font-size: 15px;
 }
 
+.section-copy {
+  margin: 0;
+  color: var(--muted);
+}
+
 .definition-list {
   display: grid;
   grid-template-columns: 120px minmax(0, 1fr);

@@ -1,10 +1,12 @@
 # ChemLimit
 
-ChemLimit è una Chrome Extension Manifest V3 per chimici, consulenti sicurezza e igienisti industriali italiani. Permette di cercare rapidamente una sostanza chimica da CAS, nome o sinonimo e mostra dati seed relativi al D.Lgs. 81/08, con link tecnici esterni verso fonti autorevoli.
+ChemLimit è una Chrome Extension Manifest V3 per chimici, consulenti sicurezza e igienisti industriali con impostazione Italy-first, internationally oriented. Permette di cercare rapidamente una sostanza chimica da CAS, nome o sinonimo e mostra dati seed relativi al D.Lgs. 81/08, con link esterni verso fonti chimiche e OEL internazionali autorevoli.
 
 ## Stato del progetto
 
 Questa è una MVP iniziale. Il database locale contiene poche sostanze dimostrative e i dati normativi sono marcati come da verificare o completare prima di qualsiasi uso professionale.
+
+Il primo dataset centrale di ChemLimit è il D.Lgs. 81/08. Le fonti internazionali, in questa fase, sono esposte come link esterni e non come database interno aggiuntivo.
 
 ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per ACGIH l'estensione mostra solo un link specifico se presente nel database locale come verificato; in caso contrario mostra "Link ACGIH non ancora verificato".
 
@@ -22,7 +24,8 @@ ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per A
 - Popup con campo di ricerca e apertura del side panel.
 - Ricerca esatta per CAS normalizzato.
 - Ricerca case-insensitive per nome italiano, nome inglese e sinonimi.
-- Link esterni verso ACGIH, ECHA, GESTIS, PubChem ed eChemPortal.
+- Sezione Italy - D.Lgs. 81/08 come primo blocco normativo.
+- Sezione International sources con link esterni verso ACGIH, ECHA, GESTIS, PubChem ed eChemPortal.
 - Stato nessun risultato con link di ricerca generici per fonti esterne non ACGIH.
 
 ## Limiti
@@ -30,6 +33,7 @@ ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per A
 - I dati normativi dell'Allegato XXXVIII sono seed iniziali da verificare e completare.
 - Le indicazioni su Allegato XLIII sono seed iniziali da verificare nella versione normativa applicabile.
 - I sinonimi devono essere validati.
+- Le fonti internazionali sono per ora collegate tramite link esterni.
 - ACGIH non viene copiato nel database e non viene interrogato tramite scraping.
 - I link esterni rimandano alle fonti ufficiali o ai relativi motori di ricerca.
 
@@ -54,6 +58,11 @@ L'estensione funziona localmente, non invia ricerche a server propri, non richie
 - Completamento Allegato XXXVIII.
 - Completamento Allegato XLIII.
 - Validazione sinonimi.
+- EU OEL sources.
+- German AGW/MAK references.
+- UK WEL references.
+- OSHA/NIOSH links.
+- UI bilingue italiano/inglese.
 - Pacchetto e pubblicazione su Chrome Web Store.
 - Supporto Firefox.
 - Valutazione Safari.
