@@ -41,6 +41,10 @@ ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per A
 
 L'estensione funziona localmente, non invia ricerche a server propri, non richiede account, non traccia l'utente e non usa analytics. L'apertura dei siti esterni è soggetta alle privacy policy dei rispettivi siti.
 
+## Support
+
+If ChemLimit saves you time, you can buy me a coffee: [Buy Me a Coffee](https://buymeacoffee.com/Vale71)
+
 ## Test manuali
 
 1. Aprire una pagina web e selezionare `67-64-1`.

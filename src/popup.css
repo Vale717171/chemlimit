@@ -76,3 +76,17 @@ button:hover {
   min-height: 18px;
   margin-top: 10px;
 }
+
+.support-footer {
+  margin-top: 12px;
+}
+
+.support-footer a {
+  color: var(--muted);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.support-footer a:hover {
+  text-decoration: underline;
+}
