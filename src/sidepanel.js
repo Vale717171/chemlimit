@@ -152,8 +152,6 @@ function renderAnnexBlock(annexRecord) {
         <dd>${escapeHtml(annexRecord.source_label || "D.Lgs. 81/08")}</dd>
         <dt>Versione fonte</dt>
         <dd>${escapeHtml(annexRecord.source_version || "da verificare")}</dd>
-        <dt>Stato dato</dt>
-        <dd>${annexRecord.verified ? "Verificato" : "Da verificare"}</dd>
         <dt>VLEP 8h</dt>
         <dd>${escapeHtml(formatLimit(getAnnexLimit(annexRecord, "limit_8h") || getAnnexLimit(annexRecord, "vlep_8h")))}</dd>
         <dt>VLEP breve termine</dt>
@@ -162,7 +160,6 @@ function renderAnnexBlock(annexRecord) {
         <dd>${escapeHtml(notations.join(", ") || "Non indicato")}</dd>
       </dl>
       ${renderSpecificLimits(annexRecord.limits)}
-      ${annexRecord.verified ? "" : "<div class=\"notice\">Dato importato nella pipeline, da verificare prima dell'uso professionale.</div>"}
       <h2>Note normative</h2>
       ${noteHtml}
     </section>
@@ -190,8 +187,6 @@ function renderBiologicalAnnexBlock(annexRecord) {
         <dd>${escapeHtml(annexRecord.source_label || "D.Lgs. 81/08")}</dd>
         <dt>Versione fonte</dt>
         <dd>${escapeHtml(annexRecord.source_version || "da verificare")}</dd>
-        <dt>Stato dato</dt>
-        <dd>${annexRecord.verified ? "Verificato" : "Da verificare"}</dd>
         <dt>Parametro biologico</dt>
         <dd>${escapeHtml(valueOrDash(biological.parameter))}</dd>
         <dt>Valore limite biologico</dt>
@@ -204,7 +199,6 @@ function renderBiologicalAnnexBlock(annexRecord) {
         <dt>Campionamento</dt>
         <dd>${escapeHtml(valueOrDash(biological.sampling_time))}</dd>
       </dl>
-      ${annexRecord.verified ? "" : "<div class=\"notice\">Dato importato nella pipeline, da verificare prima dell'uso professionale.</div>"}
       <h2>Note normative</h2>
       ${noteHtml}
     </section>
@@ -254,7 +248,7 @@ function renderLinks(links, acgihPayload) {
       : `<p class="link-note">Query ACGIH non disponibile.</p>`,
     acgih.status === "verified" && acgih.url
       ? `<button class="link-button" data-url="${escapeHtml(acgih.url)}">Apri scheda ACGIH</button>`
-      : `<p class="link-note">Link diretto ACGIH non verificato.</p>`
+      : ""
   ].join("");
 
   const linkButtons = [
@@ -311,10 +305,6 @@ function renderFound(result) {
     </section>
     ${renderRegulatory(substance)}
     ${renderLinks(substance.external_links, acgihPayload)}
-    <section class="section">
-      <h2>Note</h2>
-      <div class="notice">${escapeHtml(substance.seed_notice || "Seed iniziale da verificare.")}</div>
-    </section>
   `;
 }
 
