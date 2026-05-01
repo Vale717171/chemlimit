@@ -11,7 +11,7 @@
     "name_en": "Polveri di legno duro",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 2.0,
+      "mg_m3": 2,
       "ppm": null,
       "fibers_ml": null
     },
@@ -22,8 +22,7 @@
     },
     "notations": [],
     "notes": [
-      "Frazione inalabile: se le polveri di legno duro sono mischiate con altre polveri di legno, il valore limite si applica a tutte le polveri di legno presenti nella miscela in questione.",
-      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 2 (8)."
+      "Frazione inalabile: se le polveri di legno duro sono mischiate con altre polveri di legno, il valore limite si applica a tutte le polveri di legno presenti nella miscela in questione."
     ],
     "transitional_measures": [],
     "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
@@ -111,8 +110,7 @@
     },
     "notations": [],
     "notes": [
-      "Frazione respirabile.",
-      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,1(9)."
+      "Frazione respirabile."
     ],
     "transitional_measures": [],
     "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
@@ -168,7 +166,7 @@
     "synonyms": [],
     "limit_8h": {
       "mg_m3": 2.6,
-      "ppm": 1.0,
+      "ppm": 1,
       "fibers_ml": null
     },
     "limit_short_term": {
@@ -196,7 +194,7 @@
     "synonyms": [],
     "limit_8h": {
       "mg_m3": 1.8,
-      "ppm": 1.0,
+      "ppm": 1,
       "fibers_ml": null
     },
     "limit_short_term": {
@@ -228,7 +226,7 @@
     "synonyms": [],
     "limit_8h": {
       "mg_m3": 2.4,
-      "ppm": 1.0,
+      "ppm": 1,
       "fibers_ml": null
     },
     "limit_short_term": {
@@ -261,12 +259,12 @@
     ],
     "limit_8h": {
       "mg_m3": 54.7,
-      "ppm": 10.0,
+      "ppm": 10,
       "fibers_ml": null
     },
     "limit_short_term": {
       "mg_m3": 164.1,
-      "ppm": 30.0,
+      "ppm": 30,
       "fibers_ml": null
     },
     "notations": [
@@ -324,8 +322,8 @@
     "name_en": "2-Nitropropano",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 18.0,
-      "ppm": 5.0,
+      "mg_m3": 18,
+      "ppm": 5,
       "fibers_ml": null
     },
     "limit_short_term": {
@@ -481,7 +479,7 @@
     "synonyms": [],
     "limit_8h": {
       "mg_m3": 2.2,
-      "ppm": 1.0,
+      "ppm": 1,
       "fibers_ml": null
     },
     "limit_short_term": {
@@ -509,7 +507,7 @@
     "synonyms": [],
     "limit_8h": {
       "mg_m3": 8.2,
-      "ppm": 2.0,
+      "ppm": 2,
       "fibers_ml": null
     },
     "limit_short_term": {
@@ -573,7 +571,7 @@
     "synonyms": [],
     "limit_8h": {
       "mg_m3": 4.4,
-      "ppm": 1.0,
+      "ppm": 1,
       "fibers_ml": null
     },
     "limit_short_term": {
@@ -611,8 +609,7 @@
     },
     "notations": [],
     "notes": [
-      "Frazione inalabile.",
-      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,001(12)."
+      "Frazione inalabile."
     ],
     "transitional_measures": [
       "Valore limite 0,004 mg/m3(13) fino all’11 luglio 2027."
@@ -646,8 +643,7 @@
       "Sensibilizzazione cutanea e delle vie respiratorie"
     ],
     "notes": [
-      "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie.",
-      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,0002(12 )."
+      "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie."
     ],
     "transitional_measures": [
       "Valore limite 0,0006 mg/m3 fino all’11 luglio 2026."
@@ -679,8 +675,7 @@
     },
     "notations": [],
     "notes": [
-      "Frazione inalabile.",
-      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,01(12)."
+      "Frazione inalabile."
     ],
     "transitional_measures": [],
     "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
@@ -778,8 +773,7 @@
     },
     "notations": [],
     "notes": [
-      "Misurate sotto forma di carbonio elementare.",
-      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,05 (11)."
+      "Misurate sotto forma di carbonio elementare."
     ],
     "transitional_measures": [
       "Per le attività minerarie sotterranee e la costruzione di gallerie, il valore limite si applica a decorrere dal 21 febbraio 2026."
@@ -864,12 +858,12 @@
     "name_en": "Acrilonitrile",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 1.0,
+      "mg_m3": 1,
       "ppm": 0.45,
       "fibers_ml": null
     },
     "limit_short_term": {
-      "mg_m3": 4.0,
+      "mg_m3": 4,
       "ppm": 1.8,
       "fibers_ml": null
     },
@@ -916,7 +910,7 @@
       "Frazione respirabile, misurata come nickel.",
       "Frazione inalabile, misurata come nickel.",
       "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie.",
-      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,01(16) 0,05 (17)."
+      "La fonte ufficiale riporta due valori 8h distinti: 0,01 mg/m³ (frazione respirabile, nota 16) e 0,05 mg/m³ (frazione inalabile, nota 17)."
     ],
     "transitional_measures": [
       "Il valore limite(16) si applica a decorrere dal 18 gennaio 2025 Il valore limite(17) si applica a decorrere dal 18 gennaio 2025 Fino ad allora si applica un valore limite di 0,1 mg/m3 (17)."
@@ -965,8 +959,8 @@
     "name_en": "2-Etossi etanolo",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 8.0,
-      "ppm": 2.0,
+      "mg_m3": 8,
+      "ppm": 2,
       "fibers_ml": null
     },
     "limit_short_term": {
@@ -997,8 +991,8 @@
     "name_en": "2-Etossietil acetato",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 11.0,
-      "ppm": 2.0,
+      "mg_m3": 11,
+      "ppm": 2,
       "fibers_ml": null
     },
     "limit_short_term": {
@@ -1093,7 +1087,7 @@
     "name_en": "Bisfenolo A, 4,4’-Isopropilidenedifenolo",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 2.0,
+      "mg_m3": 2,
       "ppm": null,
       "fibers_ml": null
     },
@@ -1107,8 +1101,7 @@
     ],
     "notes": [
       "Frazione inalabile.",
-      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea.",
-      "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 2 (12)."
+      "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
     ],
     "transitional_measures": [],
     "source_version": "D.Lgs. 81/08 vigente - Allegato XLIII aggiornato da D.Lgs. 135/2024",
@@ -1160,13 +1153,13 @@
     "name_en": "Monossido di carbonio",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 23.0,
-      "ppm": 20.0,
+      "mg_m3": 23,
+      "ppm": 20,
       "fibers_ml": null
     },
     "limit_short_term": {
-      "mg_m3": 117.0,
-      "ppm": 100.0,
+      "mg_m3": 117,
+      "ppm": 100,
       "fibers_ml": null
     },
     "notations": [],
@@ -1188,13 +1181,13 @@
     "name_en": "N,N-Dimetilformamide",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 15.0,
-      "ppm": 5.0,
+      "mg_m3": 15,
+      "ppm": 5,
       "fibers_ml": null
     },
     "limit_short_term": {
-      "mg_m3": 30.0,
-      "ppm": 10.0,
+      "mg_m3": 30,
+      "ppm": 10,
       "fibers_ml": null
     },
     "notations": [
@@ -1220,13 +1213,13 @@
     "name_en": "N,N-Dimetilacetamide",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 36.0,
-      "ppm": 10.0,
+      "mg_m3": 36,
+      "ppm": 10,
       "fibers_ml": null
     },
     "limit_short_term": {
-      "mg_m3": 72.0,
-      "ppm": 20.0,
+      "mg_m3": 72,
+      "ppm": 20,
       "fibers_ml": null
     },
     "notations": [
@@ -1252,7 +1245,7 @@
     "name_en": "Nitrobenzene",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 1.0,
+      "mg_m3": 1,
       "ppm": 0.2,
       "fibers_ml": null
     },
@@ -1284,13 +1277,13 @@
     "name_en": "N-metil-2-pirrolidone",
     "synonyms": [],
     "limit_8h": {
-      "mg_m3": 40.0,
-      "ppm": 10.0,
+      "mg_m3": 40,
+      "ppm": 10,
       "fibers_ml": null
     },
     "limit_short_term": {
-      "mg_m3": 80.0,
-      "ppm": 20.0,
+      "mg_m3": 80,
+      "ppm": 20,
       "fibers_ml": null
     },
     "notations": [

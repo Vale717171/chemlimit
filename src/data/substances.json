@@ -4119,8 +4119,7 @@
         "verified": false,
         "notations": [],
         "notes": [
-          "Frazione inalabile.",
-          "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,01(12)."
+          "Frazione inalabile."
         ],
         "transitional_measures": [],
         "limit_8h": {
@@ -6801,8 +6800,7 @@
           "Sensibilizzazione cutanea e delle vie respiratorie"
         ],
         "notes": [
-          "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie.",
-          "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,0002(12 )."
+          "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie."
         ],
         "transitional_measures": [
           "Valore limite 0,0006 mg/m3 fino all’11 luglio 2026."
@@ -7005,8 +7003,7 @@
         ],
         "notes": [
           "Frazione inalabile.",
-          "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea.",
-          "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 2 (12)."
+          "Contribuisce in modo significativo all’esposizione totale attraverso la via di assorbimento cutanea."
         ],
         "transitional_measures": [],
         "limit_8h": {
@@ -7598,8 +7595,7 @@
         "verified": false,
         "notations": [],
         "notes": [
-          "Frazione inalabile.",
-          "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,001(12)."
+          "Frazione inalabile."
         ],
         "transitional_measures": [
           "Valore limite 0,004 mg/m3(13) fino all’11 luglio 2027."
@@ -9092,7 +9088,7 @@
           "Frazione respirabile, misurata come nickel.",
           "Frazione inalabile, misurata come nickel.",
           "La sostanza può causare sensibilizzazione cutanea e delle vie respiratorie.",
-          "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,01(16) 0,05 (17)."
+          "La fonte ufficiale riporta due valori 8h distinti: 0,01 mg/m³ (frazione respirabile, nota 16) e 0,05 mg/m³ (frazione inalabile, nota 17)."
         ],
         "transitional_measures": [
           "Il valore limite(16) si applica a decorrere dal 18 gennaio 2025 Il valore limite(17) si applica a decorrere dal 18 gennaio 2025 Fino ad allora si applica un valore limite di 0,1 mg/m3 (17)."
@@ -10580,8 +10576,7 @@
         "verified": false,
         "notations": [],
         "notes": [
-          "Misurate sotto forma di carbonio elementare.",
-          "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,05 (11)."
+          "Misurate sotto forma di carbonio elementare."
         ],
         "transitional_measures": [
           "Per le attività minerarie sotterranee e la costruzione di gallerie, il valore limite si applica a decorrere dal 21 febbraio 2026."
@@ -17044,8 +17039,7 @@
         "verified": false,
         "notations": [],
         "notes": [
-          "Frazione respirabile.",
-          "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 0,1(9)."
+          "Frazione respirabile."
         ],
         "transitional_measures": [],
         "limit_8h": {
@@ -17145,8 +17139,7 @@
         "verified": false,
         "notations": [],
         "notes": [
-          "Frazione inalabile: se le polveri di legno duro sono mischiate con altre polveri di legno, il valore limite si applica a tutte le polveri di legno presenti nella miscela in questione.",
-          "La fonte ufficiale riporta piu valori 8h nella stessa colonna: 2 (8)."
+          "Frazione inalabile: se le polveri di legno duro sono mischiate con altre polveri di legno, il valore limite si applica a tutte le polveri di legno presenti nella miscela in questione."
         ],
         "transitional_measures": [],
         "limit_8h": {
