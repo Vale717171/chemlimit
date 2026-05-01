@@ -27,7 +27,7 @@ ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per A
 - Ricerca esatta per CAS normalizzato.
 - Ricerca case-insensitive per nome italiano, nome inglese e sinonimi.
 - Sezione Italy - D.Lgs. 81/08 come primo blocco normativo.
-- Sezione International sources con link esterni verso ACGIH, ECHA, GESTIS, PubChem ed eChemPortal.
+- Sezione International sources con link esterni verso ECHA, PubChem e ACGIH solo se verificato.
 - Stato nessun risultato con link di ricerca generici per fonti esterne non ACGIH.
 
 ## Limiti
@@ -42,14 +42,12 @@ ChemLimit non riproduce valori TLV ACGIH e non effettua scraping di ACGIH. Per A
 
 ## External source links
 
-- ECHA direct links are used only when manually verified;
-- otherwise ChemLimit opens the official ECHA search page;
-- ACGIH is not scraped and TLV values are not copied;
-- generic search engines are not used for technical source buttons.
-- generic search engines are not used for technical source buttons;
-- alcuni link esterni aprono una ricerca precompilata;
-- altri aprono la fonte e permettono di copiare il CAS;
-- alcune fonti esterne non supportano una ricerca precompilata stabile, quindi ChemLimit apre la fonte e lascia all'utente il controllo del CAS.
+- La MVP pubblica mostra i dati del D.Lgs. 81/08 insieme a `ECHA` e `PubChem`.
+- `ACGIH` compare solo quando esiste un link verificato nel database locale.
+- ECHA direct links are used only when manually verified.
+- Otherwise ChemLimit opens the official ECHA search page.
+- ACGIH is not scraped and TLV values are not copied.
+- GESTIS ed eChemPortal restano in roadmap per una fase successiva.
 
 ## Privacy
 
@@ -62,10 +60,10 @@ If ChemLimit saves you time, you can buy me a coffee: [Buy Me a Coffee](https://
 ## Test manuali
 
 1. Aprire una pagina web e selezionare `67-64-1`, fare tasto destro e cliccare `Cerca con ChemLimit`; verificare apertura del side panel e scheda `Acetone`.
-2. Cercare `acetone` e verificare apertura corretta dei link `ECHA`, `GESTIS`, `PubChem` ed `eChemPortal` in nuove schede.
+2. Cercare `acetone` e verificare apertura corretta dei link `ECHA` e `PubChem` in nuove schede.
 3. Cercare `benzene` e verificare che i link esterni usino il CAS o il nome sostanza in modo coerente.
 4. Cercare `tricloroetilene` e verificare che la scheda mostri i dati `Allegato XLIII` e che i link esterni si aprano correttamente.
-5. Cercare `nichel` e verificare che per una sostanza senza CAS il link esterno ricada sulla ricerca per nome o sulla pagina di ricerca principale.
+5. Cercare `nichel` e verificare che per una sostanza senza CAS restino disponibili i pulsanti `ECHA` e `PubChem` senza errori UI.
 6. Cercare una sostanza con nome presente ma CAS assente nel dataset e verificare che i pulsanti disponibili restino attivi senza mostrare link rotti.
 7. Cercare una sostanza inesistente e verificare la gestione del nessun risultato con link di ricerca generici.
 8. Verificare che `ACGIH` mostri solo `Link ACGIH non ancora verificato` in assenza di URL verificato.
@@ -96,6 +94,8 @@ If ChemLimit saves you time, you can buy me a coffee: [Buy Me a Coffee](https://
 - German AGW/MAK references.
 - UK WEL references.
 - OSHA/NIOSH links.
+- GESTIS.
+- eChemPortal.
 - UI bilingue italiano/inglese.
 - Pacchetto e pubblicazione su Chrome Web Store.
 - Supporto Firefox.
