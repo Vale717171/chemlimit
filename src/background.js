@@ -16,43 +16,32 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
   }
 
   const query = String(info.selectionText || "").trim();
+  const tabId = tab && tab.id;
 
-  if (!tab?.id) {
-    console.error("ChemLimit: tab non disponibile per aprire il side panel.");
+  if (!tabId) {
+    console.error("ChemLimit: tabId non disponibile.");
     return;
   }
 
-  const tabId = tab.id;
+  chrome.sidePanel.open({ tabId }).catch((error) => {
+    console.error("ChemLimit: impossibile aprire il side panel.", error);
+  });
 
-  try {
-    chrome.sidePanel
-      .setOptions({
-        tabId,
-        path: "src/sidepanel.html",
-        enabled: true
-      })
-      .catch((error) => {
-        console.error("ChemLimit: errore in sidePanel.setOptions.", error);
-      });
-
-    chrome.sidePanel.open({ tabId }).catch((error) => {
-      console.error("ChemLimit: errore in sidePanel.open.", error);
-    });
-
-    chrome.storage.local.set({
+  chrome.storage.local
+    .set({
       chemlimitLastQuery: query,
       chemlimitLastQueryAt: Date.now()
+    })
+    .catch((error) => {
+      console.error("ChemLimit: impossibile salvare la query.", error);
     });
 
-    chrome.runtime
-      .sendMessage({
-        type: "CHEMLIMIT_SEARCH",
-        query
-      })
-      .catch(() => {
-        // Il side panel potrebbe non essere ancora pronto: non è bloccante.
-      });
-  } catch (error) {
-    console.error("ChemLimit: errore apertura side panel dal menu contestuale.", error);
-  }
+  chrome.runtime
+    .sendMessage({
+      type: "CHEMLIMIT_SEARCH",
+      query
+    })
+    .catch(() => {
+      // Il side panel potrebbe non essere ancora caricato.
+    });
 });
