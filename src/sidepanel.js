@@ -158,11 +158,10 @@ function runSearch(query) {
 }
 
 async function consumePendingSearch() {
-  const { pendingSearch } = await chrome.storage.session.get("pendingSearch");
+  const { chemlimitLastQuery } = await chrome.storage.local.get("chemlimitLastQuery");
 
-  if (pendingSearch?.query) {
-    runSearch(pendingSearch.query);
-    await chrome.storage.session.remove("pendingSearch");
+  if (chemlimitLastQuery) {
+    runSearch(chemlimitLastQuery);
   }
 }
 
@@ -172,15 +171,20 @@ form.addEventListener("submit", (event) => {
 });
 
 chrome.storage.onChanged.addListener((changes, areaName) => {
-  if (areaName !== "session") {
+  if (areaName !== "local") {
     return;
   }
 
-  const nextSearch = changes.pendingSearch?.newValue;
+  const nextSearch = changes.chemlimitLastQuery?.newValue;
 
-  if (nextSearch?.query) {
-    runSearch(nextSearch.query);
-    chrome.storage.session.remove("pendingSearch");
+  if (nextSearch) {
+    runSearch(nextSearch);
+  }
+});
+
+chrome.runtime.onMessage.addListener((message) => {
+  if (message?.type === "CHEMLIMIT_SEARCH" && message.query) {
+    runSearch(message.query);
   }
 });
 
