@@ -1,11 +1,31 @@
 import { isCas, normalizeCas, normalizeText } from "./normalize.js";
 import { buildSearchLinks, mergeExternalLinks } from "./links.js";
 
+export function normalizeCAS(value) {
+  if (!value) return "";
+  return String(value).replace(/[^0-9]/g, "");
+}
+
 export async function loadSubstances() {
   const response = await fetch(chrome.runtime.getURL("src/data/substances.json"));
 
   if (!response.ok) {
     throw new Error("Database locale non disponibile.");
+  }
+
+  const substances = await response.json();
+
+  return substances.map((substance) => ({
+    ...substance,
+    cas_normalized: normalizeCAS(substance.cas)
+  }));
+}
+
+export async function loadFamilies() {
+  const response = await fetch(chrome.runtime.getURL("src/data/families.json"));
+
+  if (!response.ok) {
+    throw new Error("Dataset famiglie normative non disponibile.");
   }
 
   return response.json();
@@ -26,9 +46,14 @@ export function findSubstance(substances, query) {
     return null;
   }
 
-  if (isCas(rawQuery)) {
+  const normalizedCasQuery = normalizeCAS(rawQuery);
+  const casLikeQuery = Boolean(normalizedCasQuery) && /^[\d\s-]+$/.test(rawQuery);
+
+  if (isCas(rawQuery) || casLikeQuery) {
     const cas = normalizeCas(rawQuery);
-    return substances.find((substance) => normalizeCas(substance.cas) === cas) || null;
+    return (
+      substances.find((substance) => substance.cas_normalized === normalizedCasQuery || normalizeCas(substance.cas) === cas) || null
+    );
   }
 
   const normalizedQuery = normalizeText(rawQuery);
@@ -39,6 +64,21 @@ export function findSubstance(substances, query) {
 
       return names.some((name) => normalizeText(name) === normalizedQuery);
     }) || null
+  );
+}
+
+export function findFamilyHint(families, query) {
+  const rawQuery = String(query || "").trim();
+  const normalizedQuery = normalizeText(rawQuery);
+
+  if (!normalizedQuery || !families || typeof families !== "object") {
+    return null;
+  }
+
+  return (
+    Object.values(families).find((family) =>
+      (family.keywords || []).some((keyword) => normalizedQuery.includes(normalizeText(keyword)))
+    ) || null
   );
 }
 
@@ -71,6 +111,10 @@ export function findSuggestions(substances, query, limit = 2) {
 
   return substances
     .map((substance) => {
+      if (!substance.cas) {
+        return null;
+      }
+
       const names = getSearchableNames(substance);
       let bestScore = 0;
 
@@ -113,7 +157,7 @@ export function findSuggestions(substances, query, limit = 2) {
     .slice(0, limit);
 }
 
-export function searchSubstances(substances, query, echaVerifiedLinks = []) {
+export function searchSubstances(substances, query, echaVerifiedLinks = [], families = {}) {
   const rawQuery = String(query || "").trim();
   const substance = findSubstance(substances, rawQuery);
 
@@ -129,11 +173,18 @@ export function searchSubstances(substances, query, echaVerifiedLinks = []) {
   }
 
   const suggestions = findSuggestions(substances, rawQuery);
+  const familyHint = suggestions.length ? null : findFamilyHint(families, rawQuery);
 
   return {
     found: false,
     query: rawQuery,
     suggestions,
+    familyHint: familyHint
+      ? {
+          label: familyHint.label,
+          annex: familyHint.annex
+        }
+      : null,
     external_links: {
       acgih: { status: "missing", url: "" },
       ...buildSearchLinks(rawQuery)

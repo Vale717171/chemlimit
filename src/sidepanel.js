@@ -1,4 +1,4 @@
-import { loadSubstances, searchSubstances } from "./lib/search.js";
+import { loadFamilies, loadSubstances, searchSubstances } from "./lib/search.js";
 import { buildAcgihLookupPayload } from "./lib/links.js";
 
 const form = document.querySelector("#searchForm");
@@ -7,6 +7,7 @@ const status = document.querySelector("#status");
 const results = document.querySelector("#results");
 
 let substances = [];
+let families = {};
 let echaVerifiedLinks = [];
 let lastHandledQuery = "";
 let lastHandledAt = 0;
@@ -230,13 +231,13 @@ function renderRegulatory(substance) {
   return `
     <section class="section">
       <h2>Italy - D.Lgs. 81/08</h2>
+      <p class="section-copy">Dati normativi aggiornati a: D.Lgs. 81/08 - aggiornamento ${escapeHtml(metadata.current_legal_update || "da verificare")}</p>
+      <p class="section-copy">Ultimo controllo dataset: ${escapeHtml(metadata.last_checked || "da verificare")}</p>
       <dl class="definition-list">
         <dt>Allegato</dt>
         <dd>${escapeHtml(annexSummary)}</dd>
         <dt>Fonte</dt>
         <dd>${escapeHtml(metadata.legal_source || "D.Lgs. 81/08")}</dd>
-        <dt>Ultimo controllo</dt>
-        <dd>${escapeHtml(metadata.last_checked || "da verificare")}</dd>
       </dl>
     </section>
     ${exposureAnnexes.map((annex) => renderAnnexBlock(annex)).join("")}
@@ -351,6 +352,18 @@ function renderNotFound(result) {
     </section>`
         : ""
     }
+    ${
+      !result.suggestions?.length && result.familyHint
+        ? `
+    <section class="section">
+      <h2>Categoria normativa</h2>
+      <p class="section-copy">Nessuna corrispondenza esatta.</p>
+      <p class="section-copy">La sostanza potrebbe rientrare nella categoria normativa:</p>
+      <p><strong>${escapeHtml(result.familyHint.label)}</strong> (${escapeHtml(`Allegato ${result.familyHint.annex}`)})</p>
+      <p class="section-copy">Verificare la classificazione.</p>
+    </section>`
+        : ""
+    }
     ${renderLinks(result.external_links, acgihPayload)}
   `;
 }
@@ -395,7 +408,7 @@ function runSearch(query, options = {}) {
     }
 
     input.value = cleanQuery;
-    const result = searchSubstances(substances, cleanQuery, echaVerifiedLinks);
+    const result = searchSubstances(substances, cleanQuery, echaVerifiedLinks, families);
     setStatus(result.found ? "Risultato locale trovato." : "Nessun risultato locale.");
     markHandledSearch(cleanQuery, queryAt);
 
@@ -452,6 +465,7 @@ chrome.runtime.onMessage.addListener((message) => {
 
 try {
   substances = await loadSubstances();
+  families = await loadFamilies();
   const echaResponse = await fetch(chrome.runtime.getURL("src/data/external/echa_verified_links.json"));
   if (echaResponse.ok) {
     echaVerifiedLinks = await echaResponse.json();

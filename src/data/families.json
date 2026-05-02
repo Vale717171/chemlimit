@@ -1,0 +1,17 @@
+{
+  "nickel": {
+    "label": "Composti del nichel",
+    "keywords": ["nickel", "ni"],
+    "annex": "XLIII"
+  },
+  "chromium_vi": {
+    "label": "Composti di cromo VI",
+    "keywords": ["chromium vi", "cromo vi", "cr vi"],
+    "annex": "XLIII"
+  },
+  "lead": {
+    "label": "Piombo e suoi composti",
+    "keywords": ["lead", "piombo", "pb"],
+    "annex": "XLIII-bis"
+  }
+}

@@ -12,6 +12,7 @@ ChemLimit is currently focused on an Italy-first regulatory workflow, with the D
 
 - Looks up chemical substances by CAS, Italian name, English name, or simple synonyms.
 - Uses exact-first search and shows up to two simple suggestions when there is no exact match.
+- Adds a small informational family hint for some regulatory category entries when there is no exact match and no suggestion.
 - Shows local Italian occupational exposure limit data from:
   - `D.Lgs. 81/08 - Allegato XXXVIII`
   - `D.Lgs. 81/08 - Allegato XLIII`
