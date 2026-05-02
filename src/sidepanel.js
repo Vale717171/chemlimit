@@ -8,6 +8,8 @@ const results = document.querySelector("#results");
 
 let substances = [];
 let echaVerifiedLinks = [];
+let lastHandledQuery = "";
+let lastHandledAt = 0;
 
 const ACGIH_DATA_HUB_URL = "https://www.acgih.org/data-hub/";
 const ACGIH_LOOKUP_STORAGE_KEY = "chemlimitAcgihLookup";
@@ -32,6 +34,15 @@ function openExternal(url) {
   }
 
   window.open(url, "_blank", "noopener,noreferrer");
+}
+
+function shouldSkipSearch(query, queryAt = 0) {
+  return Boolean(query && queryAt && query === lastHandledQuery && queryAt === lastHandledAt);
+}
+
+function markHandledSearch(query, queryAt = 0) {
+  lastHandledQuery = String(query || "").trim();
+  lastHandledAt = Number(queryAt || 0);
 }
 
 async function startAcgihLookup(payload) {
@@ -304,6 +315,9 @@ function renderFound(result) {
       </dl>
     </section>
     ${renderRegulatory(substance)}
+    <section class="section">
+      <p class="section-copy">Verificare sempre i dati sulle fonti normative applicabili prima dell’uso professionale.</p>
+    </section>
     ${renderLinks(substance.external_links, acgihPayload)}
   `;
 }
@@ -317,6 +331,26 @@ function renderNotFound(result) {
     <section class="empty">
       Nessun risultato locale per "${escapeHtml(result.query)}". Puoi consultare le fonti internazionali con link di ricerca generici.
     </section>
+    ${
+      Array.isArray(result.suggestions) && result.suggestions.length
+        ? `
+    <section class="section">
+      <h2>Possibili alternative</h2>
+      <p class="section-copy">Nessuna corrispondenza esatta. Possibili alternative:</p>
+      <div class="links">
+        ${result.suggestions
+          .map((suggestion) => {
+            const searchValue = suggestion.cas || suggestion.name_it || suggestion.name_en;
+            const label = suggestion.cas
+              ? `${suggestion.name_it} (${suggestion.cas})`
+              : suggestion.name_it;
+            return `<button class="link-button" data-suggestion-query="${escapeHtml(searchValue || "")}">${escapeHtml(label)}</button>`;
+          })
+          .join("")}
+      </div>
+    </section>`
+        : ""
+    }
     ${renderLinks(result.external_links, acgihPayload)}
   `;
 }
@@ -337,11 +371,18 @@ function bindExternalButtons() {
       await startAcgihLookup(acgihPayload);
     });
   });
+
+  results.querySelectorAll("[data-suggestion-query]").forEach((button) => {
+    button.addEventListener("click", () => {
+      runSearch(button.dataset.suggestionQuery);
+    });
+  });
 }
 
-function runSearch(query) {
+function runSearch(query, options = {}) {
   try {
     const cleanQuery = String(query || "").trim();
+    const queryAt = Number(options.queryAt || 0);
 
     if (!cleanQuery) {
       results.innerHTML = "";
@@ -349,9 +390,14 @@ function runSearch(query) {
       return;
     }
 
+    if (shouldSkipSearch(cleanQuery, queryAt)) {
+      return;
+    }
+
     input.value = cleanQuery;
     const result = searchSubstances(substances, cleanQuery, echaVerifiedLinks);
     setStatus(result.found ? "Risultato locale trovato." : "Nessun risultato locale.");
+    markHandledSearch(cleanQuery, queryAt);
 
     if (result.found) {
       renderFound(result);
@@ -368,10 +414,13 @@ function runSearch(query) {
 }
 
 async function consumePendingSearch() {
-  const { chemlimitLastQuery } = await chrome.storage.local.get("chemlimitLastQuery");
+  const { chemlimitLastQuery, chemlimitLastQueryAt } = await chrome.storage.local.get([
+    "chemlimitLastQuery",
+    "chemlimitLastQueryAt"
+  ]);
 
   if (chemlimitLastQuery) {
-    runSearch(chemlimitLastQuery);
+    runSearch(chemlimitLastQuery, { queryAt: chemlimitLastQueryAt });
   }
 }
 
@@ -386,15 +435,18 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
   }
 
   const nextSearch = changes.chemlimitLastQuery?.newValue;
+  const nextSearchAt = changes.chemlimitLastQueryAt?.newValue
+    ?? changes.chemlimitLastQueryAt?.oldValue
+    ?? 0;
 
   if (nextSearch) {
-    runSearch(nextSearch);
+    runSearch(nextSearch, { queryAt: nextSearchAt });
   }
 });
 
 chrome.runtime.onMessage.addListener((message) => {
   if (message?.type === "CHEMLIMIT_SEARCH" && message.query) {
-    runSearch(message.query);
+    runSearch(message.query, { queryAt: message.queryAt });
   }
 });
 

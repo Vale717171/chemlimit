@@ -178,12 +178,6 @@ ul {
   padding-bottom: 8px;
 }
 
-.footer-note {
-  margin: 0 0 10px;
-  color: var(--muted);
-  font-size: 12px;
-}
-
 .support-footer a {
   color: var(--muted);
   font-size: 12px;
