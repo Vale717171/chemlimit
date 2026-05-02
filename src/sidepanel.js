@@ -117,8 +117,75 @@ function formatLimit(limit) {
   return parts.join(" / ") || "Non indicato";
 }
 
+function getAnnexSubtitle(annex) {
+  if (annex === "XXXVIII") {
+    return "Valori limite di esposizione professionale - agenti chimici";
+  }
+
+  if (annex === "XLIII") {
+    return "Valori limite per agenti cancerogeni, mutageni o tossici per la riproduzione";
+  }
+
+  if (annex === "XLIII-bis") {
+    return "Valori limite biologici obbligatori e sorveglianza sanitaria";
+  }
+
+  return "";
+}
+
 function getAnnexLimit(annexRecord, fieldName) {
   return annexRecord?.[fieldName] || null;
+}
+
+function hasFiberLimit(annexRecord) {
+  const limits = [
+    annexRecord?.limit_8h,
+    annexRecord?.limit_short_term,
+    ...(annexRecord?.limits || [])
+  ];
+
+  return limits.some((limit) => limit?.fibers_ml !== null && limit?.fibers_ml !== undefined);
+}
+
+function renderBadges(items) {
+  const badges = Array.from(new Set((items || []).filter(Boolean)));
+
+  if (!badges.length) {
+    return "";
+  }
+
+  return `
+    <div class="badge-row">
+      ${badges.map((item) => `<span class="badge">${escapeHtml(item)}</span>`).join("")}
+    </div>
+  `;
+}
+
+function collectRegulatoryBadges(substance) {
+  const badges = [];
+  const xxxviii = substance.dlgs81?.allegato_xxxviii || {};
+  const xliii = substance.dlgs81?.allegato_xliii || {};
+  const xliiiBis = substance.dlgs81?.allegato_xliii_bis || {};
+
+  if (xxxviii.present) {
+    badges.push(...(xxxviii.notations || []));
+    if (hasFiberLimit(xxxviii)) {
+      badges.push("f/ml");
+    }
+  }
+
+  if (xliii.present) {
+    badges.push("Allegato XLIII", "Agente CMR / Titolo IX Capo II", ...(xliii.notations || []));
+    if (hasFiberLimit(xliii)) {
+      badges.push("f/ml");
+    }
+  }
+
+  if (xliiiBis.present) {
+    badges.push("Allegato XLIII-bis", "Valore biologico");
+  }
+
+  return badges;
 }
 
 function renderSpecificLimits(limits) {
@@ -157,6 +224,7 @@ function renderAnnexBlock(annexRecord) {
   return `
     <section class="section">
       <h2>Allegato ${escapeHtml(annexRecord.annex || "")}</h2>
+      <p class="section-copy">${escapeHtml(getAnnexSubtitle(annexRecord.annex || ""))}</p>
       <dl class="definition-list">
         <dt>Allegato ${escapeHtml(annexRecord.annex || "")}</dt>
         <dd>Presente</dd>
@@ -192,6 +260,7 @@ function renderBiologicalAnnexBlock(annexRecord) {
   return `
     <section class="section">
       <h2>Allegato ${escapeHtml(annexRecord.annex || "")}</h2>
+      <p class="section-copy">${escapeHtml(getAnnexSubtitle(annexRecord.annex || ""))}</p>
       <dl class="definition-list">
         <dt>Allegato ${escapeHtml(annexRecord.annex || "")}</dt>
         <dd>Presente</dd>
@@ -227,11 +296,12 @@ function renderRegulatory(substance) {
     .filter((annex) => annex.present)
     .map((annex) => annex.annex)
     .join(" | ") || "-";
+  const officialSources = Array.isArray(metadata.official_sources) ? metadata.official_sources : [];
 
   return `
     <section class="section">
       <h2>Italy - D.Lgs. 81/08</h2>
-      <p class="section-copy">Dati normativi aggiornati a: D.Lgs. 81/08 - aggiornamento ${escapeHtml(metadata.current_legal_update || "da verificare")}</p>
+      <p class="section-copy">Dataset normativo: D.Lgs. 81/08, aggiornato da ${escapeHtml(metadata.current_legal_update || "da verificare")}</p>
       <p class="section-copy">Ultimo controllo dataset: ${escapeHtml(metadata.last_checked || "da verificare")}</p>
       <dl class="definition-list">
         <dt>Allegato</dt>
@@ -239,6 +309,20 @@ function renderRegulatory(substance) {
         <dt>Fonte</dt>
         <dd>${escapeHtml(metadata.legal_source || "D.Lgs. 81/08")}</dd>
       </dl>
+      ${
+        officialSources.length
+          ? `
+      <div class="links compact-links">
+        ${officialSources
+          .map((source) =>
+            source?.url
+              ? `<button class="link-button secondary-button" data-url="${escapeHtml(source.url)}">${escapeHtml(source.label || "Fonte ufficiale")}</button>`
+              : ""
+          )
+          .join("")}
+      </div>`
+          : ""
+      }
     </section>
     ${exposureAnnexes.map((annex) => renderAnnexBlock(annex)).join("")}
     ${renderBiologicalAnnexBlock(xliiiBis)}
@@ -248,8 +332,12 @@ function renderRegulatory(substance) {
 function renderLinks(links, acgihPayload) {
   const acgih = links.acgih || { status: "missing", url: "" };
   const acgihButtons = [
-    acgihPayload?.query
-      ? `<button
+    `<div class="source-item">
+      <p class="source-title">ACGIH Data Hub</p>
+      <p class="source-description">Fonte esterna per individuare la scheda ACGIH ufficiale.</p>
+      ${
+        acgihPayload?.query
+          ? `<button
           class="link-button"
           data-acgih-lookup="true"
           data-acgih-query="${escapeHtml(acgihPayload.query)}"
@@ -257,30 +345,56 @@ function renderLinks(links, acgihPayload) {
           data-acgih-name-en="${escapeHtml(acgihPayload.name_en || "")}"
           data-acgih-name-it="${escapeHtml(acgihPayload.name_it || "")}"
         >Cerca su ACGIH Data Hub</button>`
-      : `<p class="link-note">Query ACGIH non disponibile.</p>`,
-    acgih.status === "verified" && acgih.url
-      ? `<button class="link-button" data-url="${escapeHtml(acgih.url)}">Apri scheda ACGIH</button>`
-      : ""
+          : `<p class="link-note">Query ACGIH non disponibile.</p>`
+      }
+      ${acgih.status === "verified" && acgih.url
+        ? `<button class="link-button secondary-button" data-url="${escapeHtml(acgih.url)}">Apri scheda ACGIH</button>`
+        : ""}
+    </div>`
   ].join("");
 
   const linkButtons = [
-    ["echa", { verified: "Open ECHA substance page", search: "Open ECHA search" }],
-    ["pubchem", { verified: "Apri PubChem", search: "Apri PubChem" }]
+    [
+      "echa",
+      {
+        title: "ECHA - identificazione e dati regolatori",
+        description: "Fonte esterna per identificazione, classificazione e dati regolatori; non sostituisce i VLEP italiani.",
+        verified: "Apri ECHA",
+        search: "Apri ECHA"
+      }
+    ],
+    [
+      "pubchem",
+      {
+        title: "PubChem",
+        description: "Fonte esterna per identificazione chimica generale.",
+        verified: "Apri PubChem",
+        search: "Apri PubChem"
+      }
+    ]
   ]
-    .map(([key, labels]) => {
+    .map(([key, source]) => {
       const link = links[key];
       const unavailableLabel = {
         echa: "Ricerca ECHA non disponibile.",
         pubchem: "Ricerca PubChem non disponibile."
       };
 
-      const buttonLabel = link?.status === "verified" ? labels.verified : labels.search;
+      const buttonLabel = link?.status === "verified" ? source.verified : source.search;
 
-      return link?.url
-        ? `<button class="link-button" data-url="${escapeHtml(link.url)}">${buttonLabel}</button>`
-        : `<p class="link-note">${unavailableLabel[key]}</p>`;
+      return `
+        <div class="source-item">
+          <p class="source-title">${escapeHtml(source.title)}</p>
+          <p class="source-description">${escapeHtml(source.description)}</p>
+          ${
+            link?.url
+              ? `<button class="link-button" data-url="${escapeHtml(link.url)}">${buttonLabel}</button>`
+              : `<p class="link-note">${unavailableLabel[key]}</p>`
+          }
+        </div>
+      `;
     })
-    .join("<br>");
+    .join("");
 
   return `
     <section class="section">
@@ -300,10 +414,12 @@ function renderFound(result) {
     name_en: substance.name_en,
     name_it: substance.name_it
   });
+  const regulatoryBadges = collectRegulatoryBadges(substance);
 
   results.innerHTML = `
     <section class="section">
       <h2>Identificazione sostanza</h2>
+      ${renderBadges(regulatoryBadges)}
       <dl class="definition-list">
         <dt>CAS</dt>
         <dd>${escapeHtml(valueOrDash(substance.cas))}</dd>

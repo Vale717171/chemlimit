@@ -84,6 +84,14 @@ Current dataset workflow:
 
 See [PRIVACY.md](./PRIVACY.md) for the current privacy note.
 
+## Regulatory caution
+
+- ChemLimit is a quick consultation tool.
+- Italian limit data comes from the local D.Lgs. 81/08 dataset.
+- Before professional use, always verify the applicable official legal source.
+- ECHA, PubChem, and ACGIH are external sources.
+- ChemLimit does not copy or redistribute ACGIH TLV values.
+
 ## Roadmap
 
 - Review and refine the D.Lgs. 81/08 dataset

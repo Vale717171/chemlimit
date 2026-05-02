@@ -120,6 +120,26 @@ input {
   color: var(--muted);
 }
 
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 10px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #eef3f6;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 650;
+}
+
 .definition-list {
   display: grid;
   grid-template-columns: 120px minmax(0, 1fr);
@@ -150,10 +170,43 @@ input {
   gap: 8px;
 }
 
+.compact-links {
+  margin-top: 10px;
+}
+
+.source-item {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fbfcfd;
+}
+
+.source-title {
+  margin: 0;
+  font-weight: 650;
+}
+
+.source-description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .link-button {
   display: inline-flex;
   justify-content: center;
   text-decoration: none;
+}
+
+.secondary-button {
+  background: #e6eef0;
+  color: var(--text);
+}
+
+.secondary-button:hover {
+  background: #d8e4e7;
 }
 
 .link-note {
