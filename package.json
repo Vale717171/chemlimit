@@ -1,0 +1,11 @@
+{
+  "name": "chemlimit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension for quick lookup of Italian VLEP/OEL values from D.Lgs. 81/08.",
+  "scripts": {
+    "validate:dataset": "node scripts/validate-dataset.js",
+    "build:dataset": "node scripts/build-substances-index.js",
+    "check:dataset": "node scripts/check-dataset-staleness.js"
+  }
+}
