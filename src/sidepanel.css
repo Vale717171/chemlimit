@@ -20,7 +20,7 @@ body {
   min-width: 320px;
   background: var(--bg);
   color: var(--text);
-  font: 14px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font: 14px/1.55 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 button,
@@ -29,14 +29,14 @@ input {
 }
 
 .app-shell {
-  padding: 18px;
+  padding: 20px 18px 18px;
 }
 
 .app-header {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .app-header h1 {
@@ -52,7 +52,7 @@ input {
 }
 
 .search-form {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .search-form label {
@@ -94,7 +94,7 @@ input {
 }
 
 .status {
-  margin: 12px 0;
+  margin: 14px 0 16px;
   color: var(--muted);
 }
 
@@ -103,16 +103,18 @@ input {
 }
 
 .section {
-  margin-top: 12px;
+  margin-top: 14px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--panel);
-  padding: 13px;
+  padding: 15px 14px;
 }
 
 .section h2 {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   font-size: 15px;
+  line-height: 1.3;
+  font-weight: 700;
 }
 
 .section-copy {
@@ -120,30 +122,71 @@ input {
   color: var(--muted);
 }
 
+.section-copy + .section-copy {
+  margin-top: 4px;
+}
+
+.regulatory-section {
+  padding-bottom: 14px;
+}
+
+.regulatory-meta {
+  margin: 0 0 12px;
+  padding: 10px 11px;
+  border: 1px solid #e2e7ec;
+  border-radius: 7px;
+  background: #f7f9fb;
+}
+
+.annex-section {
+  border-color: #d3dae2;
+  box-shadow: 0 1px 0 rgba(23, 32, 39, 0.02);
+}
+
+.annex-section + .annex-section {
+  margin-top: 16px;
+}
+
 .badge-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: 0 0 10px;
+  gap: 8px 7px;
+  margin: 2px 0 12px;
 }
 
 .badge {
   display: inline-flex;
   align-items: center;
-  min-height: 28px;
-  padding: 4px 10px;
+  min-height: 26px;
+  padding: 3px 10px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: #eef3f6;
+  background: #f2f5f7;
   color: var(--text);
   font-size: 12px;
   font-weight: 650;
+  line-height: 1.2;
+}
+
+.badge-neutral {
+  background: #f1f4f6;
+  border-color: #d9e0e6;
+}
+
+.badge-warning {
+  background: #f7f2e4;
+  border-color: #e6d7a9;
+}
+
+.badge-annex {
+  background: #eaf2f1;
+  border-color: #cbded9;
 }
 
 .definition-list {
   display: grid;
   grid-template-columns: 120px minmax(0, 1fr);
-  gap: 7px 10px;
+  gap: 8px 12px;
   margin: 0;
 }
 
@@ -157,6 +200,14 @@ input {
   overflow-wrap: anywhere;
 }
 
+.limit-value {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
 .notice {
   border: 1px solid var(--warning-border);
   border-radius: 6px;
@@ -167,17 +218,17 @@ input {
 
 .links {
   display: grid;
-  gap: 8px;
+  gap: 10px;
 }
 
 .compact-links {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .source-item {
   display: grid;
-  gap: 6px;
-  padding: 10px;
+  gap: 7px;
+  padding: 11px;
   border: 1px solid var(--border);
   border-radius: 6px;
   background: #fbfcfd;
@@ -218,11 +269,11 @@ input {
   border: 1px dashed var(--border);
   border-radius: 8px;
   background: #fff;
-  padding: 13px;
+  padding: 15px 14px;
 }
 
 ul {
-  margin: 8px 0 0;
+  margin: 10px 0 0;
   padding-left: 18px;
 }
 

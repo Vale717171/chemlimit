@@ -118,6 +118,10 @@ function formatLimit(limit) {
   return parts.join(" / ") || "Non indicato";
 }
 
+function renderLimitValue(limit) {
+  return `<span class="limit-value">${escapeHtml(formatLimit(limit))}</span>`;
+}
+
 function getAnnexSubtitle(annex) {
   if (annex === "XXXVIII") {
     return "Valori limite di esposizione professionale - agenti chimici";
@@ -159,11 +163,18 @@ function renderBadges(items) {
     <div class="badge-row">
       ${badges
         .map((item) => {
+          const itemText = String(item || "");
           const tooltip =
-            item === "Cute"
+            itemText === "Cute"
               ? ' title="Assorbimento cutaneo rilevante ai fini dell’esposizione"'
               : "";
-          return `<span class="badge"${tooltip}>${escapeHtml(item)}</span>`;
+          const badgeClass =
+            itemText.startsWith("Allegato") || itemText === "Valore biologico" || itemText.includes("Titolo IX")
+              ? "badge badge-annex"
+              : ["Cute", "Pelle", "Sensibilizzante", "Sensibilizzazione cutanea", "f/ml"].includes(itemText)
+                ? "badge badge-warning"
+                : "badge badge-neutral";
+          return `<span class="${badgeClass}"${tooltip}>${escapeHtml(itemText)}</span>`;
         })
         .join("")}
     </div>
@@ -287,7 +298,7 @@ function renderAnnexBlock(annexRecord) {
     : "<p class=\"link-note\">Nessuna nota normativa.</p>";
 
   return `
-    <section class="section">
+    <section class="section annex-section">
       <h2>Allegato ${escapeHtml(annexRecord.annex || "")}</h2>
       <p class="section-copy">${escapeHtml(getAnnexSubtitle(annexRecord.annex || ""))}</p>
       <dl class="definition-list">
@@ -298,9 +309,9 @@ function renderAnnexBlock(annexRecord) {
         <dt>Versione fonte</dt>
         <dd>${escapeHtml(annexRecord.source_version || "da verificare")}</dd>
         <dt>VLEP 8h</dt>
-        <dd>${escapeHtml(formatLimit(getAnnexLimit(annexRecord, "limit_8h") || getAnnexLimit(annexRecord, "vlep_8h")))}</dd>
+        <dd>${renderLimitValue(getAnnexLimit(annexRecord, "limit_8h") || getAnnexLimit(annexRecord, "vlep_8h"))}</dd>
         <dt>VLEP breve termine</dt>
-        <dd>${escapeHtml(formatLimit(getAnnexLimit(annexRecord, "limit_short_term") || getAnnexLimit(annexRecord, "vlep_breve_termine")))}</dd>
+        <dd>${renderLimitValue(getAnnexLimit(annexRecord, "limit_short_term") || getAnnexLimit(annexRecord, "vlep_breve_termine"))}</dd>
         <dt>Notazioni</dt>
         <dd>${escapeHtml(notations.join(", ") || "Non indicato")}</dd>
       </dl>
@@ -323,7 +334,7 @@ function renderBiologicalAnnexBlock(annexRecord) {
     : "<p class=\"link-note\">Nessuna nota normativa.</p>";
 
   return `
-    <section class="section">
+    <section class="section annex-section">
       <h2>Allegato ${escapeHtml(annexRecord.annex || "")}</h2>
       <p class="section-copy">${escapeHtml(getAnnexSubtitle(annexRecord.annex || ""))}</p>
       <dl class="definition-list">
@@ -336,10 +347,10 @@ function renderBiologicalAnnexBlock(annexRecord) {
         <dt>Parametro biologico</dt>
         <dd>${escapeHtml(valueOrDash(biological.parameter))}</dd>
         <dt>Valore limite biologico</dt>
-        <dd>${escapeHtml(
+        <dd><span class="limit-value">${escapeHtml(
           [biological.value, biological.unit].filter((item) => item !== null && item !== undefined && item !== "").join(" ") ||
             "Non indicato"
-        )}</dd>
+        )}</span></dd>
         <dt>Matrice</dt>
         <dd>${escapeHtml(valueOrDash(biological.matrix))}</dd>
         <dt>Campionamento</dt>
@@ -368,11 +379,13 @@ function renderRegulatory(substance) {
     null;
 
   return `
-    <section class="section">
+    <section class="section regulatory-section">
       <h2>Italy - D.Lgs. 81/08</h2>
-      <p class="section-copy">D.Lgs. 81/08 – Allegati XXXVIII / XLIII / XLIII-bis</p>
-      <p class="section-copy">Aggiornamento: ${escapeHtml(metadata.current_legal_update || "da verificare")}</p>
-      <p class="section-copy">Ultimo controllo dataset: ${escapeHtml(metadata.last_checked || "da verificare")}</p>
+      <div class="regulatory-meta">
+        <p class="section-copy">D.Lgs. 81/08 – Allegati XXXVIII / XLIII / XLIII-bis</p>
+        <p class="section-copy">Aggiornamento: ${escapeHtml(metadata.current_legal_update || "da verificare")}</p>
+        <p class="section-copy">Ultimo controllo dataset: ${escapeHtml(metadata.last_checked || "da verificare")}</p>
+      </div>
       <dl class="definition-list">
         <dt>Allegato</dt>
         <dd>${escapeHtml(annexSummary)}</dd>
