@@ -13,11 +13,11 @@ const ECHEMPORTAL_BASE = "https://www.echemportal.org/echemportal/substance-sear
 const MANUAL_ALIASES = {
   "67-64-1": {
     name_en: "Acetone",
-    synonyms: ["propanone", "dimetilchetone", "dimethyl ketone"]
+    synonyms: ["propanone", "dimetilchetone", "dimethyl ketone", "2-propanone"]
   },
   "71-43-2": {
     name_en: "Benzene",
-    synonyms: ["benzolo"]
+    synonyms: ["benzolo", "benzol"]
   },
   "79-01-6": {
     name_en: "Trichloroethylene",
@@ -25,15 +25,59 @@ const MANUAL_ALIASES = {
   },
   "50-00-0": {
     name_en: "Formaldehyde",
-    synonyms: ["metanale", "methanal", "aldeide formica"]
+    synonyms: ["metanale", "methanal", "aldeide formica", "formalin", "formalina", "formol"]
   },
   "108-88-3": {
     name_en: "Toluene",
-    synonyms: ["toluolo"]
+    synonyms: ["toluolo", "methylbenzene", "metilbenzene", "toluol"]
   },
   "1330-20-7": {
     name_en: "Xylene, mixed isomers",
-    synonyms: ["xilene", "xylene"]
+    synonyms: ["xilene", "xylene", "xylol", "xilolo", "dimethylbenzene", "dimetilbenzene"]
+  },
+  "78-93-3": {
+    name_en: "Butanone",
+    synonyms: ["MEK", "methyl ethyl ketone", "metiletilchetone", "2-butanone"]
+  },
+  "127-18-4": {
+    name_en: "Tetrachloroethylene",
+    synonyms: ["PERC", "PCE", "perchloroethylene", "perchloroethene", "tetrachloroethylene"]
+  },
+  "75-09-2": {
+    name_en: "Dichloromethane",
+    synonyms: ["DCM", "methylene chloride", "dichloromethane", "cloruro di metilene"]
+  },
+  "75-01-4": {
+    name_en: "Vinyl chloride monomer",
+    synonyms: ["VCM", "vinyl chloride", "cloruro di vinile"]
+  },
+  "110-54-3": {
+    name_en: "n-Hexane",
+    synonyms: ["hexane", "n-hexane", "esano"]
+  },
+  "100-41-4": {
+    name_en: "Ethylbenzene",
+    synonyms: ["ethylbenzene", "etilbenzolo"]
+  },
+  "107-02-8": {
+    name_en: "Acrolein",
+    synonyms: ["acrolein", "acrylaldehyde", "acrilaldeide"]
+  },
+  "107-98-2": {
+    name_en: "1-Methoxy-2-propanol",
+    synonyms: ["PGME", "PM", "propylene glycol monomethyl ether", "1-metossi-2-propanolo"]
+  },
+  "34590-94-8": {
+    name_en: "Dipropylene glycol monomethyl ether",
+    synonyms: ["DPM", "dipropylene glycol monomethyl ether"]
+  },
+  "75-56-9": {
+    name_en: "Propylene oxide",
+    synonyms: ["propylene oxide", "PO", "1,2-epoxypropane", "ossido di propilene"]
+  },
+  "79-46-9": {
+    name_en: "2-Nitropropane",
+    synonyms: ["2-nitropropane", "2-NP"]
   }
 };
 

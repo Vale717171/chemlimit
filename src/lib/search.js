@@ -33,11 +33,19 @@ export async function loadFamilies() {
 }
 
 function getSearchableNames(substance) {
-  return [
-    substance.name_it,
-    substance.name_en,
-    ...(substance.synonyms || [])
-  ].filter(Boolean);
+  const nameIt = substance.name_it;
+  const nameEn = substance.name_en;
+  const normalizedNameIt = normalizeText(nameIt);
+  const normalizedNameEn = normalizeText(nameEn);
+  const values = [nameIt];
+
+  if (nameEn && normalizedNameEn !== normalizedNameIt) {
+    values.push(nameEn);
+  }
+
+  values.push(...(substance.synonyms || []));
+
+  return values.filter(Boolean);
 }
 
 export function findSubstance(substances, query) {

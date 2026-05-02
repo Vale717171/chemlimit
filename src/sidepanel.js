@@ -11,6 +11,7 @@ let families = {};
 let echaVerifiedLinks = [];
 let lastHandledQuery = "";
 let lastHandledAt = 0;
+let lastSearchResult = null;
 
 const ACGIH_DATA_HUB_URL = "https://www.acgih.org/data-hub/";
 const ACGIH_LOOKUP_STORAGE_KEY = "chemlimitAcgihLookup";
@@ -156,9 +157,73 @@ function renderBadges(items) {
 
   return `
     <div class="badge-row">
-      ${badges.map((item) => `<span class="badge">${escapeHtml(item)}</span>`).join("")}
+      ${badges
+        .map((item) => {
+          const tooltip =
+            item === "Cute"
+              ? ' title="Assorbimento cutaneo rilevante ai fini dell’esposizione"'
+              : "";
+          return `<span class="badge"${tooltip}>${escapeHtml(item)}</span>`;
+        })
+        .join("")}
     </div>
   `;
+}
+
+function getPrimaryCitationAnnex(substance) {
+  const xxxviii = substance.dlgs81?.allegato_xxxviii;
+  const xliii = substance.dlgs81?.allegato_xliii;
+  const xliiiBis = substance.dlgs81?.allegato_xliii_bis;
+
+  if (xxxviii?.present) {
+    return xxxviii;
+  }
+
+  if (xliii?.present) {
+    return xliii;
+  }
+
+  if (xliiiBis?.present) {
+    return xliiiBis;
+  }
+
+  return null;
+}
+
+function buildCitationText(substance) {
+  const annexRecord = getPrimaryCitationAnnex(substance);
+  const metadata = substance.dlgs81?.metadata || {};
+  const title = substance.name_it || substance.name_en || "Sostanza";
+  const cas = substance.cas || "CAS non disponibile";
+  const updateDate = metadata.last_checked || metadata.current_legal_update_effective_date || "da verificare";
+
+  if (!annexRecord) {
+    return `${title} — ${cas} — D.Lgs. 81/08 — aggiornato ${updateDate}`;
+  }
+
+  if (annexRecord.annex === "XLIII-bis") {
+    const biological = annexRecord.biological_limit_value || {};
+    const value =
+      [biological.value, biological.unit]
+        .filter((item) => item !== null && item !== undefined && item !== "")
+        .join(" ") || "Non indicato";
+    return `${title} — ${cas} — Valore biologico: ${value} — D.Lgs. 81/08 Allegato ${annexRecord.annex} — aggiornato ${updateDate}`;
+  }
+
+  const limit8h = formatLimit(getAnnexLimit(annexRecord, "limit_8h") || getAnnexLimit(annexRecord, "vlep_8h"));
+  return `${title} — ${cas} — VLEP 8h: ${limit8h} — D.Lgs. 81/08 Allegato ${annexRecord.annex} — aggiornato ${updateDate}`;
+}
+
+async function copyCitation(substance) {
+  const citation = buildCitationText(substance);
+
+  try {
+    await navigator.clipboard.writeText(citation);
+    setStatus("Citazione copiata negli appunti.");
+  } catch (error) {
+    console.error("ChemLimit: impossibile copiare la citazione.", error);
+    setStatus("Impossibile copiare la citazione.", "error");
+  }
 }
 
 function collectRegulatoryBadges(substance) {
@@ -433,6 +498,9 @@ function renderFound(result) {
     ${renderRegulatory(substance)}
     <section class="section">
       <p class="section-copy">Verificare sempre i dati sulle fonti normative applicabili prima dell’uso professionale.</p>
+      <div class="links compact-links">
+        <button class="link-button secondary-button" data-copy-citation="true">Copia citazione</button>
+      </div>
     </section>
     ${renderLinks(substance.external_links, acgihPayload)}
   `;
@@ -505,6 +573,14 @@ function bindExternalButtons() {
       runSearch(button.dataset.suggestionQuery);
     });
   });
+
+  results.querySelectorAll("[data-copy-citation]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      if (lastSearchResult?.substance) {
+        await copyCitation(lastSearchResult.substance);
+      }
+    });
+  });
 }
 
 function runSearch(query, options = {}) {
@@ -524,6 +600,7 @@ function runSearch(query, options = {}) {
 
     input.value = cleanQuery;
     const result = searchSubstances(substances, cleanQuery, echaVerifiedLinks, families);
+    lastSearchResult = result.found ? result : null;
     setStatus(result.found ? "Risultato locale trovato." : "Nessun risultato locale.");
     markHandledSearch(cleanQuery, queryAt);
 
