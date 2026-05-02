@@ -55,6 +55,20 @@ function normalizeKeyPart(value) {
     .trim();
 }
 
+function normalizeCAS(value) {
+  return String(value || "").replace(/[^0-9]/g, "");
+}
+
+function normalizeAscii(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function encodeQuery(value) {
   return encodeURIComponent(String(value || "").trim());
 }
@@ -111,13 +125,17 @@ function createAnnexRecord(row) {
 function createBaseSubstance(row, metadata) {
   const queryValue = row.cas || row.name_en || row.name_it;
   const manualAliases = row.cas ? MANUAL_ALIASES[row.cas] || {} : {};
+  const nameIt = row.name_it;
+  const nameEn = row.name_en || manualAliases.name_en || row.name_it;
 
   return {
     id: slugify(row.name_en || row.name_it || row.cas),
     cas: row.cas || "",
+    cas_normalized: normalizeCAS(row.cas || ""),
     ec_number: row.ec_number || "",
-    name_it: row.name_it,
-    name_en: row.name_en || manualAliases.name_en || row.name_it,
+    name_it: nameIt,
+    name_en: nameEn,
+    name_ascii: normalizeAscii(nameEn || nameIt),
     synonyms: Array.from(new Set([...(row.synonyms || []), ...(manualAliases.synonyms || [])])),
     seed_notice: "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     dlgs81: {
@@ -171,6 +189,53 @@ function createBaseSubstance(row, metadata) {
   };
 }
 
+function getComparableLimitSignature(annexRecord) {
+  if (!annexRecord?.present) {
+    return "";
+  }
+
+  return JSON.stringify({
+    limit_8h: annexRecord.limit_8h || null,
+    limit_short_term: annexRecord.limit_short_term || null,
+    limits: annexRecord.limits || null,
+    biological_limit_value: annexRecord.biological_limit_value || null
+  });
+}
+
+function warnOnMergedCasDifferences(existing, row) {
+  if (!existing?.cas || !row?.cas || existing.cas !== row.cas) {
+    return;
+  }
+
+  const existingNames = [existing.name_it, existing.name_en].filter(Boolean).map(normalizeAscii);
+  const incomingNames = [row.name_it, row.name_en].filter(Boolean).map(normalizeAscii);
+  const namesDiffer =
+    existingNames.length &&
+    incomingNames.length &&
+    incomingNames.every((incomingName) => !existingNames.includes(incomingName));
+
+  if (namesDiffer) {
+    console.warn(
+      `Warning: CAS ${row.cas} has differing names across annexes: ` +
+        `"${existing.name_it || existing.name_en}" vs "${row.name_it || row.name_en}".`
+    );
+  }
+
+  if (row.annex === "XXXVIII" && existing.dlgs81?.allegato_xliii?.present) {
+    const currentAnnex = createAnnexRecord(row);
+    if (getComparableLimitSignature(existing.dlgs81.allegato_xliii) !== getComparableLimitSignature(currentAnnex)) {
+      console.warn(`Warning: CAS ${row.cas} has differing limit structures between Allegato XLIII and XXXVIII.`);
+    }
+  }
+
+  if (row.annex === "XLIII" && existing.dlgs81?.allegato_xxxviii?.present) {
+    const currentAnnex = createAnnexRecord(row);
+    if (getComparableLimitSignature(existing.dlgs81.allegato_xxxviii) !== getComparableLimitSignature(currentAnnex)) {
+      console.warn(`Warning: CAS ${row.cas} has differing limit structures between Allegato XXXVIII and XLIII.`);
+    }
+  }
+}
+
 function getRowKey(row) {
   if (row.cas) {
     return `cas:${row.cas}`;
@@ -211,11 +276,14 @@ async function main() {
   const ingest = (row) => {
     const key = getRowKey(row);
     const existing = substancesByKey.get(key) || createBaseSubstance(row, metadata);
+    warnOnMergedCasDifferences(existing, row);
     existing.id = existing.id || slugify(row.name_en || row.name_it || row.cas);
     existing.ec_number = existing.ec_number || row.ec_number || "";
     existing.name_it = existing.name_it || row.name_it;
     existing.name_en = existing.name_en || row.name_en || row.name_it;
     existing.cas = existing.cas || row.cas || "";
+    existing.cas_normalized = existing.cas_normalized || normalizeCAS(existing.cas || row.cas || "");
+    existing.name_ascii = existing.name_ascii || normalizeAscii(existing.name_en || existing.name_it || row.name_en || row.name_it);
     existing.synonyms = Array.from(
       new Set([
         ...(existing.synonyms || []),
@@ -269,6 +337,10 @@ async function main() {
           metadata
         );
       existing.dlgs81.allegato_xliii_bis = createBiologicalAnnexRecord(row);
+      existing.cas_normalized = existing.cas_normalized || normalizeCAS(existing.cas || row.cas || "");
+      existing.name_ascii =
+        existing.name_ascii ||
+        normalizeAscii(existing.name_en || existing.name_it || row.name_en || row.name_it || row.biological_limit_value?.parameter);
       substancesByKey.set(biologicalKey, existing);
     });
   }

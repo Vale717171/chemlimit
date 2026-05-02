@@ -297,11 +297,16 @@ function renderRegulatory(substance) {
     .map((annex) => annex.annex)
     .join(" | ") || "-";
   const officialSources = Array.isArray(metadata.official_sources) ? metadata.official_sources : [];
+  const primaryOfficialSource =
+    metadata.official_sources?.primary ||
+    officialSources[0] ||
+    null;
 
   return `
     <section class="section">
       <h2>Italy - D.Lgs. 81/08</h2>
-      <p class="section-copy">Dataset normativo: D.Lgs. 81/08, aggiornato da ${escapeHtml(metadata.current_legal_update || "da verificare")}</p>
+      <p class="section-copy">D.Lgs. 81/08 – Allegati XXXVIII / XLIII / XLIII-bis</p>
+      <p class="section-copy">Aggiornamento: ${escapeHtml(metadata.current_legal_update || "da verificare")}</p>
       <p class="section-copy">Ultimo controllo dataset: ${escapeHtml(metadata.last_checked || "da verificare")}</p>
       <dl class="definition-list">
         <dt>Allegato</dt>
@@ -310,16 +315,10 @@ function renderRegulatory(substance) {
         <dd>${escapeHtml(metadata.legal_source || "D.Lgs. 81/08")}</dd>
       </dl>
       ${
-        officialSources.length
+        primaryOfficialSource?.url
           ? `
       <div class="links compact-links">
-        ${officialSources
-          .map((source) =>
-            source?.url
-              ? `<button class="link-button secondary-button" data-url="${escapeHtml(source.url)}">${escapeHtml(source.label || "Fonte ufficiale")}</button>`
-              : ""
-          )
-          .join("")}
+        <button class="link-button secondary-button" data-url="${escapeHtml(primaryOfficialSource.url)}">${escapeHtml(primaryOfficialSource.label || "Fonte ufficiale")}</button>
       </div>`
           : ""
       }

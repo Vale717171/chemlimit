@@ -2,9 +2,11 @@
   {
     "id": "2-metossimetiletossi-propanolo",
     "cas": "34590-94-8",
+    "cas_normalized": "34590948",
     "ec_number": "252-104-2",
     "name_it": "(2-metossimetiletossi)-propanolo",
     "name_en": "(2-metossimetiletossi)-propanolo",
+    "name_ascii": "2 metossimetiletossi propanolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -102,9 +104,11 @@
   {
     "id": "1-2-3-trimetilbenzene",
     "cas": "526-73-8",
+    "cas_normalized": "526738",
     "ec_number": "208-394-8",
     "name_it": "1-2-3-Trimetilbenzene",
     "name_en": "1-2-3-Trimetilbenzene",
+    "name_ascii": "1 2 3 trimetilbenzene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -200,9 +204,11 @@
   {
     "id": "1-2-4-triclorobenzene",
     "cas": "120-82-1",
+    "cas_normalized": "120821",
     "ec_number": "204-428-0",
     "name_it": "1-2-4-Triclorobenzene",
     "name_en": "1-2-4-Triclorobenzene",
+    "name_ascii": "1 2 4 triclorobenzene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -300,9 +306,11 @@
   {
     "id": "1-2-4-trimetilbenzene",
     "cas": "95-63-6",
+    "cas_normalized": "95636",
     "ec_number": "202-436-9",
     "name_it": "1-2-4-Trimetilbenzene",
     "name_en": "1-2-4-Trimetilbenzene",
+    "name_ascii": "1 2 4 trimetilbenzene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -398,9 +406,11 @@
   {
     "id": "1-4-diossano",
     "cas": "123-91-1",
+    "cas_normalized": "123911",
     "ec_number": "204-661-8",
     "name_it": "1-4 Diossano",
     "name_en": "1-4 Diossano",
+    "name_ascii": "1 4 diossano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -498,9 +508,11 @@
   {
     "id": "1-metilbutil-acetato",
     "cas": "626-38-0",
+    "cas_normalized": "626380",
     "ec_number": "210-946-8",
     "name_it": "1-metilbutil acetato",
     "name_en": "1-metilbutil acetato",
+    "name_ascii": "1 metilbutil acetato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -596,9 +608,11 @@
   {
     "id": "1-metossi-2-propanolo",
     "cas": "107-98-2",
+    "cas_normalized": "107982",
     "ec_number": "203-539-1",
     "name_it": "1-Metossi-2-propanolo",
     "name_en": "1-Metossi-2-propanolo",
+    "name_ascii": "1 metossi 2 propanolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -696,9 +710,11 @@
   {
     "id": "1-1-1-tricloroetano-metilcloroformio",
     "cas": "71-55-6",
+    "cas_normalized": "71556",
     "ec_number": "200-756-3",
     "name_it": "1,1,1-tricloroetano; metilcloroformio",
     "name_en": "1,1,1-tricloroetano; metilcloroformio",
+    "name_ascii": "1 1 1 tricloroetano metilcloroformio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -794,9 +810,11 @@
   {
     "id": "1-2-epossipropano",
     "cas": "75-56-9",
+    "cas_normalized": "75569",
     "ec_number": "200-879-2",
     "name_it": "1,2-Epossipropano",
     "name_en": "1,2-Epossipropano",
+    "name_ascii": "1 2 epossipropano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -892,9 +910,11 @@
   {
     "id": "1-3-butadiene",
     "cas": "106-99-0",
+    "cas_normalized": "106990",
     "ec_number": "203-450-8",
     "name_it": "1,3-Butadiene",
     "name_en": "1,3-Butadiene",
+    "name_ascii": "1 3 butadiene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -990,9 +1010,11 @@
   {
     "id": "1-4-diclorobenzene-p-diclorobenzene",
     "cas": "106-46-7",
+    "cas_normalized": "106467",
     "ec_number": "203-400-5",
     "name_it": "1,4-Diclorobenzene p-Diclorobenzene",
     "name_en": "1,4-Diclorobenzene p-Diclorobenzene",
+    "name_ascii": "1 4 diclorobenzene p diclorobenzene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1090,9 +1112,11 @@
   {
     "id": "2-2-butossietossi-etanolo",
     "cas": "112-34-5",
+    "cas_normalized": "112345",
     "ec_number": "203-961-6",
     "name_it": "2-(2-Butossietossi)etanolo",
     "name_en": "2-(2-Butossietossi)etanolo",
+    "name_ascii": "2 2 butossietossi etanolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1188,9 +1212,11 @@
   {
     "id": "2-2-metossietossi-etanolo",
     "cas": "111-77-3",
+    "cas_normalized": "111773",
     "ec_number": "203-906-6",
     "name_it": "2-(2-Metossietossi)etanolo",
     "name_en": "2-(2-Metossietossi)etanolo",
+    "name_ascii": "2 2 metossietossi etanolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1288,9 +1314,11 @@
   {
     "id": "2-amminoetanolo",
     "cas": "141-43-5",
+    "cas_normalized": "141435",
     "ec_number": "205-483-3",
     "name_it": "2-Amminoetanolo",
     "name_en": "2-Amminoetanolo",
+    "name_ascii": "2 amminoetanolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1388,9 +1416,11 @@
   {
     "id": "2-butossietilacetato",
     "cas": "112-07-2",
+    "cas_normalized": "112072",
     "ec_number": "203-933-3",
     "name_it": "2-Butossietilacetato",
     "name_en": "2-Butossietilacetato",
+    "name_ascii": "2 butossietilacetato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1488,9 +1518,11 @@
   {
     "id": "2-etilesan-1-olo",
     "cas": "104-76-7",
+    "cas_normalized": "104767",
     "ec_number": "203-234-3",
     "name_it": "2-etilesan-1-olo",
     "name_en": "2-etilesan-1-olo",
+    "name_ascii": "2 etilesan 1 olo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1586,9 +1618,11 @@
   {
     "id": "2-etossi-etanolo",
     "cas": "110-80-5",
+    "cas_normalized": "110805",
     "ec_number": "203-804-1",
     "name_it": "2-Etossi etanolo",
     "name_en": "2-Etossi etanolo",
+    "name_ascii": "2 etossi etanolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1688,9 +1722,11 @@
   {
     "id": "2-etossietil-acetato",
     "cas": "111-15-9",
+    "cas_normalized": "111159",
     "ec_number": "203-839-2",
     "name_it": "2-Etossietil acetato",
     "name_en": "2-Etossietil acetato",
+    "name_ascii": "2 etossietil acetato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1790,9 +1826,11 @@
   {
     "id": "2-fenilpropene",
     "cas": "98-83-9",
+    "cas_normalized": "98839",
     "ec_number": "202-705-0",
     "name_it": "2-Fenilpropene",
     "name_en": "2-Fenilpropene",
+    "name_ascii": "2 fenilpropene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1888,9 +1926,11 @@
   {
     "id": "2-metossi-1-metiletilacetato",
     "cas": "108-65-6",
+    "cas_normalized": "108656",
     "ec_number": "203-603-9",
     "name_it": "2-Metossi-1-metiletilacetato",
     "name_en": "2-Metossi-1-metiletilacetato",
+    "name_ascii": "2 metossi 1 metiletilacetato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -1988,9 +2028,11 @@
   {
     "id": "2-metossietanolo",
     "cas": "109-86-4",
+    "cas_normalized": "109864",
     "ec_number": "203-713-7",
     "name_it": "2-Metossietanolo",
     "name_en": "2-Metossietanolo",
+    "name_ascii": "2 metossietanolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2090,9 +2132,11 @@
   {
     "id": "2-metossietil-acetato",
     "cas": "110-49-6",
+    "cas_normalized": "110496",
     "ec_number": "203-772-9",
     "name_it": "2-Metossietil acetato",
     "name_en": "2-Metossietil acetato",
+    "name_ascii": "2 metossietil acetato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2192,9 +2236,11 @@
   {
     "id": "2-nitropropano",
     "cas": "79-46-9",
+    "cas_normalized": "79469",
     "ec_number": "201-209-1",
     "name_it": "2-Nitropropano",
     "name_en": "2-Nitropropano",
+    "name_ascii": "2 nitropropano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2290,9 +2336,11 @@
   {
     "id": "3-metil-1-butanolo-alcool-isoamilico",
     "cas": "123-51-3",
+    "cas_normalized": "123513",
     "ec_number": "204-633-5",
     "name_it": "3-metil-1-butanolo (Alcool isoamilico)",
     "name_en": "3-metil-1-butanolo (Alcool isoamilico)",
+    "name_ascii": "3 metil 1 butanolo alcool isoamilico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2388,9 +2436,11 @@
   {
     "id": "4-amminotoluene",
     "cas": "106-49-0",
+    "cas_normalized": "106490",
     "ec_number": "203-403-1",
     "name_it": "4- amminotoluene",
     "name_en": "4- amminotoluene",
+    "name_ascii": "4 amminotoluene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2488,9 +2538,11 @@
   {
     "id": "4-metil-2-pentan-one",
     "cas": "108-10-1",
+    "cas_normalized": "108101",
     "ec_number": "203-550-1",
     "name_it": "4-Metil-2-pentan-one",
     "name_en": "4-Metil-2-pentan-one",
+    "name_ascii": "4 metil 2 pentan one",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2586,9 +2638,11 @@
   {
     "id": "4-4-metilendianilina",
     "cas": "101-77-9",
+    "cas_normalized": "101779",
     "ec_number": "202-974-4",
     "name_it": "4,4'-Metilendianilina",
     "name_en": "4,4'-Metilendianilina",
+    "name_ascii": "4 4 metilendianilina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2688,9 +2742,11 @@
   {
     "id": "4-4-metilene-bis-2-cloroanilina",
     "cas": "101-14-4",
+    "cas_normalized": "101144",
     "ec_number": "202-918-9",
     "name_it": "4,4’-Metilene-bis(2-cloroanilina)",
     "name_en": "4,4’-Metilene-bis(2-cloroanilina)",
+    "name_ascii": "4 4 metilene bis 2 cloroanilina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2790,9 +2846,11 @@
   {
     "id": "5-metilepatano-3-one",
     "cas": "541-85-5",
+    "cas_normalized": "541855",
     "ec_number": "208-793-7",
     "name_it": "5-Metilepatano-3-one",
     "name_en": "5-Metilepatano-3-one",
+    "name_ascii": "5 metilepatano 3 one",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2888,9 +2946,11 @@
   {
     "id": "5-metilesan-2-one",
     "cas": "110-12-3",
+    "cas_normalized": "110123",
     "ec_number": "203-737-8",
     "name_it": "5-metilesan-2-one",
     "name_en": "5-metilesan-2-one",
+    "name_ascii": "5 metilesan 2 one",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -2986,9 +3046,11 @@
   {
     "id": "acetati-di-n-butile",
     "cas": "123-86-4",
+    "cas_normalized": "123864",
     "ec_number": "204-658-1",
     "name_it": "Acetati di n-butile",
     "name_en": "Acetati di n-butile",
+    "name_ascii": "acetati di n butile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -3084,9 +3146,11 @@
   {
     "id": "acetato-di-3-amile",
     "cas": "620-11-1",
+    "cas_normalized": "620111",
     "ec_number": "",
     "name_it": "Acetato di 3-amile",
     "name_en": "Acetato di 3-amile",
+    "name_ascii": "acetato di 3 amile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -3182,9 +3246,11 @@
   {
     "id": "acetato-di-etile",
     "cas": "141-78-6",
+    "cas_normalized": "141786",
     "ec_number": "205-500-4",
     "name_it": "Acetato di etile",
     "name_en": "Acetato di etile",
+    "name_ascii": "acetato di etile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -3280,9 +3346,11 @@
   {
     "id": "acetato-di-isobutile",
     "cas": "110-19-0",
+    "cas_normalized": "110190",
     "ec_number": "203-745-1",
     "name_it": "Acetato di isobutile",
     "name_en": "Acetato di isobutile",
+    "name_ascii": "acetato di isobutile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -3378,9 +3446,11 @@
   {
     "id": "acetato-di-pentile",
     "cas": "628-63-7",
+    "cas_normalized": "628637",
     "ec_number": "211-047-3",
     "name_it": "Acetato di pentile",
     "name_en": "Acetato di pentile",
+    "name_ascii": "acetato di pentile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -3476,9 +3546,11 @@
   {
     "id": "acetato-di-sec-butile",
     "cas": "105-46-4",
+    "cas_normalized": "105464",
     "ec_number": "203-300-1",
     "name_it": "Acetato di sec-butile",
     "name_en": "Acetato di sec-butile",
+    "name_ascii": "acetato di sec butile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -3574,9 +3646,11 @@
   {
     "id": "acetato-di-vinile",
     "cas": "108-05-4",
+    "cas_normalized": "108054",
     "ec_number": "203-545-4",
     "name_it": "Acetato di vinile",
     "name_en": "Acetato di vinile",
+    "name_ascii": "acetato di vinile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -3672,9 +3746,11 @@
   {
     "id": "acetone",
     "cas": "67-64-1",
+    "cas_normalized": "67641",
     "ec_number": "200-662-2",
     "name_it": "Acetone",
     "name_en": "Acetone",
+    "name_ascii": "acetone",
     "synonyms": [
       "propanone",
       "dimetilchetone",
@@ -3774,9 +3850,11 @@
   {
     "id": "acetonitrile",
     "cas": "75-05-8",
+    "cas_normalized": "75058",
     "ec_number": "200-835-2",
     "name_it": "Acetonitrile",
     "name_en": "Acetonitrile",
+    "name_ascii": "acetonitrile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -3874,9 +3952,11 @@
   {
     "id": "acido-acetico",
     "cas": "64-19-7",
+    "cas_normalized": "64197",
     "ec_number": "200-580-7",
     "name_it": "Acido acetico",
     "name_en": "Acido acetico",
+    "name_ascii": "acido acetico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -3972,9 +4052,11 @@
   {
     "id": "acido-acrilico-acido-prop-2-enoico",
     "cas": "79-10-7",
+    "cas_normalized": "79107",
     "ec_number": "201-177-9",
     "name_it": "Acido acrilico. Acido prop-2-enoico",
     "name_en": "Acido acrilico. Acido prop-2-enoico",
+    "name_ascii": "acido acrilico acido prop 2 enoico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4074,9 +4156,11 @@
   {
     "id": "acido-arsenico-ei-suoi-sali-e-composti-inorganici-dell-arsenico",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Acido arsenico ei suoi sali e composti inorganici dell’arsenico",
     "name_en": "Acido arsenico ei suoi sali e composti inorganici dell’arsenico",
+    "name_ascii": "acido arsenico ei suoi sali e composti inorganici dell arsenico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4174,9 +4258,11 @@
   {
     "id": "acido-bromidrico",
     "cas": "10035-10-6",
+    "cas_normalized": "10035106",
     "ec_number": "233-113-0",
     "name_it": "Acido bromidrico",
     "name_en": "Acido bromidrico",
+    "name_ascii": "acido bromidrico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4272,9 +4358,11 @@
   {
     "id": "acido-cloridrico",
     "cas": "7647-01-0",
+    "cas_normalized": "7647010",
     "ec_number": "231-595-7",
     "name_it": "Acido cloridrico",
     "name_en": "Acido cloridrico",
+    "name_ascii": "acido cloridrico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4370,9 +4458,11 @@
   {
     "id": "acido-fluoridrico",
     "cas": "7664-39-3",
+    "cas_normalized": "7664393",
     "ec_number": "231-634-8",
     "name_it": "Acido fluoridrico",
     "name_en": "Acido fluoridrico",
+    "name_ascii": "acido fluoridrico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4468,9 +4558,11 @@
   {
     "id": "acido-formico",
     "cas": "64-18-6",
+    "cas_normalized": "64186",
     "ec_number": "200-579-1",
     "name_it": "Acido formico",
     "name_en": "Acido formico",
+    "name_ascii": "acido formico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4566,9 +4658,11 @@
   {
     "id": "acido-nitrico",
     "cas": "7697-37-2",
+    "cas_normalized": "7697372",
     "ec_number": "231-714-2",
     "name_it": "Acido nitrico",
     "name_en": "Acido nitrico",
+    "name_ascii": "acido nitrico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4664,9 +4758,11 @@
   {
     "id": "acido-ortofosforico",
     "cas": "7664-38-2",
+    "cas_normalized": "7664382",
     "ec_number": "231-633-2",
     "name_it": "Acido ortofosforico",
     "name_en": "Acido ortofosforico",
+    "name_ascii": "acido ortofosforico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4762,9 +4858,11 @@
   {
     "id": "acido-ossalico",
     "cas": "144-62-7",
+    "cas_normalized": "144627",
     "ec_number": "205-634-3",
     "name_it": "Acido ossalico",
     "name_en": "Acido ossalico",
+    "name_ascii": "acido ossalico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4860,9 +4958,11 @@
   {
     "id": "acido-picrico",
     "cas": "88-89-1",
+    "cas_normalized": "88891",
     "ec_number": "201-865-9",
     "name_it": "Acido picrico",
     "name_en": "Acido picrico",
+    "name_ascii": "acido picrico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -4958,9 +5058,11 @@
   {
     "id": "acido-propionico",
     "cas": "79-09-4",
+    "cas_normalized": "79094",
     "ec_number": "201-176-3",
     "name_it": "Acido propionico",
     "name_en": "Acido propionico",
+    "name_ascii": "acido propionico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5056,9 +5158,11 @@
   {
     "id": "acido-solfidrico",
     "cas": "7783-06-4",
+    "cas_normalized": "7783064",
     "ec_number": "231-977-3",
     "name_it": "Acido solfidrico",
     "name_en": "Acido solfidrico",
+    "name_ascii": "acido solfidrico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5154,9 +5258,11 @@
   {
     "id": "acido-solforico-nebulizzazione",
     "cas": "7664-93-9",
+    "cas_normalized": "7664939",
     "ec_number": "231-639-5",
     "name_it": "Acido solforico (nebulizzazione)",
     "name_en": "Acido solforico (nebulizzazione)",
+    "name_ascii": "acido solforico nebulizzazione",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5255,9 +5361,11 @@
   {
     "id": "acrilammide",
     "cas": "79-06-1",
+    "cas_normalized": "79061",
     "ec_number": "201-173-7",
     "name_it": "Acrilammide",
     "name_en": "Acrilammide",
+    "name_ascii": "acrilammide",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5357,9 +5465,11 @@
   {
     "id": "acrilato-di-n-butile",
     "cas": "141-32-2",
+    "cas_normalized": "141322",
     "ec_number": "205-480-7",
     "name_it": "Acrilato di n-butile",
     "name_en": "Acrilato di n-butile",
+    "name_ascii": "acrilato di n butile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5455,9 +5565,11 @@
   {
     "id": "acrilonitrile",
     "cas": "107-13-1",
+    "cas_normalized": "107131",
     "ec_number": "203-466-5",
     "name_it": "Acrilonitrile",
     "name_en": "Acrilonitrile",
+    "name_ascii": "acrilonitrile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5561,9 +5673,11 @@
   {
     "id": "acroleina-acrilaldeide-prop-2-enale",
     "cas": "107-02-8",
+    "cas_normalized": "107028",
     "ec_number": "203-453-4",
     "name_it": "Acroleina, Acrilaldeide, Prop-2-enale",
     "name_en": "Acroleina, Acrilaldeide, Prop-2-enale",
+    "name_ascii": "acroleina acrilaldeide prop 2 enale",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5659,9 +5773,11 @@
   {
     "id": "alcole-allilico",
     "cas": "107-18-6",
+    "cas_normalized": "107186",
     "ec_number": "203-470-7",
     "name_it": "Alcole allilico",
     "name_en": "Alcole allilico",
+    "name_ascii": "alcole allilico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5759,9 +5875,11 @@
   {
     "id": "amitrolo",
     "cas": "61-82-5",
+    "cas_normalized": "61825",
     "ec_number": "200-521-5",
     "name_it": "Amitrolo",
     "name_en": "Amitrolo",
+    "name_ascii": "amitrolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5857,9 +5975,11 @@
   {
     "id": "ammoniaca-anidra",
     "cas": "7664-41-7",
+    "cas_normalized": "7664417",
     "ec_number": "231-635-3",
     "name_it": "Ammoniaca anidra",
     "name_en": "Ammoniaca anidra",
+    "name_ascii": "ammoniaca anidra",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -5955,9 +6075,11 @@
   {
     "id": "anidride-carbonica",
     "cas": "124-38-9",
+    "cas_normalized": "124389",
     "ec_number": "204-696-9",
     "name_it": "Anidride carbonica",
     "name_en": "Anidride carbonica",
+    "name_ascii": "anidride carbonica",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -6053,9 +6175,11 @@
   {
     "id": "anidride-solforosa",
     "cas": "7446-09-5",
+    "cas_normalized": "7446095",
     "ec_number": "231-195-2",
     "name_it": "Anidride solforosa",
     "name_en": "Anidride solforosa",
+    "name_ascii": "anidride solforosa",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -6151,9 +6275,11 @@
   {
     "id": "anilina",
     "cas": "62-53-3",
+    "cas_normalized": "62533",
     "ec_number": "200-539-3",
     "name_it": "Anilina",
     "name_en": "Anilina",
+    "name_ascii": "anilina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -6253,9 +6379,11 @@
   {
     "id": "argento-composti-solubili-come-ag",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "231-131-3",
     "name_it": "Argento (composti solubili come Ag)",
     "name_en": "Argento (composti solubili come Ag)",
+    "name_ascii": "argento composti solubili come ag",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -6351,9 +6479,11 @@
   {
     "id": "argento-metallico",
     "cas": "7440-22-4",
+    "cas_normalized": "7440224",
     "ec_number": "231-131-3",
     "name_it": "Argento metallico",
     "name_en": "Argento metallico",
+    "name_ascii": "argento metallico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -6449,9 +6579,11 @@
   {
     "id": "azoturo-di-sodio",
     "cas": "26628-22-8",
+    "cas_normalized": "26628228",
     "ec_number": "247-852-1",
     "name_it": "Azoturo di sodio",
     "name_en": "Azoturo di sodio",
+    "name_ascii": "azoturo di sodio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -6549,9 +6681,11 @@
   {
     "id": "bario-composti-solubili-come-ba",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Bario (composti solubili come Ba)",
     "name_en": "Bario (composti solubili come Ba)",
+    "name_ascii": "bario composti solubili come ba",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -6647,9 +6781,11 @@
   {
     "id": "benzene",
     "cas": "71-43-2",
+    "cas_normalized": "71432",
     "ec_number": "200-753-7",
     "name_it": "Benzene",
     "name_en": "Benzene",
+    "name_ascii": "benzene",
     "synonyms": [
       "benzolo"
     ],
@@ -6753,9 +6889,11 @@
   {
     "id": "berillio-e-composti-inorganici-del-berillio",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Berillio e composti inorganici del berillio",
     "name_en": "Berillio e composti inorganici del berillio",
+    "name_ascii": "berillio e composti inorganici del berillio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -6857,9 +6995,11 @@
   {
     "id": "biossido-di-azoto",
     "cas": "10102-44-0",
+    "cas_normalized": "10102440",
     "ec_number": "233-272-6",
     "name_it": "Biossido di azoto",
     "name_en": "Biossido di azoto",
+    "name_ascii": "biossido di azoto",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -6955,9 +7095,11 @@
   {
     "id": "bisfenolo-a-4-4-isopropilidenedifenolo",
     "cas": "80-05-7",
+    "cas_normalized": "80057",
     "ec_number": "201-245-8",
     "name_it": "Bisfenolo A, 4,4’-Isopropilidenedifenolo",
     "name_en": "Bisfenolo A, 4,4’-Isopropilidenedifenolo",
+    "name_ascii": "bisfenolo a 4 4 isopropilidenedifenolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7058,9 +7200,11 @@
   {
     "id": "bromo",
     "cas": "7726-95-6",
+    "cas_normalized": "7726956",
     "ec_number": "231-778-1",
     "name_it": "Bromo",
     "name_en": "Bromo",
+    "name_ascii": "bromo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7156,9 +7300,11 @@
   {
     "id": "bromoetilene",
     "cas": "593-60-2",
+    "cas_normalized": "593602",
     "ec_number": "209-800-6",
     "name_it": "Bromoetilene",
     "name_en": "Bromoetilene",
+    "name_ascii": "bromoetilene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7254,9 +7400,11 @@
   {
     "id": "but-2-in-1-4-diolo",
     "cas": "110-65-6",
+    "cas_normalized": "110656",
     "ec_number": "203-788-6",
     "name_it": "But-2-in-1,4-diolo",
     "name_en": "But-2-in-1,4-diolo",
+    "name_ascii": "but 2 in 1 4 diolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7352,9 +7500,11 @@
   {
     "id": "butanone",
     "cas": "78-93-3",
+    "cas_normalized": "78933",
     "ec_number": "201-159-0",
     "name_it": "Butanone",
     "name_en": "Butanone",
+    "name_ascii": "butanone",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7450,9 +7600,11 @@
   {
     "id": "butossietanolo-2",
     "cas": "111-76-2",
+    "cas_normalized": "111762",
     "ec_number": "203-905-0",
     "name_it": "Butossietanolo-2",
     "name_en": "Butossietanolo-2",
+    "name_ascii": "butossietanolo 2",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7550,9 +7702,11 @@
   {
     "id": "cadmio-e-suoi-composti-inorganici",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Cadmio e suoi composti inorganici",
     "name_en": "Cadmio e suoi composti inorganici",
+    "name_ascii": "cadmio e suoi composti inorganici",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7652,9 +7806,11 @@
   {
     "id": "cianammide",
     "cas": "420-04-2",
+    "cas_normalized": "420042",
     "ec_number": "206-992-3",
     "name_it": "Cianammide",
     "name_en": "Cianammide",
+    "name_ascii": "cianammide",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7752,9 +7908,11 @@
   {
     "id": "cianuro-di-idrogeno-espresso-come-cianuro",
     "cas": "74-90-8",
+    "cas_normalized": "74908",
     "ec_number": "200-821-6",
     "name_it": "Cianuro di idrogeno (espresso come cianuro)",
     "name_en": "Cianuro di idrogeno (espresso come cianuro)",
+    "name_ascii": "cianuro di idrogeno espresso come cianuro",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7852,9 +8010,11 @@
   {
     "id": "cianuro-di-potassio-espresso-come-cianuro",
     "cas": "151-50-8",
+    "cas_normalized": "151508",
     "ec_number": "205-792-3",
     "name_it": "Cianuro di potassio (espresso come cianuro)",
     "name_en": "Cianuro di potassio (espresso come cianuro)",
+    "name_ascii": "cianuro di potassio espresso come cianuro",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -7952,9 +8112,11 @@
   {
     "id": "cianuro-di-sodio-espresso-come-cianuro",
     "cas": "143-33-9",
+    "cas_normalized": "143339",
     "ec_number": "205-599-4",
     "name_it": "Cianuro di sodio (espresso come cianuro)",
     "name_en": "Cianuro di sodio (espresso come cianuro)",
+    "name_ascii": "cianuro di sodio espresso come cianuro",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8052,9 +8214,11 @@
   {
     "id": "cicloesano",
     "cas": "110-82-7",
+    "cas_normalized": "110827",
     "ec_number": "203-806-2",
     "name_it": "Cicloesano",
     "name_en": "Cicloesano",
+    "name_ascii": "cicloesano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8150,9 +8314,11 @@
   {
     "id": "cicloesanone",
     "cas": "108-94-1",
+    "cas_normalized": "108941",
     "ec_number": "203-631-1",
     "name_it": "Cicloesanone",
     "name_en": "Cicloesanone",
+    "name_ascii": "cicloesanone",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8250,9 +8416,11 @@
   {
     "id": "cloro",
     "cas": "7782-50-5",
+    "cas_normalized": "7782505",
     "ec_number": "231-959-5",
     "name_it": "Cloro",
     "name_en": "Cloro",
+    "name_ascii": "cloro",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8348,9 +8516,11 @@
   {
     "id": "clorodifluorometano",
     "cas": "75-45-6",
+    "cas_normalized": "75456",
     "ec_number": "200-871-9",
     "name_it": "Clorodifluorometano",
     "name_en": "Clorodifluorometano",
+    "name_ascii": "clorodifluorometano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8446,9 +8616,11 @@
   {
     "id": "cloroetano",
     "cas": "75-00-3",
+    "cas_normalized": "75003",
     "ec_number": "200-830-5",
     "name_it": "Cloroetano",
     "name_en": "Cloroetano",
+    "name_ascii": "cloroetano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8544,9 +8716,11 @@
   {
     "id": "cloroformio",
     "cas": "67-66-3",
+    "cas_normalized": "67663",
     "ec_number": "200-663-8",
     "name_it": "Cloroformio",
     "name_en": "Cloroformio",
+    "name_ascii": "cloroformio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8644,9 +8818,11 @@
   {
     "id": "clorometano",
     "cas": "74-87-3",
+    "cas_normalized": "74873",
     "ec_number": "200-817-4",
     "name_it": "Clorometano",
     "name_en": "Clorometano",
+    "name_ascii": "clorometano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8742,9 +8918,11 @@
   {
     "id": "cloruro-di-metilene-diclorometano",
     "cas": "75-09-2",
+    "cas_normalized": "75092",
     "ec_number": "200-838-9",
     "name_it": "Cloruro di metilene / Diclorometano",
     "name_en": "Cloruro di metilene / Diclorometano",
+    "name_ascii": "cloruro di metilene diclorometano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8842,9 +9020,11 @@
   {
     "id": "cloruro-di-vinile-monomero",
     "cas": "75-01-4",
+    "cas_normalized": "75014",
     "ec_number": "200-831-0",
     "name_it": "Cloruro di vinile monomero",
     "name_en": "Cloruro di vinile monomero",
+    "name_ascii": "cloruro di vinile monomero",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -8940,9 +9120,11 @@
   {
     "id": "cloruro-di-vinilidene-1-1-dicloroetilene",
     "cas": "75-35-4",
+    "cas_normalized": "75354",
     "ec_number": "200-864-0",
     "name_it": "Cloruro di vinilidene / 1,1-Dicloroetilene",
     "name_en": "Cloruro di vinilidene / 1,1-Dicloroetilene",
+    "name_ascii": "cloruro di vinilidene 1 1 dicloroetilene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -9038,9 +9220,11 @@
   {
     "id": "composti-del-nichel",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Composti del Nichel",
     "name_en": "Composti del Nichel",
+    "name_ascii": "composti del nichel",
     "synonyms": [
       "nichel"
     ],
@@ -9169,9 +9353,11 @@
   {
     "id": "composti-di-cromo-vi-definiti-cancerogeni-ai-sensi-dell-articolo-2-lettera-a-puntoi-della-direttiva-2004-37-come-cromo",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Composti di cromo VI definiti cancerogeni ai sensi dell’articolo 2, lettera a), puntoi) della direttiva 2004/37 (come cromo)",
     "name_en": "Composti di cromo VI definiti cancerogeni ai sensi dell’articolo 2, lettera a), puntoi) della direttiva 2004/37 (come cromo)",
+    "name_ascii": "composti di cromo vi definiti cancerogeni ai sensi dell articolo 2 lettera a puntoi della direttiva 2004 37 come cromo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -9269,9 +9455,11 @@
   {
     "id": "cresoli-tutti-gli-isomeri",
     "cas": "1319-77-3",
+    "cas_normalized": "1319773",
     "ec_number": "215-293-2",
     "name_it": "Cresoli (tutti gli isomeri)",
     "name_en": "Cresoli (tutti gli isomeri)",
+    "name_ascii": "cresoli tutti gli isomeri",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -9367,9 +9555,11 @@
   {
     "id": "cromo-metallico-composti-di-cromo-inorganico-ii-e-compostidi-cromo-inorganico-iii-non-solubili",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Cromo metallico, composti di cromo inorganico (II) e compostidi cromo inorganico (III) (non solubili)",
     "name_en": "Cromo metallico, composti di cromo inorganico (II) e compostidi cromo inorganico (III) (non solubili)",
+    "name_ascii": "cromo metallico composti di cromo inorganico ii e compostidi cromo inorganico iii non solubili",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -9465,9 +9655,11 @@
   {
     "id": "cumene-2-fenilpropano",
     "cas": "98-82-8",
+    "cas_normalized": "98828",
     "ec_number": "202-704-5",
     "name_it": "Cumene (2-fenilpropano)",
     "name_en": "Cumene (2-fenilpropano)",
+    "name_ascii": "cumene 2 fenilpropano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -9565,9 +9757,11 @@
   {
     "id": "diacetile-butanedione",
     "cas": "431-03-8",
+    "cas_normalized": "431038",
     "ec_number": "207-069-8",
     "name_it": "Diacetile Butanedione",
     "name_en": "Diacetile Butanedione",
+    "name_ascii": "diacetile butanedione",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -9663,9 +9857,11 @@
   {
     "id": "diclorobenzene-1-2",
     "cas": "95-50-1",
+    "cas_normalized": "95501",
     "ec_number": "202-425-9",
     "name_it": "Diclorobenzene, 1,2-",
     "name_en": "Diclorobenzene, 1,2-",
+    "name_ascii": "diclorobenzene 1 2",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -9763,9 +9959,11 @@
   {
     "id": "dicloroetano-1-1",
     "cas": "75-34-3",
+    "cas_normalized": "75343",
     "ec_number": "200-863-5",
     "name_it": "Dicloroetano, 1,1-",
     "name_en": "Dicloroetano, 1,1-",
+    "name_ascii": "dicloroetano 1 1",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -9863,9 +10061,11 @@
   {
     "id": "dietilammina",
     "cas": "109-89-7",
+    "cas_normalized": "109897",
     "ec_number": "203-716-3",
     "name_it": "Dietilammina",
     "name_en": "Dietilammina",
+    "name_ascii": "dietilammina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -9961,9 +10161,11 @@
   {
     "id": "dietiletere",
     "cas": "60-29-7",
+    "cas_normalized": "60297",
     "ec_number": "200-467-2",
     "name_it": "Dietiletere",
     "name_en": "Dietiletere",
+    "name_ascii": "dietiletere",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10059,9 +10261,11 @@
   {
     "id": "difeniletere",
     "cas": "101-84-8",
+    "cas_normalized": "101848",
     "ec_number": "202-981-2",
     "name_it": "Difeniletere",
     "name_en": "Difeniletere",
+    "name_ascii": "difeniletere",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10157,9 +10361,11 @@
   {
     "id": "diidrossido-di-calcio",
     "cas": "1305-62-0",
+    "cas_normalized": "1305620",
     "ec_number": "215-137-3",
     "name_it": "Diidrossido di calcio",
     "name_en": "Diidrossido di calcio",
+    "name_ascii": "diidrossido di calcio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10257,9 +10463,11 @@
   {
     "id": "dimetilammina",
     "cas": "124-40-3",
+    "cas_normalized": "124403",
     "ec_number": "204-697-4",
     "name_it": "Dimetilammina",
     "name_en": "Dimetilammina",
+    "name_ascii": "dimetilammina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10355,9 +10563,11 @@
   {
     "id": "disolfuro-di-carbonio",
     "cas": "75-15-0",
+    "cas_normalized": "75150",
     "ec_number": "200-843-6",
     "name_it": "Disolfuro di carbonio",
     "name_en": "Disolfuro di carbonio",
+    "name_ascii": "disolfuro di carbonio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10455,9 +10665,11 @@
   {
     "id": "e-caprolattame-polveri-e-vapori",
     "cas": "105-60-2",
+    "cas_normalized": "105602",
     "ec_number": "203-313-2",
     "name_it": "e-Caprolattame (polveri e vapori)",
     "name_en": "e-Caprolattame (polveri e vapori)",
+    "name_ascii": "e caprolattame polveri e vapori",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10555,9 +10767,11 @@
   {
     "id": "emissioni-di-gasdi-scarico-dei-motori-diesel",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Emissioni di gasdi scarico dei motori diesel",
     "name_en": "Emissioni di gasdi scarico dei motori diesel",
+    "name_ascii": "emissioni di gasdi scarico dei motori diesel",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10657,9 +10871,11 @@
   {
     "id": "epicloridrina",
     "cas": "106-89-8",
+    "cas_normalized": "106898",
     "ec_number": "203-439-8",
     "name_it": "Epicloridrina",
     "name_en": "Epicloridrina",
+    "name_ascii": "epicloridrina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10759,9 +10975,11 @@
   {
     "id": "eptan-3-one",
     "cas": "106-35-4",
+    "cas_normalized": "106354",
     "ec_number": "203-388-1",
     "name_it": "Eptan-3-one",
     "name_en": "Eptan-3-one",
+    "name_ascii": "eptan 3 one",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10857,9 +11075,11 @@
   {
     "id": "eptano-2-one",
     "cas": "110-43-0",
+    "cas_normalized": "110430",
     "ec_number": "203-767-1",
     "name_it": "eptano-2-one",
     "name_en": "eptano-2-one",
+    "name_ascii": "eptano 2 one",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -10957,9 +11177,11 @@
   {
     "id": "eptano-n",
     "cas": "142-82-5",
+    "cas_normalized": "142825",
     "ec_number": "205-563-8",
     "name_it": "Eptano, n-",
     "name_en": "Eptano, n-",
+    "name_ascii": "eptano n",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11055,9 +11277,11 @@
   {
     "id": "etere-dimetilico",
     "cas": "115-10-6",
+    "cas_normalized": "115106",
     "ec_number": "204-065-8",
     "name_it": "Etere dimetilico",
     "name_en": "Etere dimetilico",
+    "name_ascii": "etere dimetilico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11153,9 +11377,11 @@
   {
     "id": "etilacrilato",
     "cas": "140-88-5",
+    "cas_normalized": "140885",
     "ec_number": "205-438-8",
     "name_it": "Etilacrilato",
     "name_en": "Etilacrilato",
+    "name_ascii": "etilacrilato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11251,9 +11477,11 @@
   {
     "id": "etilammina",
     "cas": "75-04-7",
+    "cas_normalized": "75047",
     "ec_number": "200-834-7",
     "name_it": "Etilammina",
     "name_en": "Etilammina",
+    "name_ascii": "etilammina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11349,9 +11577,11 @@
   {
     "id": "etilbenzene",
     "cas": "100-41-4",
+    "cas_normalized": "100414",
     "ec_number": "202-849-4",
     "name_it": "Etilbenzene",
     "name_en": "Etilbenzene",
+    "name_ascii": "etilbenzene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11449,9 +11679,11 @@
   {
     "id": "etilen-glicol",
     "cas": "107-21-1",
+    "cas_normalized": "107211",
     "ec_number": "203-473-3",
     "name_it": "Etilen glicol",
     "name_en": "Etilen glicol",
+    "name_ascii": "etilen glicol",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11549,9 +11781,11 @@
   {
     "id": "etilene-dibromuro",
     "cas": "106-93-4",
+    "cas_normalized": "106934",
     "ec_number": "203-444-5",
     "name_it": "Etilene dibromuro",
     "name_en": "Etilene dibromuro",
+    "name_ascii": "etilene dibromuro",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11651,9 +11885,11 @@
   {
     "id": "etilene-dicloruro",
     "cas": "107-06-2",
+    "cas_normalized": "107062",
     "ec_number": "203-458-1",
     "name_it": "Etilene dicloruro",
     "name_en": "Etilene dicloruro",
+    "name_ascii": "etilene dicloruro",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11753,9 +11989,11 @@
   {
     "id": "fenolo",
     "cas": "108-95-2",
+    "cas_normalized": "108952",
     "ec_number": "203-632-7",
     "name_it": "Fenolo",
     "name_en": "Fenolo",
+    "name_ascii": "fenolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11853,9 +12091,11 @@
   {
     "id": "fibre-ceramiche-refrattarie-definite-cancerogene-ai-sensi-dell-articolo-2-lettera-a-punto-i-della-direttiva-2004-37",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Fibre ceramiche refrattarie definite cancerogene ai sensi dell’articolo 2, lettera a), punto i) della direttiva 2004/37",
     "name_en": "Fibre ceramiche refrattarie definite cancerogene ai sensi dell’articolo 2, lettera a), punto i) della direttiva 2004/37",
+    "name_ascii": "fibre ceramiche refrattarie definite cancerogene ai sensi dell articolo 2 lettera a punto i della direttiva 2004 37",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -11951,9 +12191,11 @@
   {
     "id": "fluoro",
     "cas": "7782-41-4",
+    "cas_normalized": "7782414",
     "ec_number": "231-945-8",
     "name_it": "Fluoro",
     "name_en": "Fluoro",
+    "name_ascii": "fluoro",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -12049,9 +12291,11 @@
   {
     "id": "fluoruri-inorganici-espressi-come-f",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Fluoruri inorganici (espressi come F)",
     "name_en": "Fluoruri inorganici (espressi come F)",
+    "name_ascii": "fluoruri inorganici espressi come f",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -12147,9 +12391,11 @@
   {
     "id": "formaldehyde",
     "cas": "50-00-0",
+    "cas_normalized": "50000",
     "ec_number": "200-001-8",
     "name_it": "Formaldeide",
     "name_en": "Formaldehyde",
+    "name_ascii": "formaldehyde",
     "synonyms": [
       "metanale",
       "methanal",
@@ -12253,9 +12499,11 @@
   {
     "id": "formiato-di-metile",
     "cas": "107-31-3",
+    "cas_normalized": "107313",
     "ec_number": "203-481-7",
     "name_it": "Formiato di metile",
     "name_en": "Formiato di metile",
+    "name_ascii": "formiato di metile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -12353,9 +12601,11 @@
   {
     "id": "fosfina",
     "cas": "7803-51-2",
+    "cas_normalized": "7803512",
     "ec_number": "232-260-8",
     "name_it": "Fosfina",
     "name_en": "Fosfina",
+    "name_ascii": "fosfina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -12451,9 +12701,11 @@
   {
     "id": "fosgene",
     "cas": "75-44-5",
+    "cas_normalized": "75445",
     "ec_number": "200-870-3",
     "name_it": "Fosgene",
     "name_en": "Fosgene",
+    "name_ascii": "fosgene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -12549,9 +12801,11 @@
   {
     "id": "idrazina",
     "cas": "302-01-2",
+    "cas_normalized": "302012",
     "ec_number": "206-114-9",
     "name_it": "Idrazina",
     "name_en": "Idrazina",
+    "name_ascii": "idrazina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -12651,9 +12905,11 @@
   {
     "id": "idruro-di-litio",
     "cas": "7580-67-8",
+    "cas_normalized": "7580678",
     "ec_number": "231-484-3",
     "name_it": "Idruro di litio",
     "name_en": "Idruro di litio",
+    "name_ascii": "idruro di litio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -12751,9 +13007,11 @@
   {
     "id": "isocianato-di-metile",
     "cas": "624-83-9",
+    "cas_normalized": "624839",
     "ec_number": "210-866-3",
     "name_it": "Isocianato di metile",
     "name_en": "Isocianato di metile",
+    "name_ascii": "isocianato di metile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -12851,9 +13109,11 @@
   {
     "id": "isopentano",
     "cas": "78-78-4",
+    "cas_normalized": "78784",
     "ec_number": "201-142-8",
     "name_it": "Isopentano",
     "name_en": "Isopentano",
+    "name_ascii": "isopentano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -12949,9 +13209,11 @@
   {
     "id": "isopentil-acetato",
     "cas": "123-92-2",
+    "cas_normalized": "123922",
     "ec_number": "204-662-3",
     "name_it": "Isopentil acetato",
     "name_en": "Isopentil acetato",
+    "name_ascii": "isopentil acetato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13047,9 +13309,11 @@
   {
     "id": "m-xilene",
     "cas": "108-38-3",
+    "cas_normalized": "108383",
     "ec_number": "203-576-3",
     "name_it": "m-Xilene",
     "name_en": "m-Xilene",
+    "name_ascii": "m xilene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13147,9 +13411,11 @@
   {
     "id": "manganese-e-composti-inorganicidel-manganese-espresso-come-manganese",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Manganese e composti inorganicidel manganese (espresso come manganese)",
     "name_en": "Manganese e composti inorganicidel manganese (espresso come manganese)",
+    "name_ascii": "manganese e composti inorganicidel manganese espresso come manganese",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13248,9 +13514,11 @@
   {
     "id": "mercurio-e-composti-inorganici-bivalenti-del-mercurio-compresi-ossido-mercurico-e-cloruro-di-mercurio-misurati-come-mercurio",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Mercurio e composti inorganici bivalenti del mercurio compresi ossido mercurico e cloruro di mercurio (misurati come mercurio)",
     "name_en": "Mercurio e composti inorganici bivalenti del mercurio compresi ossido mercurico e cloruro di mercurio (misurati come mercurio)",
+    "name_ascii": "mercurio e composti inorganici bivalenti del mercurio compresi ossido mercurico e cloruro di mercurio misurati come mercurio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13351,9 +13619,11 @@
   {
     "id": "mesitilene-1-3-5-trimetilbenzene",
     "cas": "108-67-8",
+    "cas_normalized": "108678",
     "ec_number": "203-604-4",
     "name_it": "Mesitilene (1,3,5-trimetilbenzene)",
     "name_en": "Mesitilene (1,3,5-trimetilbenzene)",
+    "name_ascii": "mesitilene 1 3 5 trimetilbenzene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13449,9 +13719,11 @@
   {
     "id": "metacrilato-di-metile",
     "cas": "80-62-6",
+    "cas_normalized": "80626",
     "ec_number": "201-297-1",
     "name_it": "Metacrilato di metile",
     "name_en": "Metacrilato di metile",
+    "name_ascii": "metacrilato di metile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13547,9 +13819,11 @@
   {
     "id": "metanolo",
     "cas": "67-56-1",
+    "cas_normalized": "67561",
     "ec_number": "200-659-6",
     "name_it": "Metanolo",
     "name_en": "Metanolo",
+    "name_ascii": "metanolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13647,9 +13921,11 @@
   {
     "id": "metilacrilato",
     "cas": "96-33-3",
+    "cas_normalized": "96333",
     "ec_number": "202-500-6",
     "name_it": "Metilacrilato",
     "name_en": "Metilacrilato",
+    "name_ascii": "metilacrilato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13747,9 +14023,11 @@
   {
     "id": "miscele-di-idrocarburi-policiclici-aromatici-in-particolare-quelle-contenente-benzo-a-pirene-definite-cancerogene-ai-sensi-della-direttiva-2004-37",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Miscele di idrocarburi policiclici Aromatici,in particolare quelle contenente benzo(a)pirene, definite cancerogene ai sensi della direttiva 2004/37",
     "name_en": "Miscele di idrocarburi policiclici Aromatici,in particolare quelle contenente benzo(a)pirene, definite cancerogene ai sensi della direttiva 2004/37",
+    "name_ascii": "miscele di idrocarburi policiclici aromatici in particolare quelle contenente benzo a pirene definite cancerogene ai sensi della direttiva 2004 37",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13849,9 +14127,11 @@
   {
     "id": "monoclorobenzene",
     "cas": "108-90-7",
+    "cas_normalized": "108907",
     "ec_number": "203-628-5",
     "name_it": "Monoclorobenzene",
     "name_en": "Monoclorobenzene",
+    "name_ascii": "monoclorobenzene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -13947,9 +14227,11 @@
   {
     "id": "monossido-di-azoto",
     "cas": "10102-43-9",
+    "cas_normalized": "10102439",
     "ec_number": "233-271-0",
     "name_it": "Monossido di azoto",
     "name_en": "Monossido di azoto",
+    "name_ascii": "monossido di azoto",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14045,9 +14327,11 @@
   {
     "id": "monossido-di-carbonio",
     "cas": "630-08-0",
+    "cas_normalized": "630080",
     "ec_number": "211-128-3",
     "name_it": "Monossido di carbonio",
     "name_en": "Monossido di carbonio",
+    "name_ascii": "monossido di carbonio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14143,9 +14427,11 @@
   {
     "id": "morfolina",
     "cas": "110-91-8",
+    "cas_normalized": "110918",
     "ec_number": "203-815-1",
     "name_it": "Morfolina",
     "name_en": "Morfolina",
+    "name_ascii": "morfolina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14243,9 +14529,11 @@
   {
     "id": "n-esano",
     "cas": "110-54-3",
+    "cas_normalized": "110543",
     "ec_number": "203-777-6",
     "name_it": "n-Esano",
     "name_en": "n-Esano",
+    "name_ascii": "n esano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14341,9 +14629,11 @@
   {
     "id": "n-metil-2-pirrolidone",
     "cas": "872-50-4",
+    "cas_normalized": "872504",
     "ec_number": "212-828-1",
     "name_it": "N-metil-2-pirrolidone",
     "name_en": "N-metil-2-pirrolidone",
+    "name_ascii": "n metil 2 pirrolidone",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14443,9 +14733,11 @@
   {
     "id": "n-n-dimetilacetamide",
     "cas": "127-19-5",
+    "cas_normalized": "127195",
     "ec_number": "204-826-4",
     "name_it": "N,N-Dimetilacetamide",
     "name_en": "N,N-Dimetilacetamide",
+    "name_ascii": "n n dimetilacetamide",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14545,9 +14837,11 @@
   {
     "id": "n-n-dimetilformamide",
     "cas": "68-12-2",
+    "cas_normalized": "68122",
     "ec_number": "200-679-5",
     "name_it": "N,N-Dimetilformamide",
     "name_en": "N,N-Dimetilformamide",
+    "name_ascii": "n n dimetilformamide",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14647,9 +14941,11 @@
   {
     "id": "naftalene",
     "cas": "91-20-3",
+    "cas_normalized": "91203",
     "ec_number": "202-049-5",
     "name_it": "Naftalene",
     "name_en": "Naftalene",
+    "name_ascii": "naftalene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14745,9 +15041,11 @@
   {
     "id": "neopentano",
     "cas": "463-82-1",
+    "cas_normalized": "463821",
     "ec_number": "207-343-7",
     "name_it": "Neopentano",
     "name_en": "Neopentano",
+    "name_ascii": "neopentano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14843,9 +15141,11 @@
   {
     "id": "nicotina",
     "cas": "54-11-5",
+    "cas_normalized": "54115",
     "ec_number": "200-193-3",
     "name_it": "Nicotina",
     "name_en": "Nicotina",
+    "name_ascii": "nicotina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -14943,9 +15243,11 @@
   {
     "id": "nitrobenzene",
     "cas": "98-95-3",
+    "cas_normalized": "98953",
     "ec_number": "202-716-0",
     "name_it": "Nitrobenzene",
     "name_en": "Nitrobenzene",
+    "name_ascii": "nitrobenzene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15045,9 +15347,11 @@
   {
     "id": "nitroetano",
     "cas": "79-24-3",
+    "cas_normalized": "79243",
     "ec_number": "201-188-9",
     "name_it": "Nitroetano",
     "name_en": "Nitroetano",
+    "name_ascii": "nitroetano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15145,9 +15449,11 @@
   {
     "id": "nitroglicerina-glicerina-trinitrato",
     "cas": "55-63-0",
+    "cas_normalized": "55630",
     "ec_number": "200-240-8",
     "name_it": "Nitroglicerina; glicerina trinitrato",
     "name_en": "Nitroglicerina; glicerina trinitrato",
+    "name_ascii": "nitroglicerina glicerina trinitrato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15245,9 +15551,11 @@
   {
     "id": "o-toluidina",
     "cas": "95-53-4",
+    "cas_normalized": "95534",
     "ec_number": "202-429-0",
     "name_it": "o-Toluidina",
     "name_en": "o-Toluidina",
+    "name_ascii": "o toluidina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15347,9 +15655,11 @@
   {
     "id": "o-xilene",
     "cas": "95-47-6",
+    "cas_normalized": "95476",
     "ec_number": "202-422-2",
     "name_it": "o-Xilene",
     "name_en": "o-Xilene",
+    "name_ascii": "o xilene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15447,9 +15757,11 @@
   {
     "id": "oli-minerali-precedentemente-usati-nei-motori-a-combustione-interna-per-lubrificare-e-raffreddare-perle-parti-mobili-all-interno-del-motore",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Oli minerali precedentemente usati nei motori a combustione interna per lubrificare e raffreddare perle parti mobili all’interno del motore",
     "name_en": "Oli minerali precedentemente usati nei motori a combustione interna per lubrificare e raffreddare perle parti mobili all’interno del motore",
+    "name_ascii": "oli minerali precedentemente usati nei motori a combustione interna per lubrificare e raffreddare perle parti mobili all interno del motore",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15549,9 +15861,11 @@
   {
     "id": "ortosilicato-di-tetraetile",
     "cas": "78-10-4",
+    "cas_normalized": "78104",
     "ec_number": "201-083-8",
     "name_it": "Ortosilicato di tetraetile",
     "name_en": "Ortosilicato di tetraetile",
+    "name_ascii": "ortosilicato di tetraetile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15647,9 +15961,11 @@
   {
     "id": "ossido-di-calcio",
     "cas": "1305-78-8",
+    "cas_normalized": "1305788",
     "ec_number": "215-138-9",
     "name_it": "Ossido di calcio",
     "name_en": "Ossido di calcio",
+    "name_ascii": "ossido di calcio",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15747,9 +16063,11 @@
   {
     "id": "ossido-di-etilene",
     "cas": "75-21-8",
+    "cas_normalized": "75218",
     "ec_number": "200-849-9",
     "name_it": "Ossido di etilene",
     "name_en": "Ossido di etilene",
+    "name_ascii": "ossido di etilene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15849,9 +16167,11 @@
   {
     "id": "ossido-di-terz-butile-e-metile",
     "cas": "1634-04-4",
+    "cas_normalized": "1634044",
     "ec_number": "216-653-1",
     "name_it": "Ossido di terz-butile e metile",
     "name_en": "Ossido di terz-butile e metile",
+    "name_ascii": "ossido di terz butile e metile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -15947,9 +16267,11 @@
   {
     "id": "p-xilene",
     "cas": "106-42-3",
+    "cas_normalized": "106423",
     "ec_number": "203-396-5",
     "name_it": "p-Xilene",
     "name_en": "p-Xilene",
+    "name_ascii": "p xilene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16047,9 +16369,11 @@
   {
     "id": "pentacloruro-di-fosforo",
     "cas": "10026-13-8",
+    "cas_normalized": "10026138",
     "ec_number": "233-060-3",
     "name_it": "Pentacloruro di fosforo",
     "name_en": "Pentacloruro di fosforo",
+    "name_ascii": "pentacloruro di fosforo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16145,9 +16469,11 @@
   {
     "id": "pentano",
     "cas": "109-66-0",
+    "cas_normalized": "109660",
     "ec_number": "203-692-4",
     "name_it": "Pentano",
     "name_en": "Pentano",
+    "name_ascii": "pentano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16243,9 +16569,11 @@
   {
     "id": "pentaossido-di-fosforo",
     "cas": "1314-56-3",
+    "cas_normalized": "1314563",
     "ec_number": "215-236-1",
     "name_it": "Pentaossido di fosforo",
     "name_en": "Pentaossido di fosforo",
+    "name_ascii": "pentaossido di fosforo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16341,9 +16669,11 @@
   {
     "id": "pentasolfuro-di-difosforo",
     "cas": "1314-80-3",
+    "cas_normalized": "1314803",
     "ec_number": "215-242-4",
     "name_it": "Pentasolfuro di difosforo",
     "name_en": "Pentasolfuro di difosforo",
+    "name_ascii": "pentasolfuro di difosforo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16439,9 +16769,11 @@
   {
     "id": "lead-and-its-ionic-compounds",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Piombo e suoi composti ionici",
     "name_en": "Lead and its ionic compounds",
+    "name_ascii": "lead and its ionic compounds",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16526,9 +16858,11 @@
   {
     "id": "piombo-inorganico-e-i-suoi-composti",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Piombo inorganico e i suoi composti",
     "name_en": "Piombo inorganico e i suoi composti",
+    "name_ascii": "piombo inorganico e i suoi composti",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16624,9 +16958,11 @@
   {
     "id": "piperazina-polvere-e-vapore",
     "cas": "110-85-0",
+    "cas_normalized": "110850",
     "ec_number": "203-808-3",
     "name_it": "Piperazina (polvere e vapore)",
     "name_en": "Piperazina (polvere e vapore)",
+    "name_ascii": "piperazina polvere e vapore",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16724,9 +17060,11 @@
   {
     "id": "piretro-depurato-dai-lattoni-sensibilizzanti",
     "cas": "8003-34-7",
+    "cas_normalized": "8003347",
     "ec_number": "",
     "name_it": "Piretro (depurato dai lattoni sensibilizzanti)",
     "name_en": "Piretro (depurato dai lattoni sensibilizzanti)",
+    "name_ascii": "piretro depurato dai lattoni sensibilizzanti",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16822,9 +17160,11 @@
   {
     "id": "piridina",
     "cas": "110-86-1",
+    "cas_normalized": "110861",
     "ec_number": "203-809-9",
     "name_it": "Piridina",
     "name_en": "Piridina",
+    "name_ascii": "piridina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -16920,9 +17260,11 @@
   {
     "id": "platino-metallico",
     "cas": "7440-06-4",
+    "cas_normalized": "7440064",
     "ec_number": "231-116-1",
     "name_it": "Platino (metallico)",
     "name_en": "Platino (metallico)",
+    "name_ascii": "platino metallico",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17018,9 +17360,11 @@
   {
     "id": "polvere-di-silice-cristallina-respirabile",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Polvere di silice cristallina respirabile",
     "name_en": "Polvere di silice cristallina respirabile",
+    "name_ascii": "polvere di silice cristallina respirabile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17118,9 +17462,11 @@
   {
     "id": "polveri-di-legno-duro",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Polveri di legno duro",
     "name_en": "Polveri di legno duro",
+    "name_ascii": "polveri di legno duro",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17218,9 +17564,11 @@
   {
     "id": "resorcinolo",
     "cas": "108-46-3",
+    "cas_normalized": "108463",
     "ec_number": "203-585-2",
     "name_it": "Resorcinolo",
     "name_en": "Resorcinolo",
+    "name_ascii": "resorcinolo",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17316,9 +17664,11 @@
   {
     "id": "seleniuro-di-idrogeno",
     "cas": "7783-07-5",
+    "cas_normalized": "7783075",
     "ec_number": "231-978-9",
     "name_it": "Seleniuro di idrogeno",
     "name_en": "Seleniuro di idrogeno",
+    "name_ascii": "seleniuro di idrogeno",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17414,9 +17764,11 @@
   {
     "id": "stagno-composti-inorganici-come-sn",
     "cas": "",
+    "cas_normalized": "",
     "ec_number": "",
     "name_it": "Stagno (composti inorganici come Sn)",
     "name_en": "Stagno (composti inorganici come Sn)",
+    "name_ascii": "stagno composti inorganici come sn",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17512,9 +17864,11 @@
   {
     "id": "sulfotep",
     "cas": "3689-24-5",
+    "cas_normalized": "3689245",
     "ec_number": "222-995-2",
     "name_it": "Sulfotep",
     "name_en": "Sulfotep",
+    "name_ascii": "sulfotep",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17612,9 +17966,11 @@
   {
     "id": "terfenile-idrogenato",
     "cas": "61788-32-7",
+    "cas_normalized": "61788327",
     "ec_number": "262-967-7",
     "name_it": "Terfenile idrogenato",
     "name_en": "Terfenile idrogenato",
+    "name_ascii": "terfenile idrogenato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17710,9 +18066,11 @@
   {
     "id": "tert-amilacetato",
     "cas": "625-16-1",
+    "cas_normalized": "625161",
     "ec_number": "809-420-6",
     "name_it": "Tert amilacetato",
     "name_en": "Tert amilacetato",
+    "name_ascii": "tert amilacetato",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17808,9 +18166,11 @@
   {
     "id": "tetracloroetilene",
     "cas": "127-18-4",
+    "cas_normalized": "127184",
     "ec_number": "204-825-9",
     "name_it": "Tetracloroetilene",
     "name_en": "Tetracloroetilene",
+    "name_ascii": "tetracloroetilene",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -17908,9 +18268,11 @@
   {
     "id": "tetracloruro-di-carbonio-tetraclorometano",
     "cas": "56-23-5",
+    "cas_normalized": "56235",
     "ec_number": "200-262-8",
     "name_it": "Tetracloruro di carbonio, tetraclorometano",
     "name_en": "Tetracloruro di carbonio, tetraclorometano",
+    "name_ascii": "tetracloruro di carbonio tetraclorometano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -18008,9 +18370,11 @@
   {
     "id": "tetraidrofurano",
     "cas": "109-99-9",
+    "cas_normalized": "109999",
     "ec_number": "203-726-8",
     "name_it": "Tetraidrofurano",
     "name_en": "Tetraidrofurano",
+    "name_ascii": "tetraidrofurano",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -18108,9 +18472,11 @@
   {
     "id": "toluene",
     "cas": "108-88-3",
+    "cas_normalized": "108883",
     "ec_number": "203-625-9",
     "name_it": "Toluene",
     "name_en": "Toluene",
+    "name_ascii": "toluene",
     "synonyms": [
       "toluolo"
     ],
@@ -18210,9 +18576,11 @@
   {
     "id": "trichloroethylene",
     "cas": "79-01-6",
+    "cas_normalized": "79016",
     "ec_number": "201-167-4",
     "name_it": "Tricloroetilene",
     "name_en": "Trichloroethylene",
+    "name_ascii": "trichloroethylene",
     "synonyms": [
       "tricloroetene",
       "trichloroethene",
@@ -18317,9 +18685,11 @@
   {
     "id": "tricloruro-di-fosforile",
     "cas": "10025-87-3",
+    "cas_normalized": "10025873",
     "ec_number": "233-046-7",
     "name_it": "Tricloruro di fosforile",
     "name_en": "Tricloruro di fosforile",
+    "name_ascii": "tricloruro di fosforile",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -18415,9 +18785,11 @@
   {
     "id": "trietilammina",
     "cas": "121-44-8",
+    "cas_normalized": "121448",
     "ec_number": "204-469-4",
     "name_it": "Trietilammina",
     "name_en": "Trietilammina",
+    "name_ascii": "trietilammina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -18515,9 +18887,11 @@
   {
     "id": "trimetilammina",
     "cas": "75-50-3",
+    "cas_normalized": "75503",
     "ec_number": "200-875-0",
     "name_it": "Trimetilammina",
     "name_en": "Trimetilammina",
+    "name_ascii": "trimetilammina",
     "synonyms": [],
     "seed_notice": "Dato importato nella pipeline, da verificare prima dell'uso professionale.",
     "dlgs81": {
@@ -18613,9 +18987,11 @@
   {
     "id": "xylene-mixed-isomers",
     "cas": "1330-20-7",
+    "cas_normalized": "1330207",
     "ec_number": "215-535-7",
     "name_it": "Xilene, isomeri misti, puro",
     "name_en": "Xylene, mixed isomers",
+    "name_ascii": "xylene mixed isomers",
     "synonyms": [
       "xilene",
       "xylene"

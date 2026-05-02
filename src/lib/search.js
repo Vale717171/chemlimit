@@ -17,7 +17,8 @@ export async function loadSubstances() {
 
   return substances.map((substance) => ({
     ...substance,
-    cas_normalized: normalizeCAS(substance.cas)
+    cas_normalized: substance.cas_normalized || normalizeCAS(substance.cas),
+    name_ascii: substance.name_ascii || normalizeText(substance.name_en || substance.name_it)
   }));
 }
 
@@ -61,6 +62,10 @@ export function findSubstance(substances, query) {
   return (
     substances.find((substance) => {
       const names = getSearchableNames(substance);
+
+      if (substance.name_ascii && substance.name_ascii === normalizedQuery) {
+        return true;
+      }
 
       return names.some((name) => normalizeText(name) === normalizedQuery);
     }) || null
